@@ -28,10 +28,6 @@ class DASHViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupWebView()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         loadWebView()
     }
     
