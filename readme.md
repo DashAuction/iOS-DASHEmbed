@@ -1,1 +1,50 @@
-DASH
+# DASH
+
+## Purpose
+
+This library provides an easy way to embed the DASH mobile experience into an iOS application.
+
+## Usage
+
+### Create a DASHConfig
+
+Create a DASHConfig. This is used to initialize the DASH library with needed information.
+
+```swift
+let bundleIdentifier = Bundle.main.bundleIdentifier ?? "io.dashapp.DASHEmbed"
+let dashConfig = DASHConfig(userEmail: "ryan@dashapp.io", teamIdentifier: "fcdallas", pushDeviceToken: nil, distrubutorIdentifier: "DASH_DISTRIBUTOR", applicationIdentifier: bundleIdentifier)
+```
+### Initialize the DASH library
+
+Initialize library either using the singleton or instance.
+
+```swift
+DASH.team.start(with: dashConfig)
+```
+```swift
+let dash = DASH()
+dash.start(with: dashConfig)
+```
+### Display the provided DASHViewController
+
+```swift
+let dashViewController = DASH.team.dashViewController()
+
+//Add a close button if needed
+let closeButton = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(closeDASHModal))
+dashViewController.navigationItem.leftBarButtonItem = closeButton
+```
+Display modally
+
+```swift
+//Present
+let navigationController = UINavigationController(rootViewController: dashViewController)
+present(navigationController, animated: true, completion: nil)
+```
+Or push on a navigation stack
+
+```swift
+navigationController?.pushViewController(dashViewController, animated: true)
+```
+
+Check out the [Current Documentation](https://bitbucket.org/dashdev/dash-embed-ios/raw/697027e709f319c152ac7638f02bebfb5e7f25ea/Documentation/DASHAuctions_V1.pdf)
