@@ -14,7 +14,7 @@ public struct DASHConfig {
     public var teamIdentifier: String
     
     /// A unique identifier for the app distributor implementing DASH in their app. DASH will provide this identifier.
-    public var distrubutorIdentifier: String
+    public var distributorIdentifier: String
     
     /// A unique identifier for the individual application using DASH. For iOS, this is the bundle identifier.
     public var applicationIdentifier: String

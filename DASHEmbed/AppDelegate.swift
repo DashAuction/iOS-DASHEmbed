@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Configure DASH Instance
         let bundleIdentifier = Bundle.main.bundleIdentifier ?? "io.dashapp.DASHEmbed"
-        let dashConfig = DASHConfig(teamIdentifier: "fcdallas", distrubutorIdentifier: "DASH_DISTRIBUTOR", applicationIdentifier: bundleIdentifier)
+        let dashConfig = DASHConfig(teamIdentifier: "fcdallas", distributorIdentifier: "DASH_DISTRIBUTOR", applicationIdentifier: bundleIdentifier)
         DASH.team.start(with: dashConfig)
         
         return true
