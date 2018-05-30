@@ -19,6 +19,8 @@ public class DASH {
     // MARK: Private
     
     private var config: DASHConfig?
+    private var pushToken: Data?
+    private var userEmail: String?
     
     // MARK: Public
     
@@ -33,6 +35,16 @@ public class DASH {
     /// Initializes DASH. Call this once before any other methods.
     public func start(with config: DASHConfig) {
         self.config = config
+    }
+    
+    /// Sets the current user's email. Email is used to uniquely identify a user in the DASH system.
+    public func setUserEmail(_ userEmail: String?) {
+        self.userEmail = userEmail
+    }
+    
+    /// Used to set the push device token for the current app. Set this with the data returned from the remote notifications delegate method. This is used to send DASH outbid notifications on the team's behalf.
+    public func setUserPushToken(with data: Data?) {
+        pushToken = data
     }
     
     /// Returns true if the url passed in should be handled by DASH. Ex: URLs from DASH notifications will return true. **Not yet implemented. Returns false for now**

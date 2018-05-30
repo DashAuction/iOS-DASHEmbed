@@ -12,11 +12,6 @@ class ExampleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        //Configure DASH Instance
-        let bundleIdentifier = Bundle.main.bundleIdentifier ?? "io.dashapp.DASHEmbed"
-        let dashConfig = DASHConfig(userEmail: "ryan@dashapp.io", teamIdentifier: "fcdallas", pushDeviceToken: nil, distrubutorIdentifier: "DASH_DISTRIBUTOR", applicationIdentifier: bundleIdentifier)
-        DASH.team.start(with: dashConfig)
     }
     
     // MARK: Actions

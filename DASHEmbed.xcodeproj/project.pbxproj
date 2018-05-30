@@ -44,6 +44,7 @@
 		2FB4E95720BD90FC00F09A5D /* DASH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DASH.swift; sourceTree = "<group>"; };
 		2FB4E95A20BD94D800F09A5D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2FB4E95C20BD94EC00F09A5D /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		2FB9A03420BE22D300314A89 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 		2FB4E93320BD8DF100F09A5D /* DASHEmbed */ = {
 			isa = PBXGroup;
 			children = (
+				2FB9A03420BE22D300314A89 /* readme.md */,
 				2FB4E95420BD8F6300F09A5D /* Framework */,
 				2FB4E93420BD8DF100F09A5D /* AppDelegate.swift */,
 				2FB4E93B20BD8DF100F09A5D /* Assets.xcassets */,

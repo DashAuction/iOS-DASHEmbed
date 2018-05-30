@@ -12,7 +12,7 @@ Create a DASHConfig. This is used to initialize the DASH library with needed inf
 
 ```swift
 let bundleIdentifier = Bundle.main.bundleIdentifier ?? "io.dashapp.DASHEmbed"
-let dashConfig = DASHConfig(userEmail: "ryan@dashapp.io", teamIdentifier: "fcdallas", pushDeviceToken: nil, distrubutorIdentifier: "DASH_DISTRIBUTOR", applicationIdentifier: bundleIdentifier)
+let dashConfig = DASHConfig(teamIdentifier: "fcdallas", distrubutorIdentifier: "DASH_DISTRIBUTOR", applicationIdentifier: bundleIdentifier)
 ```
 ### Initialize the DASH library
 
@@ -25,6 +25,14 @@ DASH.team.start(with: dashConfig)
 let dash = DASH()
 dash.start(with: dashConfig)
 ```
+
+### Set the push token to enable outbid notifications (Work in progress)
+
+```swift
+//Sets the user's push token for outbid notifications
+DASH.team.setUserPushToken(with: deviceToken)
+```
+
 ### Display the provided DASHViewController
 
 ```swift
