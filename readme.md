@@ -55,4 +55,4 @@ Or push on a navigation stack
 navigationController?.pushViewController(dashViewController, animated: true)
 ```
 
-Check out the [Current Documentation](https://bitbucket.org/dashdev/dash-embed-ios/raw/697027e709f319c152ac7638f02bebfb5e7f25ea/Documentation/DASHAuctions_V1.pdf)
+Check out the [Current Documentation](https://bitbucket.org/dashdev/dash-embed-ios/raw/21b09d1d6620a0594e88aea498cfa46a4717b43b/Documentation/DASHAuctions_V1.pdf)
