@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,10 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Configure DASH Instance
         let bundleIdentifier = Bundle.main.bundleIdentifier ?? "io.dashapp.DASHEmbed"
         let dashConfig = DASHConfig(teamIdentifier: "fcdallas", distributorIdentifier: "DASH_DISTRIBUTOR", applicationIdentifier: bundleIdentifier)
+        //Start DASH
         DASH.team.start(with: dashConfig)
         
         return true
     }
+    
+    // MARK: - Push Delegate
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         //Sets the user's push token for outbid notifications

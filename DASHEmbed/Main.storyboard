@@ -34,48 +34,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7WI-lf-iol">
-                                <rect key="frame" x="77.5" y="282.5" width="219" height="102"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="IDR-lU-kLS">
+                                <rect key="frame" x="76.5" y="215.5" width="222.5" height="236.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxP-DE-lb2">
-                                        <rect key="frame" x="0.0" y="0.0" width="219" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="222.5" height="30"/>
                                         <state key="normal" title="Present DASH Modally"/>
                                         <connections>
                                             <action selector="presentModally" destination="gq6-gR-uRi" eventType="touchUpInside" id="Ki1-iw-66D"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ji9-UW-qlH">
-                                        <rect key="frame" x="0.0" y="72" width="219" height="30"/>
+                                        <rect key="frame" x="0.0" y="54" width="222.5" height="30"/>
                                         <state key="normal" title="Push DASH on Navigation Stack"/>
                                         <connections>
                                             <action selector="pushNavigation" destination="gq6-gR-uRi" eventType="touchUpInside" id="Olg-9Z-SuJ"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ja2-nU-Vci">
+                                        <rect key="frame" x="0.0" y="108" width="222.5" height="30"/>
+                                        <state key="normal" title="Request Push Notifications"/>
+                                        <connections>
+                                            <action selector="requestPushAuthorization" destination="gq6-gR-uRi" eventType="touchUpInside" id="OHj-RB-K7m"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push Status: Not Determined" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXV-6B-DE2">
+                                        <rect key="frame" x="0.0" y="162" width="222.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mKh-NV-Giq">
+                                        <rect key="frame" x="0.0" y="206.5" width="222.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="userEmailUpdatedWithSender:" destination="gq6-gR-uRi" eventType="editingChanged" id="z7h-qg-LIm"/>
+                                        </connections>
+                                    </textField>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="ji9-UW-qlH" secondAttribute="trailing" id="6Wi-4Y-jop"/>
-                                    <constraint firstItem="CxP-DE-lb2" firstAttribute="top" secondItem="7WI-lf-iol" secondAttribute="top" id="9L1-4u-rl2"/>
-                                    <constraint firstAttribute="trailing" secondItem="CxP-DE-lb2" secondAttribute="trailing" id="BvE-pJ-vHu"/>
-                                    <constraint firstItem="ji9-UW-qlH" firstAttribute="leading" secondItem="7WI-lf-iol" secondAttribute="leading" id="Mra-tu-yLP"/>
-                                    <constraint firstItem="CxP-DE-lb2" firstAttribute="leading" secondItem="7WI-lf-iol" secondAttribute="leading" id="PJ1-EG-esX"/>
-                                    <constraint firstItem="ji9-UW-qlH" firstAttribute="top" secondItem="CxP-DE-lb2" secondAttribute="bottom" constant="42" id="aqg-Hg-XKJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="ji9-UW-qlH" secondAttribute="bottom" id="ljM-9c-63Q"/>
-                                </constraints>
-                            </view>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="7WI-lf-iol" firstAttribute="centerX" secondItem="VVY-D1-Qnt" secondAttribute="centerX" id="7aS-RX-3FW"/>
-                            <constraint firstItem="7WI-lf-iol" firstAttribute="centerY" secondItem="VVY-D1-Qnt" secondAttribute="centerY" id="IbS-xB-Uzh"/>
+                            <constraint firstItem="IDR-lU-kLS" firstAttribute="centerY" secondItem="VVY-D1-Qnt" secondAttribute="centerY" id="E6t-Pg-gLP"/>
+                            <constraint firstItem="IDR-lU-kLS" firstAttribute="centerX" secondItem="VVY-D1-Qnt" secondAttribute="centerX" id="bw2-qF-x8E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LIa-jO-1BZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="KVv-Yi-9yx"/>
+                    <connections>
+                        <outlet property="pushStatusLabel" destination="fXV-6B-DE2" id="mVY-Nr-Roi"/>
+                        <outlet property="userEmailTextField" destination="mKh-NV-Giq" id="iUi-RR-sTQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BtB-q0-1eK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="42" y="148"/>
+            <point key="canvasLocation" x="40.799999999999997" y="147.97601199400302"/>
         </scene>
     </scenes>
 </document>

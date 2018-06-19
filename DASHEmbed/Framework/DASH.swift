@@ -15,11 +15,16 @@ import UIKit
 public typealias DASHCompletion = (Bool) -> Void
 
 public class DASH {
+    
+    struct UserInfo {
+        var pushTokenString: String?
+        var userEmail: String?
+    }
 
     // MARK: Private
     
     private var config: DASHConfig?
-    private var pushToken: Data?
+    private var pushTokenString: String?
     private var userEmail: String?
     
     // MARK: Public
@@ -44,7 +49,7 @@ public class DASH {
     
     /// Used to set the push device token for the current app. Set this with the data returned from the remote notifications delegate method. This is used to send DASH outbid notifications on the team's behalf.
     public func setUserPushToken(with data: Data?) {
-        pushToken = data
+        pushTokenString = data?.hexString
     }
     
     /// Returns true if the url passed in should be handled by DASH. Ex: URLs from DASH notifications will return true. **Not yet implemented. Returns false for now**
@@ -63,7 +68,7 @@ public class DASH {
             fatalError("DASH must start with config before using DASHViewController")
         }
         
-        let viewController = DASHViewController.instantiate(with: config)
+        let viewController = DASHViewController.instantiate(with: config, userInfo: UserInfo(pushTokenString: pushTokenString, userEmail: userEmail))
         return viewController
     }
 }
