@@ -34,59 +34,96 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="IDR-lU-kLS">
-                                <rect key="frame" x="76.5" y="215.5" width="222.5" height="236.5"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbg-Q0-1g3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxP-DE-lb2">
-                                        <rect key="frame" x="0.0" y="0.0" width="222.5" height="30"/>
-                                        <state key="normal" title="Present DASH Modally"/>
-                                        <connections>
-                                            <action selector="presentModally" destination="gq6-gR-uRi" eventType="touchUpInside" id="Ki1-iw-66D"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ji9-UW-qlH">
-                                        <rect key="frame" x="0.0" y="54" width="222.5" height="30"/>
-                                        <state key="normal" title="Push DASH on Navigation Stack"/>
-                                        <connections>
-                                            <action selector="pushNavigation" destination="gq6-gR-uRi" eventType="touchUpInside" id="Olg-9Z-SuJ"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ja2-nU-Vci">
-                                        <rect key="frame" x="0.0" y="108" width="222.5" height="30"/>
-                                        <state key="normal" title="Request Push Notifications"/>
-                                        <connections>
-                                            <action selector="requestPushAuthorization" destination="gq6-gR-uRi" eventType="touchUpInside" id="OHj-RB-K7m"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push Status: Not Determined" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXV-6B-DE2">
-                                        <rect key="frame" x="0.0" y="162" width="222.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mKh-NV-Giq">
-                                        <rect key="frame" x="0.0" y="206.5" width="222.5" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="userEmailUpdatedWithSender:" destination="gq6-gR-uRi" eventType="editingChanged" id="z7h-qg-LIm"/>
-                                        </connections>
-                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOj-M7-7vT">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="373.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="IDR-lU-kLS">
+                                                <rect key="frame" x="16" y="24" width="343" height="325.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Navigation:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxS-Zo-4R8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxP-DE-lb2">
+                                                        <rect key="frame" x="0.0" y="44.5" width="343" height="30"/>
+                                                        <state key="normal" title="Present DASH Modally"/>
+                                                        <connections>
+                                                            <action selector="presentModally" destination="gq6-gR-uRi" eventType="touchUpInside" id="Ki1-iw-66D"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ji9-UW-qlH">
+                                                        <rect key="frame" x="0.0" y="98.5" width="343" height="30"/>
+                                                        <state key="normal" title="Push DASH on Navigation Stack"/>
+                                                        <connections>
+                                                            <action selector="pushNavigation" destination="gq6-gR-uRi" eventType="touchUpInside" id="Olg-9Z-SuJ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push Status: Not Determined" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXV-6B-DE2">
+                                                        <rect key="frame" x="0.0" y="152.5" width="343" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ja2-nU-Vci">
+                                                        <rect key="frame" x="0.0" y="197" width="343" height="30"/>
+                                                        <state key="normal" title="Request Push Notifications"/>
+                                                        <connections>
+                                                            <action selector="requestPushAuthorization" destination="gq6-gR-uRi" eventType="touchUpInside" id="OHj-RB-K7m"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: Not Set" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKl-I6-hqD">
+                                                        <rect key="frame" x="0.0" y="251" width="343" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzU-Gi-t6K">
+                                                        <rect key="frame" x="0.0" y="295.5" width="343" height="30"/>
+                                                        <state key="normal" title="Set Email"/>
+                                                        <connections>
+                                                            <action selector="setUserEmailTapped" destination="gq6-gR-uRi" eventType="touchUpInside" id="qlU-cM-JOm"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="IDR-lU-kLS" firstAttribute="centerX" secondItem="jOj-M7-7vT" secondAttribute="centerX" id="Pe9-7A-gTc"/>
+                                            <constraint firstAttribute="bottom" secondItem="IDR-lU-kLS" secondAttribute="bottom" constant="24" id="b5w-fZ-S6t"/>
+                                            <constraint firstItem="IDR-lU-kLS" firstAttribute="top" secondItem="jOj-M7-7vT" secondAttribute="top" constant="24" id="jfH-hQ-tZr"/>
+                                            <constraint firstItem="IDR-lU-kLS" firstAttribute="leading" secondItem="jOj-M7-7vT" secondAttribute="leading" constant="16" id="lxb-Ug-eGp"/>
+                                            <constraint firstAttribute="trailing" secondItem="IDR-lU-kLS" secondAttribute="trailing" constant="16" id="pzz-FQ-JQC"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
-                            </stackView>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="jOj-M7-7vT" secondAttribute="trailing" id="8k3-uj-iw5"/>
+                                    <constraint firstAttribute="bottom" secondItem="jOj-M7-7vT" secondAttribute="bottom" id="8w5-Lw-DCB"/>
+                                    <constraint firstItem="jOj-M7-7vT" firstAttribute="top" secondItem="rbg-Q0-1g3" secondAttribute="top" id="BLi-yD-xop"/>
+                                    <constraint firstItem="jOj-M7-7vT" firstAttribute="leading" secondItem="rbg-Q0-1g3" secondAttribute="leading" id="nYD-qh-Hpb"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="IDR-lU-kLS" firstAttribute="centerY" secondItem="VVY-D1-Qnt" secondAttribute="centerY" id="E6t-Pg-gLP"/>
-                            <constraint firstItem="IDR-lU-kLS" firstAttribute="centerX" secondItem="VVY-D1-Qnt" secondAttribute="centerX" id="bw2-qF-x8E"/>
+                            <constraint firstItem="rbg-Q0-1g3" firstAttribute="leading" secondItem="LIa-jO-1BZ" secondAttribute="leading" id="Hui-w4-gbo"/>
+                            <constraint firstItem="jOj-M7-7vT" firstAttribute="width" secondItem="VVY-D1-Qnt" secondAttribute="width" id="ZE6-MX-TEw"/>
+                            <constraint firstItem="rbg-Q0-1g3" firstAttribute="trailing" secondItem="LIa-jO-1BZ" secondAttribute="trailing" id="cGj-A9-chE"/>
+                            <constraint firstItem="rbg-Q0-1g3" firstAttribute="bottom" secondItem="LIa-jO-1BZ" secondAttribute="bottom" id="mpo-ns-qGW"/>
+                            <constraint firstItem="rbg-Q0-1g3" firstAttribute="top" secondItem="LIa-jO-1BZ" secondAttribute="top" id="qr4-Dh-lOi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LIa-jO-1BZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="KVv-Yi-9yx"/>
                     <connections>
                         <outlet property="pushStatusLabel" destination="fXV-6B-DE2" id="mVY-Nr-Roi"/>
-                        <outlet property="userEmailTextField" destination="mKh-NV-Giq" id="iUi-RR-sTQ"/>
+                        <outlet property="userEmailLabel" destination="uKl-I6-hqD" id="jbQ-Gd-PRX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BtB-q0-1eK" userLabel="First Responder" sceneMemberID="firstResponder"/>

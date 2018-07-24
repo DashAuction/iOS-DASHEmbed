@@ -16,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         //Configure DASH Instance
-        let bundleIdentifier = Bundle.main.bundleIdentifier ?? "io.dashapp.DASHEmbed"
-        let dashConfig = DASHConfig(teamIdentifier: "fcdallas", distributorIdentifier: "DASH_DISTRIBUTOR", applicationIdentifier: bundleIdentifier)
+        let appId = "55e1bb99a1a135543f692bad"
+        let dashConfig = DASHConfig(appId: appId)
         //Start DASH
         DASH.team.start(with: dashConfig)
         

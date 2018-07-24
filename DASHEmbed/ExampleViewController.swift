@@ -12,7 +12,7 @@ import UserNotifications
 class ExampleViewController: UIViewController {
     
     @IBOutlet var pushStatusLabel: UILabel!
-    @IBOutlet var userEmailTextField: UITextField!
+    @IBOutlet var userEmailLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +42,13 @@ class ExampleViewController: UIViewController {
     
     @IBAction private func requestPushAuthorization() {
         registerForPushNotifications()
+    }
+    
+    @IBAction private func setUserEmailTapped() {
+        presentEntryAlert(with: "Set Email", message: "Set the user email.", currentValue: nil) { (email) in
+            DASH.team.setUserEmail(email)
+            self.userEmailLabel.text = "Email: \(email ?? "Not Set")"
+        }
     }
     
     @objc private func closeDASHModal() {
@@ -83,5 +90,18 @@ class ExampleViewController: UIViewController {
                 self?.pushStatusLabel.text = "Push Status: \(status)"
             }
         }
+    }
+    
+    private func presentEntryAlert(with title: String, message: String, currentValue: String? = nil, completion: @escaping (String?) -> Void) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addTextField { (textField) in
+            textField.placeholder = title
+            textField.text = currentValue
+        }
+        alert.addAction(UIAlertAction(title: "Save", style: .default, handler: { (_) in
+            let textFieldText = alert.textFields?.first?.text
+            completion(textFieldText)
+        }))
+        present(alert, animated: true, completion: nil)
     }
 }

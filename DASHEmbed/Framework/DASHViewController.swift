@@ -10,11 +10,12 @@ import WebKit
 
 class DASHViewController: UIViewController {
     
-    private let baseURLString = "https://web.dashapp.io/auctions/"
-    private let distributorQueryName = "distributorIdentifier"
-    private let applicationQueryName = "applicationIdentifier"
-    private let emailQueryName = "userEmail"
-    private let pushQueryName = "pushToken"
+    private let baseURLString = "https://web.dashapp.io/web"
+    private let applicationQueryName = "appId"
+    private let platformQueryName = "platformId"
+    private let platformQueryValue = "ios"
+    private let emailQueryName = "email"
+    private let pushQueryName = "pushId"
 
     private var webView: WKWebView!
     private var config: DASHConfig?
@@ -60,18 +61,16 @@ class DASHViewController: UIViewController {
     
     private func loadWebView() {
         guard let config = config else { fatalError("A DASHConfig is required before using DASHViewController")}
-        
-        let teamURLString = baseURLString.appending(config.teamIdentifier)
-        if let url = URL(string: teamURLString) {
+        if let url = URL(string: baseURLString) {
             var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false)
             
             var queryItems = [URLQueryItem]()
             
             //Add default query items
-            let distributorQueryItem = URLQueryItem(name: distributorQueryName, value: config.distributorIdentifier)
-            queryItems.append(distributorQueryItem)
-            let applicationQueryItem = URLQueryItem(name: applicationQueryName, value: config.applicationIdentifier)
+            let applicationQueryItem = URLQueryItem(name: applicationQueryName, value: config.appId)
             queryItems.append(applicationQueryItem)
+            let platformQueryItem = URLQueryItem(name: platformQueryName, value: platformQueryValue)
+            queryItems.append(platformQueryItem)
             
             //Add user email if provided
             if let userEmail = userInfo?.userEmail {
