@@ -10,7 +10,7 @@ import WebKit
 
 class DASHViewController: UIViewController {
     
-    private let baseURLString = "https://web.dashapp.io/web"
+    private let baseURLString = "https://dev-web.dashapp.io/app"
     private let applicationQueryName = "appId"
     private let platformQueryName = "platformId"
     private let platformQueryValue = "ios"

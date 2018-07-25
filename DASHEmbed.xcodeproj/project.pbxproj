@@ -71,6 +71,8 @@
 		2FB4E92820BD8DF100F09A5D = {
 			isa = PBXGroup;
 			children = (
+				2FB9A03420BE22D300314A89 /* readme.md */,
+				2FB4E93B20BD8DF100F09A5D /* Assets.xcassets */,
 				2FB4E93320BD8DF100F09A5D /* DASHEmbed */,
 				2FB4E94820BD8DF100F09A5D /* DASHEmbedTests */,
 				2FB4E93220BD8DF100F09A5D /* Products */,
@@ -89,15 +91,10 @@
 		2FB4E93320BD8DF100F09A5D /* DASHEmbed */ = {
 			isa = PBXGroup;
 			children = (
-				2FC22B2720D8ACC500C68963 /* DASHEmbed.entitlements */,
-				2FB9A03420BE22D300314A89 /* readme.md */,
+				D0656DDE2108091C00579486 /* App */,
+				D0656DDF2108093F00579486 /* Startup */,
+				D0656DE02108097600579486 /* Main */,
 				2FB4E95420BD8F6300F09A5D /* Framework */,
-				2FB4E93420BD8DF100F09A5D /* AppDelegate.swift */,
-				2FB4E93B20BD8DF100F09A5D /* Assets.xcassets */,
-				2FB4E93D20BD8DF100F09A5D /* LaunchScreen.storyboard */,
-				2FB4E94020BD8DF100F09A5D /* Info.plist */,
-				2FB4E95A20BD94D800F09A5D /* Main.storyboard */,
-				2FB4E95C20BD94EC00F09A5D /* ExampleViewController.swift */,
 			);
 			path = DASHEmbed;
 			sourceTree = "<group>";
@@ -114,13 +111,40 @@
 		2FB4E95420BD8F6300F09A5D /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				2FB4E93620BD8DF100F09A5D /* DASHViewController.swift */,
 				2FB4E93820BD8DF100F09A5D /* DASH.storyboard */,
-				2FB4E95520BD8F9A00F09A5D /* DASHConfig.swift */,
 				2FB4E95720BD90FC00F09A5D /* DASH.swift */,
+				2FB4E95520BD8F9A00F09A5D /* DASHConfig.swift */,
+				2FB4E93620BD8DF100F09A5D /* DASHViewController.swift */,
 				2FC22B2520D8A28C00C68963 /* Data+Additions.swift */,
 			);
 			path = Framework;
+			sourceTree = "<group>";
+		};
+		D0656DDE2108091C00579486 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2FB4E94020BD8DF100F09A5D /* Info.plist */,
+				2FC22B2720D8ACC500C68963 /* DASHEmbed.entitlements */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D0656DDF2108093F00579486 /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				2FB4E93D20BD8DF100F09A5D /* LaunchScreen.storyboard */,
+				2FB4E93420BD8DF100F09A5D /* AppDelegate.swift */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
+		D0656DE02108097600579486 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2FB4E95A20BD94D800F09A5D /* Main.storyboard */,
+				2FB4E95C20BD94EC00F09A5D /* ExampleViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,10 +416,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = DASHEmbed/DASHEmbed.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DASHEmbed/App/DASHEmbed.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 277BBQM6F2;
-				INFOPLIST_FILE = DASHEmbed/Info.plist;
+				INFOPLIST_FILE = DASHEmbed/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.dashapp.dashembeddemo;
@@ -409,10 +433,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = DASHEmbed/DASHEmbed.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DASHEmbed/App/DASHEmbed.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 277BBQM6F2;
-				INFOPLIST_FILE = DASHEmbed/Info.plist;
+				INFOPLIST_FILE = DASHEmbed/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.dashapp.dashembeddemo;
@@ -429,7 +453,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 277BBQM6F2;
-				INFOPLIST_FILE = DASHEmbedTests/Info.plist;
+				INFOPLIST_FILE = DASHEmbedTests/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.dashapp.DASHEmbedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -446,7 +470,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 277BBQM6F2;
-				INFOPLIST_FILE = DASHEmbedTests/Info.plist;
+				INFOPLIST_FILE = DASHEmbedTests/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.dashapp.DASHEmbedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -518,10 +542,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = DASHEmbed/DASHEmbed.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DASHEmbed/App/DASHEmbed.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 277BBQM6F2;
-				INFOPLIST_FILE = DASHEmbed/Info.plist;
+				INFOPLIST_FILE = DASHEmbed/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.dashapp.dashembeddemo2;
@@ -538,7 +562,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 277BBQM6F2;
-				INFOPLIST_FILE = DASHEmbedTests/Info.plist;
+				INFOPLIST_FILE = DASHEmbedTests/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.dashapp.DASHEmbedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -603,10 +627,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = DASHEmbed/DASHEmbed.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DASHEmbed/App/DASHEmbed.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 277BBQM6F2;
-				INFOPLIST_FILE = DASHEmbed/Info.plist;
+				INFOPLIST_FILE = DASHEmbed/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.dashapp.dashembeddemo2;
@@ -623,7 +647,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 277BBQM6F2;
-				INFOPLIST_FILE = DASHEmbedTests/Info.plist;
+				INFOPLIST_FILE = DASHEmbedTests/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.dashapp.DASHEmbedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
