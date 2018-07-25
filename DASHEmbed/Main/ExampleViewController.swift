@@ -19,6 +19,9 @@ class ExampleViewController: UIViewController {
         
         //Update Push Status
         updatePushStatusLabel()
+        
+        // Put this in so I don't have to tap the request every time.  Please delete as needed.
+        registerForPushNotifications()
     }
     
     // MARK: Actions

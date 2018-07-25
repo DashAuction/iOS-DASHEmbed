@@ -52,6 +52,10 @@ public class DASH {
         pushTokenString = data?.hexString
     }
     
+    public func setUserPushToken(with data: String) {
+        pushTokenString = data;
+    }
+    
     /// Returns true if the url passed in should be handled by DASH. Ex: URLs from DASH notifications will return true. **Not yet implemented. Returns false for now**
     public func canHandleDASHLink(with url: URL) -> Bool {
         return false //Not yet implemented
