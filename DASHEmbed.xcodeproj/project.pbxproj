@@ -112,9 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				2FB4E93820BD8DF100F09A5D /* DASH.storyboard */,
+				2FB4E93620BD8DF100F09A5D /* DASHViewController.swift */,
 				2FB4E95720BD90FC00F09A5D /* DASH.swift */,
 				2FB4E95520BD8F9A00F09A5D /* DASHConfig.swift */,
-				2FB4E93620BD8DF100F09A5D /* DASHViewController.swift */,
 				2FC22B2520D8A28C00C68963 /* Data+Additions.swift */,
 			);
 			path = Framework;
