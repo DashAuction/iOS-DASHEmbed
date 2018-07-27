@@ -47,7 +47,7 @@ class DASHViewController: UIViewController {
         webView.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(webView)
-        let horizontalContraints = NSLayoutConstraint.constraints(withVisualFormat: "|[webView]|",
+        let horizontalContraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|[webView]|",
                                                                   options: [],
                                                                   metrics: nil,
                                                                   views: ["webView": webView])
