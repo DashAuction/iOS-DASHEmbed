@@ -10,12 +10,14 @@
 
 import Foundation
 import UIKit
-
-/// Called when a process completes with success state.
-public typealias DASHCompletion = (Bool) -> Void
+import UserNotifications
 
 public class DASH {
     
+    private let dashNotificationInfoKey = "dash"
+    private let dashNotificationAuctionItemKey = "auctionItemId"
+    private let dashNotificationAuctionKey = "auctionItem"
+
     struct UserInfo {
         var pushTokenString: String?
         var userEmail: String?
@@ -26,6 +28,7 @@ public class DASH {
     private var config: DASHConfig?
     private var pushTokenString: String?
     private var userEmail: String?
+    private var currentNotificationData: [String: Any]?
     
     // MARK: Public
     
@@ -52,18 +55,31 @@ public class DASH {
         pushTokenString = data?.hexString
     }
     
+    /// Used to set the push device token for the current app if already in string format. This is used to send DASH outbid notifications on the team's behalf.
     public func setUserPushToken(with data: String) {
         pushTokenString = data;
     }
     
-    /// Returns true if the url passed in should be handled by DASH. Ex: URLs from DASH notifications will return true. **Not yet implemented. Returns false for now**
-    public func canHandleDASHLink(with url: URL) -> Bool {
-        return false //Not yet implemented
+    /// Returns true if the notification passed in should be handled by DASH. If true, you should tell DASH to handle the notification and present the DASH view controller.
+    public func canHandleNotification(_ notification: UNNotification) -> Bool {
+        return notification.request.content.userInfo[dashNotificationInfoKey] != nil
     }
     
-    /// Tells DASH to handle the link. Completion is called once navigation has finished and is ready for display. Ex: DASH will navigate to the correct auction item when passed the URL from an outbid notification. **Not yet implemented. Immediately returns false for now**
-    public func handleDASHLink(with url: URL, completion: @escaping DASHCompletion) {
-        completion(false) //Not yet implemented
+    /// Tells DASH to handle the notification. The next presentation of the DASH view controller will handle the notification. EX: If a DASH outbid notification is set here, the next presentation will navigate directly to the respective auction item.
+    public func handleNotification(_ notification: UNNotification) {
+        if let dashInfo = notification.request.content.userInfo[dashNotificationInfoKey] as? [String: Any] {
+            currentNotificationData = dashInfo
+        }
+    }
+    
+    /// Returns whether DASH currently has data as result of a notification (and subsequently DASH view controller should be presented)
+    public func hasNotificationData() -> Bool {
+        return currentNotificationData != nil
+    }
+    
+    /// Clears out the pending notification data provided by handleNotification()
+    public func clearNotificationData() {
+        currentNotificationData = nil
     }
     
     /// Returns a DASH view controller for display. Can be pushed on a navigation stack as is or presented modally when embedded in a UINavigationController
@@ -72,7 +88,7 @@ public class DASH {
             fatalError("DASH must start with config before using DASHViewController")
         }
         
-        let viewController = DASHViewController.instantiate(with: config, userInfo: UserInfo(pushTokenString: pushTokenString, userEmail: userEmail))
+        let viewController = DASHViewController.instantiate(with: config, userInfo: UserInfo(pushTokenString: pushTokenString, userEmail: userEmail), notificationData: currentNotificationData)
         return viewController
     }
 }

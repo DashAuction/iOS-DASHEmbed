@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Start DASH
         DASH.team.start(with: dashConfig)
         
-        //This is the push token for Pete's iPhone X (for use when in the simulator, overriden by didRegister...)
-        DASH.team.setUserPushToken(with: "a7697dc1ecce86fcaba87411eadfeb9c32e2082b9f3458699beacfd0ac7eba00")
+        //Set delegate to respond to push notifications
+        UNUserNotificationCenter.current().delegate = self
         
         return true
     }
@@ -35,3 +35,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        if DASH.team.canHandleNotification(response.notification) {
+            DASH.team.handleNotification(response.notification)
+        }
+        
+        //Else, Handle other notifications
+        
+        completionHandler()
+    }
+}

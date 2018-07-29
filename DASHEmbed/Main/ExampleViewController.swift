@@ -20,8 +20,17 @@ class ExampleViewController: UIViewController {
         //Update Push Status
         updatePushStatusLabel()
         
-        // Put this in so I don't have to tap the request every time.  Please delete as needed.
-        registerForPushNotifications()
+        //If we're authroized, register for push to get the lastest token
+        UNUserNotificationCenter.current().getNotificationSettings { (settings) in
+            if settings.authorizationStatus == .authorized {
+                self.registerForPushNotifications()
+            }
+        }
+        
+        //TODO: Make sure we have push token first
+        if DASH.team.hasNotificationData() {
+            presentModally()
+        }
     }
     
     // MARK: Actions

@@ -20,14 +20,16 @@ class DASHViewController: UIViewController {
     private var webView: WKWebView!
     private var config: DASHConfig?
     private var userInfo: DASH.UserInfo?
+    private var notificationData: [String: Any]?
     
-    static func instantiate(with config: DASHConfig, userInfo: DASH.UserInfo) -> DASHViewController {
+    static func instantiate(with config: DASHConfig, userInfo: DASH.UserInfo, notificationData: [String: Any]?) -> DASHViewController {
         let storyboard = UIStoryboard(name: "DASH", bundle: nil)
         guard let viewController = storyboard.instantiateInitialViewController() as? DASHViewController else {
             fatalError("Unable to instantiate DASHViewController.")
         }
         viewController.config = config
         viewController.userInfo = userInfo
+        viewController.notificationData = notificationData
         
         return viewController
     }
@@ -82,6 +84,14 @@ class DASHViewController: UIViewController {
             if let pushToken = userInfo?.pushTokenString {
                 let pushQueryItem = URLQueryItem(name: pushQueryName, value: pushToken)
                 queryItems.append(pushQueryItem)
+            }
+            
+            //Add the notification data as query parameters if present
+            if let notificationData = notificationData {
+                for (key, value) in notificationData {
+                    let notificationQuery = URLQueryItem(name: key, value: String(describing: value))
+                    queryItems.append(notificationQuery)
+                }
             }
             
             urlComponents?.queryItems = queryItems
