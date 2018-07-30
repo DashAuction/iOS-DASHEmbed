@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         if DASH.team.canHandleNotification(response.notification) {
-            DASH.team.handleNotification(response.notification)
+            DASH.team.setNotificationData(from: response.notification)
         }
         
         //Else, Handle other notifications

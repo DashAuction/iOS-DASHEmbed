@@ -27,7 +27,7 @@ class ExampleViewController: UIViewController {
             }
         }
         
-        //TODO: Make sure we have push token first
+        //Very simple example of push handling. Your setup will probably be more complex
         if DASH.team.hasNotificationData() {
             presentModally()
         }
@@ -65,10 +65,6 @@ class ExampleViewController: UIViewController {
     
     @objc private func closeDASHModal() {
         dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction private func userEmailUpdated(sender: UITextField) {
-        DASH.team.setUserEmail(sender.text)
     }
     
     // MARK: - Private

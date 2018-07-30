@@ -15,15 +15,13 @@ import UserNotifications
 public class DASH {
     
     private let dashNotificationInfoKey = "dash"
-    private let dashNotificationAuctionItemKey = "auctionItemId"
-    private let dashNotificationAuctionKey = "auctionItem"
+    private let dashPushTokenKey = "io.dashapp.dashembed.pushtoken"
+    private let dashUserEmailKey = "io.dashapp.dashembed.useremail"
 
     struct UserInfo {
         var pushTokenString: String?
         var userEmail: String?
     }
-
-    // MARK: Private
     
     private var config: DASHConfig?
     private var pushTokenString: String?
@@ -35,29 +33,43 @@ public class DASH {
     /// Singleton use of DASH
     public static let team = DASH()
     
-    /// Initializer to make a local instance of the DASH embedded framework
-    public init() {
-        
-    }
-    
     /// Initializes DASH. Call this once before any other methods.
     public func start(with config: DASHConfig) {
         self.config = config
+        
+        //Populate cached values
+        pushTokenString = cachedString(forKey: dashPushTokenKey)
+        userEmail = cachedString(forKey: dashUserEmailKey)
     }
     
-    /// Sets the current user's email. Email is used to uniquely identify a user in the DASH system.
+    /// Sets the current user's email. Email is used to uniquely identify a user in the DASH system. Email is cached locally by DASH for ease of use.
     public func setUserEmail(_ userEmail: String?) {
         self.userEmail = userEmail
+        cacheString(userEmail, forKey: dashUserEmailKey)
     }
     
-    /// Used to set the push device token for the current app. Set this with the data returned from the remote notifications delegate method. This is used to send DASH outbid notifications on the team's behalf.
+    /// Clears out local and cached user email data
+    public func clearUserEmail() {
+        userEmail = nil
+        cacheString(nil, forKey: dashUserEmailKey)
+    }
+    
+    /// Used to set the push device token for the current app. Set this with the data returned from the remote notifications delegate method. This is used to send DASH outbid notifications on the team's behalf. Set each time token changes. Token will be cached locally by DASH for ease of use.
     public func setUserPushToken(with data: Data?) {
         pushTokenString = data?.hexString
+        cacheString(pushTokenString, forKey: dashPushTokenKey)
     }
     
-    /// Used to set the push device token for the current app if already in string format. This is used to send DASH outbid notifications on the team's behalf.
+    /// Used to set the push device token for the current app if already in string format. This is used to send DASH outbid notifications on the team's behalf. Set each time token changes. Token will be cached locally by DASH for ease of use.
     public func setUserPushToken(with data: String) {
         pushTokenString = data;
+        cacheString(pushTokenString, forKey: dashPushTokenKey)
+    }
+    
+    /// Clears out local and cached push tokens in DASH
+    public func clearPushToken() {
+        pushTokenString = nil
+        cacheString(nil, forKey: dashPushTokenKey) //Clears from defaults
     }
     
     /// Returns true if the notification passed in should be handled by DASH. If true, you should tell DASH to handle the notification and present the DASH view controller.
@@ -66,7 +78,7 @@ public class DASH {
     }
     
     /// Tells DASH to handle the notification. The next presentation of the DASH view controller will handle the notification. EX: If a DASH outbid notification is set here, the next presentation will navigate directly to the respective auction item.
-    public func handleNotification(_ notification: UNNotification) {
+    public func setNotificationData(from notification: UNNotification) {
         if let dashInfo = notification.request.content.userInfo[dashNotificationInfoKey] as? [String: Any] {
             currentNotificationData = dashInfo
         }
@@ -90,5 +102,21 @@ public class DASH {
         
         let viewController = DASHViewController.instantiate(with: config, userInfo: UserInfo(pushTokenString: pushTokenString, userEmail: userEmail), notificationData: currentNotificationData)
         return viewController
+    }
+    
+    // MARK: Private
+    
+    private func cacheString(_ string: String?, forKey key: String) {
+        let userDefaults = UserDefaults.standard
+        if let string = string {
+            userDefaults.set(string, forKey: key)
+        } else {
+            userDefaults.removeObject(forKey: key)
+        }
+    }
+    
+    private func cachedString(forKey key: String) -> String? {
+        let userDefaults = UserDefaults.standard
+        return userDefaults.string(forKey: key)
     }
 }
