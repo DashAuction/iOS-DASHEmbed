@@ -27,16 +27,33 @@ class ExampleViewController: UIViewController {
             }
         }
         
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationDidBecomeActiveNotification), name: .UIApplicationDidBecomeActive, object: nil)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        showDASHIfNeeded()
+    }
+    
+    private func showDASHIfNeeded() {
         //Very simple example of push handling. Your setup will probably be more complex
         if DASH.team.hasNotificationData() {
             presentModally()
         }
     }
     
+    // MARK: Notifications
+    
+    @objc private func applicationDidBecomeActiveNotification() {
+        //When we come back from the background, check to see if we need to show the view controller
+        showDASHIfNeeded()
+    }
+    
     // MARK: Actions
     
     @IBAction private func presentModally() {
         let dashViewController = DASH.team.dashViewController()
+        dashViewController.delegate = self //Optionally set delegate
         
         //Add a close button
         let closeButton = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(closeDASHModal))
@@ -49,6 +66,7 @@ class ExampleViewController: UIViewController {
     
     @IBAction private func pushNavigation() {
         let dashViewController = DASH.team.dashViewController()
+        dashViewController.delegate = self //Optionally set delegate
         navigationController?.pushViewController(dashViewController, animated: true)
     }
     
@@ -111,5 +129,22 @@ class ExampleViewController: UIViewController {
             completion(textFieldText)
         }))
         present(alert, animated: true, completion: nil)
+    }
+}
+
+extension ExampleViewController: DASHViewControllerDelegate {
+    func dashViewController(_ dashViewController: DASHViewController, didFailWith error: DASH.Error) {
+        let title = "Error"
+        let message: String
+        switch error {
+        case .noInternet:
+            message = "No Internet Detected. Check your connection and try again."
+        default:
+            message = "We were unable to load. Please try again later."
+        }
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        dashViewController.present(alert, animated: true, completion: nil)
     }
 }

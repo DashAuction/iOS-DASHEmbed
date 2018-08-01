@@ -8,6 +8,11 @@
 import UIKit
 import WebKit
 
+protocol DASHViewControllerDelegate: class {
+    /// Called when the DASH view controller encounters an error.
+    func dashViewController(_ dashViewController: DASHViewController, didFailWith error: DASH.Error)
+}
+
 class DASHViewController: UIViewController {
     
     private let baseURLString = "https://dev-web.dashapp.io/app"
@@ -21,6 +26,8 @@ class DASHViewController: UIViewController {
     private var config: DASHConfig?
     private var userInfo: DASH.UserInfo?
     private var notificationData: [String: Any]?
+    
+    weak var delegate: DASHViewControllerDelegate?
     
     static func instantiate(with config: DASHConfig, userInfo: DASH.UserInfo, notificationData: [String: Any]?) -> DASHViewController {
         let storyboard = UIStoryboard(name: "DASH", bundle: nil)
@@ -40,12 +47,28 @@ class DASHViewController: UIViewController {
         loadWebView()
     }
     
+    /// Updates the view controller with notification data. Used internally.
+    func updateNotificationData(with data: [String: Any]?) {
+        notificationData = data
+        reloadInterface(startFromBeginning: true) //Reload the web view to the correct page
+    }
+    
+    /// Refreshes the current page. If startFromBeginning is true, the interface is reloaded to the beginning state.
+    func reloadInterface(startFromBeginning: Bool = false) {
+        if startFromBeginning {
+            loadWebView()
+        } else {
+            webView.reload()
+        }
+    }
+    
     // MARK: Private
     
     private func setupWebView() {
         // Create WKWebView in code, because IB has issues before iOS 11
         let configuration = WKWebViewConfiguration()
         webView = WKWebView(frame: view.bounds, configuration: configuration)
+        webView.navigationDelegate = self
         webView.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(webView)
@@ -101,5 +124,18 @@ class DASHViewController: UIViewController {
                 webView.load(urlRequest)
             }
         }
+    }
+}
+
+extension DASHViewController: WKNavigationDelegate {
+    func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        if let nsError = error as? NSError {
+            if nsError.code == NSURLErrorNotConnectedToInternet {
+                delegate?.dashViewController(self, didFailWith: .noInternet)
+                return
+            }
+        }
+        
+        delegate?.dashViewController(self, didFailWith: .unableToLoad)
     }
 }
