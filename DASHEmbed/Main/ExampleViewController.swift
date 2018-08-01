@@ -43,7 +43,7 @@ class ExampleViewController: UIViewController {
     // MARK: Actions
     
     @IBAction private func presentModally() {
-        let dashViewController = DASH.team.dashViewController()
+        guard let dashViewController = DASH.team.dashViewController() else { return }
         dashViewController.delegate = self //Optionally set delegate
         
         //Add a close button
@@ -56,7 +56,7 @@ class ExampleViewController: UIViewController {
     }
     
     @IBAction private func pushNavigation() {
-        let dashViewController = DASH.team.dashViewController()
+        guard let dashViewController = DASH.team.dashViewController() else { return }
         dashViewController.delegate = self //Optionally set delegate
         navigationController?.pushViewController(dashViewController, animated: true)
     }

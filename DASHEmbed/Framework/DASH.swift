@@ -107,9 +107,10 @@ class DASH {
     }
     
     /// Returns a DASH view controller for display. Can be pushed on a navigation stack as is or presented modally when embedded in a UINavigationController
-    func dashViewController() -> DASHViewController {
+    func dashViewController() -> DASHViewController? {
         guard let config = config else {
-            fatalError("DASH must start with config before using DASHViewController")
+            print("DASH must start with config before using DASHViewController")
+            return nil
         }
         
         let viewController = DASHViewController.instantiate(with: config, userInfo: UserInfo(pushTokenString: pushTokenString, userEmail: userEmail), notificationData: currentNotificationData)

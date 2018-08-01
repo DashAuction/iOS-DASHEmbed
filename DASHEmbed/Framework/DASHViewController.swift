@@ -29,11 +29,13 @@ class DASHViewController: UIViewController {
     
     weak var delegate: DASHViewControllerDelegate?
     
-    static func instantiate(with config: DASHConfig, userInfo: DASH.UserInfo, notificationData: [String: Any]?) -> DASHViewController {
+    static func instantiate(with config: DASHConfig, userInfo: DASH.UserInfo, notificationData: [String: Any]?) -> DASHViewController? {
         let storyboard = UIStoryboard(name: "DASH", bundle: nil)
         guard let viewController = storyboard.instantiateInitialViewController() as? DASHViewController else {
-            fatalError("Unable to instantiate DASHViewController.")
+            print("Unable to instantiate DASHViewController.")
+            return nil
         }
+        
         viewController.config = config
         viewController.userInfo = userInfo
         viewController.notificationData = notificationData
@@ -85,7 +87,12 @@ class DASHViewController: UIViewController {
     }
     
     private func loadWebView() {
-        guard let config = config else { fatalError("A DASHConfig is required before using DASHViewController")}
+        guard let config = config else {
+            print("A DASHConfig is required before using DASHViewController")
+            delegate?.dashViewController(self, didFailWith: .unableToLoad)
+            return
+        }
+        
         if let url = URL(string: baseURLString) {
             var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false)
             
