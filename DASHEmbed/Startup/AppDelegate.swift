@@ -16,7 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         //Configure DASH Instance
-        let appId = "55e1bb99a1a135543f692bad"
+        let appId: String
+        #if EMBED
+        appId = "55e1bb99a1a135543f692bad"
+        #else
+        appId = "595c4a47c96546377fe4edd0"
+        #endif
         let dashConfig = DASHConfig(appId: appId)
         //Start DASH
         DASH.team.start(with: dashConfig)
