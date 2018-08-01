@@ -16,14 +16,10 @@ let dashConfig = DASHConfig(appId: appId)
 ```
 ### Initialize the DASH library
 
-Initialize library either using the singleton or instance.
+Initialize library using the singleton.
 
 ```swift
 DASH.team.start(with: dashConfig)
-```
-```swift
-let dash = DASH()
-dash.start(with: dashConfig)
 ```
 
 ### Set the push token to enable outbid notifications
