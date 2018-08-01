@@ -10,7 +10,7 @@ import Foundation
 
 public struct DASHConfig {
     
-    /// A unique identifier for the DASH Foundation
+    /// A unique identifier for the DASH Foundation (provided by DASH)
     public var appId: String
 }
 

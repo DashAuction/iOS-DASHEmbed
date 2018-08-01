@@ -4,8 +4,8 @@
 //
 //  Copyright © 2018 DASH. All rights reserved.
 //
-//  A DASH instance can be used as an app wide singleton (by using team) or as a local instance (by using
-//  the initializer). It is the main class for interacting with the SDK. Use this instance to handle deep
+//  A DASH instance can be used as an app wide singleton (by using team).
+//  It is the main class for interacting with the SDK. Use this instance to handle deep
 //  link URLs and to instantiate a view controller to show the DASH interface.
 
 import Foundation
@@ -15,7 +15,9 @@ import UserNotifications
 class DASH {
     
     enum Error {
+        /// DASH is unable to load
         case unableToLoad
+        /// DASH is unable to reach the Internet
         case noInternet
     }
     
