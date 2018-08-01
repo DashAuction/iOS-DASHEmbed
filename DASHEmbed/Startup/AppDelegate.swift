@@ -39,10 +39,19 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         if DASH.team.canHandleNotification(response.notification) {
             DASH.team.setNotificationData(from: response.notification)
+            
+            //This is a simplified approach as an example. Exact implementation will depend on your architecture
+            if let navController = window?.rootViewController as? UINavigationController, let exampleViewController = navController.topViewController as? ExampleViewController {
+                exampleViewController.showDASHIfNeeded()
+            }
         }
         
         //Else, Handle other notifications
         
         completionHandler()
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler(.alert) //We always want to show the alert to allow for in moment notifications while app is foregrounded
     }
 }

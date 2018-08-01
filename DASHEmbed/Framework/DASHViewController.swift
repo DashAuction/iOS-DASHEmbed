@@ -129,11 +129,10 @@ class DASHViewController: UIViewController {
 
 extension DASHViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
-        if let nsError = error as? NSError {
-            if nsError.code == NSURLErrorNotConnectedToInternet {
-                delegate?.dashViewController(self, didFailWith: .noInternet)
-                return
-            }
+        let nsError = error as NSError
+        if nsError.code == NSURLErrorNotConnectedToInternet {
+            delegate?.dashViewController(self, didFailWith: .noInternet)
+            return
         }
         
         delegate?.dashViewController(self, didFailWith: .unableToLoad)

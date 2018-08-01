@@ -87,7 +87,12 @@ class DASH {
     func setNotificationData(from notification: UNNotification) {
         if let dashInfo = notification.request.content.userInfo[dashNotificationInfoKey] as? [String: Any] {
             currentNotificationData = dashInfo
-            currentDashViewController?.updateNotificationData(with: dashInfo)
+            
+            //If we can go ahead and handle the data, handle it then clear it out
+            if let dashViewController = currentDashViewController {
+                dashViewController.updateNotificationData(with: dashInfo)
+                clearNotificationData()
+            }
         }
     }
     

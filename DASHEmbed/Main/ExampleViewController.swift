@@ -27,26 +27,17 @@ class ExampleViewController: UIViewController {
             }
         }
         
-        NotificationCenter.default.addObserver(self, selector: #selector(applicationDidBecomeActiveNotification), name: .UIApplicationDidBecomeActive, object: nil)
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         showDASHIfNeeded()
     }
     
-    private func showDASHIfNeeded() {
+    func showDASHIfNeeded() {
         //Very simple example of push handling. Your setup will probably be more complex
-        if DASH.team.hasNotificationData() {
+        if DASH.team.hasNotificationData() && presentedViewController == nil && isViewLoaded {
             presentModally()
+            
+            //Clear notification data now that we've presented it
+            DASH.team.clearNotificationData()
         }
-    }
-    
-    // MARK: Notifications
-    
-    @objc private func applicationDidBecomeActiveNotification() {
-        //When we come back from the background, check to see if we need to show the view controller
-        showDASHIfNeeded()
     }
     
     // MARK: Actions
