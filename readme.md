@@ -6,6 +6,12 @@ This library provides an easy way to embed the DASH mobile experience into an iO
 
 ## Usage
 
+### Required permissions
+
+User location is used for future location based features. 
+
+To enable, set a description for the NSLocationWhenInUseUsageDescription plist key.
+
 ### Create a DASHConfig
 
 Create a DASHConfig. This is used to initialize the DASH library with needed information.
