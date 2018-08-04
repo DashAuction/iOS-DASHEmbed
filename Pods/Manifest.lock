@@ -6,11 +6,11 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   DASHEmbed:
-    :path: ./
+    :path: "./"
 
 SPEC CHECKSUMS:
   DASHEmbed: 8b132889e2b8a9a8be32eefebfe457cfc8ac25f6
 
 PODFILE CHECKSUM: b075021cadac034c4a0ab78bfc909c4fb4a5fa0a
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
