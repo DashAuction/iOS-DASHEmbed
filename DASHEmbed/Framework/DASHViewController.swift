@@ -15,7 +15,8 @@ public protocol DASHViewControllerDelegate: class {
 
 public class DASHViewController: UIViewController {
     
-    private let baseURLString = "https://dev-web.dashapp.io/app"
+    private let baseDevelopmentURLString = "https://dev-web.dashapp.io/app"
+    private let baseURLString = "https://web.dashapp.io/app"
     private let applicationQueryName = "appId"
     private let platformQueryName = "platformId"
     private let platformQueryValue = "ios"
@@ -93,7 +94,8 @@ public class DASHViewController: UIViewController {
             return
         }
         
-        if let url = URL(string: baseURLString) {
+        let urlString = config.useDevelopmentServers ? baseDevelopmentURLString : baseURLString
+        if let url = URL(string: urlString) {
             var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false)
             
             var queryItems = [URLQueryItem]()
