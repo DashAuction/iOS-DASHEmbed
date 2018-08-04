@@ -16,6 +16,8 @@ pod 'DASHEmbed'
 
 ### Requirements
 
+##### iOS 10+, Swift 4.1
+
 ##### User location is used for future location based features.
 
 To enable, set a description for the NSLocationWhenInUseUsageDescription plist key.
@@ -93,4 +95,4 @@ Or push on a navigation stack
 navigationController?.pushViewController(dashViewController, animated: true)
 ```
 
-Check out the [Current Documentation](https://bitbucket.org/dashdev/dash-embed-ios/raw/21b09d1d6620a0594e88aea498cfa46a4717b43b/Documentation/DASHAuctions_V1.pdf)
+Check out the [Current Documentation](https://github.com/DashAuction/iOS-DASHEmbed/raw/master/Documentation/DASHAuctions_V1.pdf)
