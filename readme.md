@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This library provides an easy way to embed the DASH mobile experience into an iOS application.
+This library provides an easy way to embed the DASH mobile experience into an iOS application. For more information check out [DASH](http://www.dashapp.io)
 
 ## Installation
 
@@ -14,11 +14,15 @@ pod 'DASHEmbed'
 
 ## Usage
 
-### Required permissions
+### Requirements
 
-User location is used for future location based features.
+##### User location is used for future location based features.
 
 To enable, set a description for the NSLocationWhenInUseUsageDescription plist key.
+
+##### To enable push notification functionality
+
+We will need a push notification Encryption Key and Key ID from Apple. For information on obtaining these assets see the "Obtain an Encryption Key and Key ID from Apple" section on [Establishing a Token-Based Connection to APNs](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token_based_connection_to_apns)
 
 ### Create a DASHConfig
 
