@@ -1,0 +1,6 @@
+framework module DASHEmbed {
+  umbrella header "DASHEmbed-umbrella.h"
+
+  export *
+  module * { export * }
+}

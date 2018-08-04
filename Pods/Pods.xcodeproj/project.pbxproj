@@ -1,0 +1,1235 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02DA112B9CFAE76B8CE075C3470C41A9 /* Bundle+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C838C6B39879BE99FB1AF30AFBF76AC7 /* Bundle+Additions.swift */; };
+		06F3CBF8C096DE85B77825E346EBACDF /* Pods-DASHEmbedDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E26B5E96E2B7EC0183F314980E3BB72F /* Pods-DASHEmbedDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		279F3CC52F03BEEC78FB5B3D53B55528 /* DASH.swift in Sources */ = {isa = PBXBuildFile; fileRef = E007FBDAD496BAFDBCE39959492CDA2B /* DASH.swift */; };
+		308F3143C74DDBFB2E3D169D6D4E3294 /* DASHEmbed-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3993659E02B9C59F880A648E89C0A74C /* DASHEmbed-dummy.m */; };
+		39D7C19E2BA9B90CDE873C93C619FEC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105C21C15CB59ED6E00EBCFEF4FACB93 /* Foundation.framework */; };
+		480A194D2F90C1121887E4974AECA228 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F705C1B4FEA75F9485B59FE4AF607ACE /* WebKit.framework */; };
+		559DD5EA40339AC3A10DA393F9BBFF42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105C21C15CB59ED6E00EBCFEF4FACB93 /* Foundation.framework */; };
+		586D9344815D2ECD04DF8B3552784A86 /* Pods-DASHEmbedDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B1A51AA83659628A4F9293CAB41C450F /* Pods-DASHEmbedDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A92F8E0A1BFDE6CCC88B60FE9FC5FE4 /* Pods-DASHEmbedDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F129B77F85447C0BBC92055DFDF4247 /* Pods-DASHEmbedDemoTests-dummy.m */; };
+		8CB63353E4E8244E2198E428F925515F /* DASHEmbed.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E249C01B86C536473E4FBB8CEC1FBA8 /* DASHEmbed.bundle */; };
+		B30EF77E049C99EA93482CE467CDAB7E /* DASHEmbed-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0A16ED1835D40C1C17FB5B423459DA /* DASHEmbed-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C859CDCA6FB1E9735245DCDBC00E7C1F /* DASHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8923B7E865D77AFDF40E989FED611CED /* DASHViewController.swift */; };
+		CB2BA88CBFA3098658401F329F1FF4DB /* DASHConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E90FA164175F77F586B8094C66C4F0 /* DASHConfig.swift */; };
+		D6A7C86CD80D6C6A9BAEAB63CF8E1442 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F2C91E51E5626C6798B5405B130B7C /* UserNotifications.framework */; };
+		D73F7CAC9E51C06E2EA4D4D38CD8227F /* Data+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315AABAE39F447E2FF16269FF51A5EAC /* Data+Additions.swift */; };
+		D8377466449B57C78A4577471B9D8665 /* DASH.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EC7A656FAD210C1838796D3D548C579 /* DASH.storyboard */; };
+		E715064DE1CE10AB1954A5FC1F7E622D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE10590D5D3E53E3D6438C9BC2C54EE /* UIKit.framework */; };
+		F3ECA2D72AFDDBDD2CFFB9C1D512F1A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105C21C15CB59ED6E00EBCFEF4FACB93 /* Foundation.framework */; };
+		FE06770E797F7F03AB2CCA24F7F34248 /* Pods-DASHEmbedDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D376B55C9E67D7803DFE54A055EE50EB /* Pods-DASHEmbedDemo-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D66C807013397A5300935D7439A0EA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F992E6C70C8A3E6DA83964E242936325;
+			remoteInfo = "DASHEmbed-DASHEmbed";
+		};
+		686665F6E86B0E3846CA115841BE59AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D76DD11FF5C92541EBC3B88A0E17DC9F;
+			remoteInfo = DASHEmbed;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06E90FA164175F77F586B8094C66C4F0 /* DASHConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DASHConfig.swift; path = DASHEmbed/Framework/DASHConfig.swift; sourceTree = "<group>"; };
+		0EC7A656FAD210C1838796D3D548C579 /* DASH.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DASH.storyboard; path = DASHEmbed/Framework/Base.lproj/DASH.storyboard; sourceTree = "<group>"; };
+		0FA1102D622109387010B6710AF2FF38 /* Pods-DASHEmbedDemo.debug 2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemo.debug 2.xcconfig"; sourceTree = "<group>"; };
+		105C21C15CB59ED6E00EBCFEF4FACB93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		11B70EA14BDAE6543794E754416C46EE /* Pods_DASHEmbedDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DASHEmbedDemo.framework; path = "Pods-DASHEmbedDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E8C3B2FEA4B354BC27ECFEAF0598270 /* Pods-DASHEmbedDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemo.release.xcconfig"; sourceTree = "<group>"; };
+		1F129B77F85447C0BBC92055DFDF4247 /* Pods-DASHEmbedDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DASHEmbedDemoTests-dummy.m"; sourceTree = "<group>"; };
+		221B30A9DD0ABD6C219605828FAAE2AA /* readme.md */ = {isa = PBXFileReference; includeInIndex = 1; path = readme.md; sourceTree = "<group>"; };
+		29EAB63C8C908E1F2CC90B37714377AF /* Pods-DASHEmbedDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DASHEmbedDemoTests-frameworks.sh"; sourceTree = "<group>"; };
+		2C0A16ED1835D40C1C17FB5B423459DA /* DASHEmbed-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DASHEmbed-umbrella.h"; sourceTree = "<group>"; };
+		315AABAE39F447E2FF16269FF51A5EAC /* Data+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Additions.swift"; path = "DASHEmbed/Framework/Data+Additions.swift"; sourceTree = "<group>"; };
+		339A98C80606E7A3E92474F45B65BA9E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3993659E02B9C59F880A648E89C0A74C /* DASHEmbed-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DASHEmbed-dummy.m"; sourceTree = "<group>"; };
+		407C089A98CBB78F7E7FDCB3D24A3D5A /* Pods-DASHEmbedDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DASHEmbedDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		571BC9DC8CCB76944D3AD0E2097FFBB6 /* Pods-DASHEmbedDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DASHEmbedDemo-frameworks.sh"; sourceTree = "<group>"; };
+		582B79B3DB9C1C7AE5B5497555B5E481 /* DASHEmbed.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = DASHEmbed.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5EB514463CE75E1C727DD6F531398A75 /* Pods-DASHEmbedDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DASHEmbedDemo.modulemap"; sourceTree = "<group>"; };
+		5EE10590D5D3E53E3D6438C9BC2C54EE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		68B128BC4E2BEDD73F6163FC59555921 /* Pods-DASHEmbedDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		6A44E88A71C497A00F844020BDD472A6 /* DASHEmbed-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DASHEmbed-prefix.pch"; sourceTree = "<group>"; };
+		6BE7B6B8B50526F60EAF9666AF697DD7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7790F3F2819FFF3AC14160FF8F8D3A4C /* Pods-DASHEmbedDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DASHEmbedDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		803989F1E063B5357CD053CD4C237A2B /* Pods-DASHEmbedDemoTests.debug 2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemoTests.debug 2.xcconfig"; sourceTree = "<group>"; };
+		8923B7E865D77AFDF40E989FED611CED /* DASHViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DASHViewController.swift; path = DASHEmbed/Framework/DASHViewController.swift; sourceTree = "<group>"; };
+		8E249C01B86C536473E4FBB8CEC1FBA8 /* DASHEmbed.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DASHEmbed.bundle; path = "DASHEmbed-DASHEmbed.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		952F16A94D8E9F5D0B90FA0167B1ABA9 /* Pods-DASHEmbedDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DASHEmbedDemo-resources.sh"; sourceTree = "<group>"; };
+		9CF22A2C290E2972340BCD0C71D5C7AF /* Pods-DASHEmbedDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DASHEmbedDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9FCCB4B33AF713F677248C5AFA4C554B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1885BCC2D1855E391323F1742C90FCA /* Pods-DASHEmbedDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DASHEmbedDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		A66854568203356719647E5629038260 /* Pods-DASHEmbedDemo.release 2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemo.release 2.xcconfig"; sourceTree = "<group>"; };
+		A801BC57BFF2EE57F7804DFF8F2BCBF9 /* DASHEmbed.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DASHEmbed.modulemap; sourceTree = "<group>"; };
+		B033DBF131573140BFA1C5E0FD63E147 /* ResourceBundle-DASHEmbed-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-DASHEmbed-Info.plist"; sourceTree = "<group>"; };
+		B1A51AA83659628A4F9293CAB41C450F /* Pods-DASHEmbedDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DASHEmbedDemo-umbrella.h"; sourceTree = "<group>"; };
+		B3C78E23BF9F91949AA9845358EA855B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4F2C91E51E5626C6798B5405B130B7C /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = DEVELOPER_DIR; };
+		C838C6B39879BE99FB1AF30AFBF76AC7 /* Bundle+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Additions.swift"; path = "DASHEmbed/Framework/Bundle+Additions.swift"; sourceTree = "<group>"; };
+		CF0441E04D21E2D5EA03257E1B4B2494 /* DASHEmbed.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DASHEmbed.xcconfig; sourceTree = "<group>"; };
+		D376B55C9E67D7803DFE54A055EE50EB /* Pods-DASHEmbedDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DASHEmbedDemo-dummy.m"; sourceTree = "<group>"; };
+		D5A0D1D9E348E8D01D26DBD8535EE1AC /* Pods-DASHEmbedDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		DC388E3B711D12FA298F0E402473359E /* Pods-DASHEmbedDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DASHEmbedDemoTests-resources.sh"; sourceTree = "<group>"; };
+		E007FBDAD496BAFDBCE39959492CDA2B /* DASH.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DASH.swift; path = DASHEmbed/Framework/DASH.swift; sourceTree = "<group>"; };
+		E0D14576F2533317236CC052FF5B9589 /* Pods-DASHEmbedDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E26B5E96E2B7EC0183F314980E3BB72F /* Pods-DASHEmbedDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DASHEmbedDemoTests-umbrella.h"; sourceTree = "<group>"; };
+		EAA84F0902F10361D2B22062037F3BA8 /* Pods_DASHEmbedDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DASHEmbedDemoTests.framework; path = "Pods-DASHEmbedDemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFEC26BA990682937BAEC76B80B4C13C /* Pods-DASHEmbedDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DASHEmbedDemoTests.modulemap"; sourceTree = "<group>"; };
+		F705C1B4FEA75F9485B59FE4AF607ACE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		FC823E61750F198BB162C5363EF32153 /* Pods-DASHEmbedDemoTests.release 2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemoTests.release 2.xcconfig"; sourceTree = "<group>"; };
+		FC83D5EAE27895A1D48BD9289D0718F1 /* DASHEmbed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DASHEmbed.framework; path = DASHEmbed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		319123CA352958E70AD2057BBF9C0C8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559DD5EA40339AC3A10DA393F9BBFF42 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96DD93C2BAC898606B44A87A61BDD7DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D7C19E2BA9B90CDE873C93C619FEC5 /* Foundation.framework in Frameworks */,
+				E715064DE1CE10AB1954A5FC1F7E622D /* UIKit.framework in Frameworks */,
+				D6A7C86CD80D6C6A9BAEAB63CF8E1442 /* UserNotifications.framework in Frameworks */,
+				480A194D2F90C1121887E4974AECA228 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D523DD0E12EFE97CFCFD28C2E74B1179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F83E048C93325C76C4AECAA49FB13EE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3ECA2D72AFDDBDD2CFFB9C1D512F1A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05B719D9743AAEC54324F951779819B9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45C1591AF35ED6F292F325A83B360767 /* DASHEmbed */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1B3BF60D2E678D9D907FABE7089488F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		299C336DAD0D3977A7A8CBA88FD6DCC9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0EC7A656FAD210C1838796D3D548C579 /* DASH.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		45C1591AF35ED6F292F325A83B360767 /* DASHEmbed */ = {
+			isa = PBXGroup;
+			children = (
+				C838C6B39879BE99FB1AF30AFBF76AC7 /* Bundle+Additions.swift */,
+				E007FBDAD496BAFDBCE39959492CDA2B /* DASH.swift */,
+				06E90FA164175F77F586B8094C66C4F0 /* DASHConfig.swift */,
+				8923B7E865D77AFDF40E989FED611CED /* DASHViewController.swift */,
+				315AABAE39F447E2FF16269FF51A5EAC /* Data+Additions.swift */,
+				69161AF0011A8FB12753678BB3F3F307 /* Pod */,
+				299C336DAD0D3977A7A8CBA88FD6DCC9 /* Resources */,
+				DCFC495E0166EE8A5A1C81D258FFB079 /* Support Files */,
+			);
+			name = DASHEmbed;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		69161AF0011A8FB12753678BB3F3F307 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				582B79B3DB9C1C7AE5B5497555B5E481 /* DASHEmbed.podspec */,
+				6BE7B6B8B50526F60EAF9666AF697DD7 /* LICENSE */,
+				221B30A9DD0ABD6C219605828FAAE2AA /* readme.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				05B719D9743AAEC54324F951779819B9 /* Development Pods */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				E7234DAFC9E0C8F26C24A67108DF341F /* Products */,
+				D5AB0A31FFD93AC3998BE3D2FBE49AD4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A1B3BF60D2E678D9D907FABE7089488F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				105C21C15CB59ED6E00EBCFEF4FACB93 /* Foundation.framework */,
+				5EE10590D5D3E53E3D6438C9BC2C54EE /* UIKit.framework */,
+				B4F2C91E51E5626C6798B5405B130B7C /* UserNotifications.framework */,
+				F705C1B4FEA75F9485B59FE4AF607ACE /* WebKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B21C11721B620D522D0627C9382D593A /* Pods-DASHEmbedDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9FCCB4B33AF713F677248C5AFA4C554B /* Info.plist */,
+				5EB514463CE75E1C727DD6F531398A75 /* Pods-DASHEmbedDemo.modulemap */,
+				9CF22A2C290E2972340BCD0C71D5C7AF /* Pods-DASHEmbedDemo-acknowledgements.markdown */,
+				A1885BCC2D1855E391323F1742C90FCA /* Pods-DASHEmbedDemo-acknowledgements.plist */,
+				D376B55C9E67D7803DFE54A055EE50EB /* Pods-DASHEmbedDemo-dummy.m */,
+				571BC9DC8CCB76944D3AD0E2097FFBB6 /* Pods-DASHEmbedDemo-frameworks.sh */,
+				952F16A94D8E9F5D0B90FA0167B1ABA9 /* Pods-DASHEmbedDemo-resources.sh */,
+				B1A51AA83659628A4F9293CAB41C450F /* Pods-DASHEmbedDemo-umbrella.h */,
+				D5A0D1D9E348E8D01D26DBD8535EE1AC /* Pods-DASHEmbedDemo.debug.xcconfig */,
+				0FA1102D622109387010B6710AF2FF38 /* Pods-DASHEmbedDemo.debug 2.xcconfig */,
+				1E8C3B2FEA4B354BC27ECFEAF0598270 /* Pods-DASHEmbedDemo.release.xcconfig */,
+				A66854568203356719647E5629038260 /* Pods-DASHEmbedDemo.release 2.xcconfig */,
+			);
+			name = "Pods-DASHEmbedDemo";
+			path = "Target Support Files/Pods-DASHEmbedDemo";
+			sourceTree = "<group>";
+		};
+		D5AB0A31FFD93AC3998BE3D2FBE49AD4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B21C11721B620D522D0627C9382D593A /* Pods-DASHEmbedDemo */,
+				EE2776C94F7917B93799C518203AD566 /* Pods-DASHEmbedDemoTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DCFC495E0166EE8A5A1C81D258FFB079 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A801BC57BFF2EE57F7804DFF8F2BCBF9 /* DASHEmbed.modulemap */,
+				CF0441E04D21E2D5EA03257E1B4B2494 /* DASHEmbed.xcconfig */,
+				3993659E02B9C59F880A648E89C0A74C /* DASHEmbed-dummy.m */,
+				6A44E88A71C497A00F844020BDD472A6 /* DASHEmbed-prefix.pch */,
+				2C0A16ED1835D40C1C17FB5B423459DA /* DASHEmbed-umbrella.h */,
+				B3C78E23BF9F91949AA9845358EA855B /* Info.plist */,
+				B033DBF131573140BFA1C5E0FD63E147 /* ResourceBundle-DASHEmbed-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Pods/Target Support Files/DASHEmbed";
+			sourceTree = "<group>";
+		};
+		E7234DAFC9E0C8F26C24A67108DF341F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E249C01B86C536473E4FBB8CEC1FBA8 /* DASHEmbed.bundle */,
+				FC83D5EAE27895A1D48BD9289D0718F1 /* DASHEmbed.framework */,
+				11B70EA14BDAE6543794E754416C46EE /* Pods_DASHEmbedDemo.framework */,
+				EAA84F0902F10361D2B22062037F3BA8 /* Pods_DASHEmbedDemoTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE2776C94F7917B93799C518203AD566 /* Pods-DASHEmbedDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				339A98C80606E7A3E92474F45B65BA9E /* Info.plist */,
+				EFEC26BA990682937BAEC76B80B4C13C /* Pods-DASHEmbedDemoTests.modulemap */,
+				407C089A98CBB78F7E7FDCB3D24A3D5A /* Pods-DASHEmbedDemoTests-acknowledgements.markdown */,
+				7790F3F2819FFF3AC14160FF8F8D3A4C /* Pods-DASHEmbedDemoTests-acknowledgements.plist */,
+				1F129B77F85447C0BBC92055DFDF4247 /* Pods-DASHEmbedDemoTests-dummy.m */,
+				29EAB63C8C908E1F2CC90B37714377AF /* Pods-DASHEmbedDemoTests-frameworks.sh */,
+				DC388E3B711D12FA298F0E402473359E /* Pods-DASHEmbedDemoTests-resources.sh */,
+				E26B5E96E2B7EC0183F314980E3BB72F /* Pods-DASHEmbedDemoTests-umbrella.h */,
+				E0D14576F2533317236CC052FF5B9589 /* Pods-DASHEmbedDemoTests.debug.xcconfig */,
+				803989F1E063B5357CD053CD4C237A2B /* Pods-DASHEmbedDemoTests.debug 2.xcconfig */,
+				68B128BC4E2BEDD73F6163FC59555921 /* Pods-DASHEmbedDemoTests.release.xcconfig */,
+				FC823E61750F198BB162C5363EF32153 /* Pods-DASHEmbedDemoTests.release 2.xcconfig */,
+			);
+			name = "Pods-DASHEmbedDemoTests";
+			path = "Target Support Files/Pods-DASHEmbedDemoTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		041443D21DDF363FF3562C5D9497F37A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F3CBF8C096DE85B77825E346EBACDF /* Pods-DASHEmbedDemoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC2C99B67201D2DE8E1C8E232895257 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				586D9344815D2ECD04DF8B3552784A86 /* Pods-DASHEmbedDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBA51AEFC363669E85851DDD77BECF35 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B30EF77E049C99EA93482CE467CDAB7E /* DASHEmbed-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		184ECB2EE63B8FEE1D72E7846953DCFF /* Pods-DASHEmbedDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7330A4C4726011ED54985ACC80F9EB8F /* Build configuration list for PBXNativeTarget "Pods-DASHEmbedDemo" */;
+			buildPhases = (
+				16CFE854A99792DF967FCC09BA212AF4 /* Sources */,
+				F83E048C93325C76C4AECAA49FB13EE6 /* Frameworks */,
+				CEC2C99B67201D2DE8E1C8E232895257 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				102E9407DB14CFCDF4158A99CD84757A /* PBXTargetDependency */,
+			);
+			name = "Pods-DASHEmbedDemo";
+			productName = "Pods-DASHEmbedDemo";
+			productReference = 11B70EA14BDAE6543794E754416C46EE /* Pods_DASHEmbedDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C0D67451B7F41D2231BAA43CBC612002 /* Pods-DASHEmbedDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12A2290EEC902858764A3B3CD6B5BF7B /* Build configuration list for PBXNativeTarget "Pods-DASHEmbedDemoTests" */;
+			buildPhases = (
+				F5D16E3C564D175B7A8B075DFD51E0E3 /* Sources */,
+				319123CA352958E70AD2057BBF9C0C8F /* Frameworks */,
+				041443D21DDF363FF3562C5D9497F37A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DASHEmbedDemoTests";
+			productName = "Pods-DASHEmbedDemoTests";
+			productReference = EAA84F0902F10361D2B22062037F3BA8 /* Pods_DASHEmbedDemoTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D76DD11FF5C92541EBC3B88A0E17DC9F /* DASHEmbed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A7674B87CD55FFCCA15CC6F91A9F169 /* Build configuration list for PBXNativeTarget "DASHEmbed" */;
+			buildPhases = (
+				3F59E994F9A2B37A50E61BC0B292EF13 /* Sources */,
+				96DD93C2BAC898606B44A87A61BDD7DC /* Frameworks */,
+				391688F9BA43429D62CD0BC0F1AFC1B3 /* Resources */,
+				EBA51AEFC363669E85851DDD77BECF35 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F96A3313485806C09EC9A506AE15AA32 /* PBXTargetDependency */,
+			);
+			name = DASHEmbed;
+			productName = DASHEmbed;
+			productReference = FC83D5EAE27895A1D48BD9289D0718F1 /* DASHEmbed.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F992E6C70C8A3E6DA83964E242936325 /* DASHEmbed-DASHEmbed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21B8BC40C13FAE7D32503ADF3715061C /* Build configuration list for PBXNativeTarget "DASHEmbed-DASHEmbed" */;
+			buildPhases = (
+				506CB5B59DE7007D8023FBD214F942EB /* Sources */,
+				D523DD0E12EFE97CFCFD28C2E74B1179 /* Frameworks */,
+				DFCF92D326ADC52B653146C49D736D32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DASHEmbed-DASHEmbed";
+			productName = "DASHEmbed-DASHEmbed";
+			productReference = 8E249C01B86C536473E4FBB8CEC1FBA8 /* DASHEmbed.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E7234DAFC9E0C8F26C24A67108DF341F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D76DD11FF5C92541EBC3B88A0E17DC9F /* DASHEmbed */,
+				F992E6C70C8A3E6DA83964E242936325 /* DASHEmbed-DASHEmbed */,
+				184ECB2EE63B8FEE1D72E7846953DCFF /* Pods-DASHEmbedDemo */,
+				C0D67451B7F41D2231BAA43CBC612002 /* Pods-DASHEmbedDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		391688F9BA43429D62CD0BC0F1AFC1B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CB63353E4E8244E2198E428F925515F /* DASHEmbed.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFCF92D326ADC52B653146C49D736D32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8377466449B57C78A4577471B9D8665 /* DASH.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16CFE854A99792DF967FCC09BA212AF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE06770E797F7F03AB2CCA24F7F34248 /* Pods-DASHEmbedDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F59E994F9A2B37A50E61BC0B292EF13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02DA112B9CFAE76B8CE075C3470C41A9 /* Bundle+Additions.swift in Sources */,
+				279F3CC52F03BEEC78FB5B3D53B55528 /* DASH.swift in Sources */,
+				CB2BA88CBFA3098658401F329F1FF4DB /* DASHConfig.swift in Sources */,
+				308F3143C74DDBFB2E3D169D6D4E3294 /* DASHEmbed-dummy.m in Sources */,
+				C859CDCA6FB1E9735245DCDBC00E7C1F /* DASHViewController.swift in Sources */,
+				D73F7CAC9E51C06E2EA4D4D38CD8227F /* Data+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506CB5B59DE7007D8023FBD214F942EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D16E3C564D175B7A8B075DFD51E0E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A92F8E0A1BFDE6CCC88B60FE9FC5FE4 /* Pods-DASHEmbedDemoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		102E9407DB14CFCDF4158A99CD84757A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DASHEmbed;
+			target = D76DD11FF5C92541EBC3B88A0E17DC9F /* DASHEmbed */;
+			targetProxy = 686665F6E86B0E3846CA115841BE59AA /* PBXContainerItemProxy */;
+		};
+		F96A3313485806C09EC9A506AE15AA32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DASHEmbed-DASHEmbed";
+			target = F992E6C70C8A3E6DA83964E242936325 /* DASHEmbed-DASHEmbed */;
+			targetProxy = 2D66C807013397A5300935D7439A0EA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2C26FC0AF2F6A25F5DB148782BA6FD71 /* Debug 2 */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF0441E04D21E2D5EA03257E1B4B2494 /* DASHEmbed.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DASHEmbed/DASHEmbed-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DASHEmbed/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DASHEmbed/DASHEmbed.modulemap";
+				PRODUCT_NAME = DASHEmbed;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "Debug 2";
+		};
+		39329535D54A24017EEDB4EA829EBFE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF0441E04D21E2D5EA03257E1B4B2494 /* DASHEmbed.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DASHEmbed";
+				INFOPLIST_FILE = "Target Support Files/DASHEmbed/ResourceBundle-DASHEmbed-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = DASHEmbed;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		3C28E91D15E5A1E17F6052A05EBC0BD8 /* Release 2 */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A66854568203356719647E5629038260 /* Pods-DASHEmbedDemo.release 2.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DASHEmbedDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DASHEmbedDemo/Pods-DASHEmbedDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DASHEmbedDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "Release 2";
+		};
+		42A31DEFAFB364901C144671276C6529 /* Release 2 */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC823E61750F198BB162C5363EF32153 /* Pods-DASHEmbedDemoTests.release 2.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DASHEmbedDemoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DASHEmbedDemoTests/Pods-DASHEmbedDemoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DASHEmbedDemoTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "Release 2";
+		};
+		4C77C0250116252112AFDACEC77CF2AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5A0D1D9E348E8D01D26DBD8535EE1AC /* Pods-DASHEmbedDemo.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DASHEmbedDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DASHEmbedDemo/Pods-DASHEmbedDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DASHEmbedDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		582B64886618F07E3BF717A35433ACCA /* Release 2 */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF0441E04D21E2D5EA03257E1B4B2494 /* DASHEmbed.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DASHEmbed";
+				INFOPLIST_FILE = "Target Support Files/DASHEmbed/ResourceBundle-DASHEmbed-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = DASHEmbed;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = "Release 2";
+		};
+		6366AFBBA00553338DD367B20F3C66BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF0441E04D21E2D5EA03257E1B4B2494 /* DASHEmbed.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DASHEmbed/DASHEmbed-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DASHEmbed/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DASHEmbed/DASHEmbed.modulemap";
+				PRODUCT_NAME = DASHEmbed;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		667E1995647BEF867771E64C3AA85493 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF0441E04D21E2D5EA03257E1B4B2494 /* DASHEmbed.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DASHEmbed/DASHEmbed-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DASHEmbed/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DASHEmbed/DASHEmbed.modulemap";
+				PRODUCT_NAME = DASHEmbed;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6AC1F48D23EC82B66DE9C8BF5DF1F846 /* Debug 2 */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FA1102D622109387010B6710AF2FF38 /* Pods-DASHEmbedDemo.debug 2.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DASHEmbedDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DASHEmbedDemo/Pods-DASHEmbedDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DASHEmbedDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "Debug 2";
+		};
+		7C07ED8089F70A31B83996A8910D7F18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9153A04E812246B3A502FE25C4539FE1 /* Release 2 */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF0441E04D21E2D5EA03257E1B4B2494 /* DASHEmbed.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DASHEmbed/DASHEmbed-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DASHEmbed/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DASHEmbed/DASHEmbed.modulemap";
+				PRODUCT_NAME = DASHEmbed;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "Release 2";
+		};
+		94ECBB88F6D6E3F37D7C24FC48ECB12C /* Debug 2 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG_2=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = "Debug 2";
+		};
+		98F29E7567052F62660DDD7069ADF73C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AE0FC9A3A0E1416898561DAA6EB288F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E8C3B2FEA4B354BC27ECFEAF0598270 /* Pods-DASHEmbedDemo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DASHEmbedDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DASHEmbedDemo/Pods-DASHEmbedDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DASHEmbedDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE3FB56D2D4DF307AA2C84924EC6357D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF0441E04D21E2D5EA03257E1B4B2494 /* DASHEmbed.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DASHEmbed";
+				INFOPLIST_FILE = "Target Support Files/DASHEmbed/ResourceBundle-DASHEmbed-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = DASHEmbed;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D4C1A940F990E0FFE9A5206A02D454FD /* Debug 2 */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF0441E04D21E2D5EA03257E1B4B2494 /* DASHEmbed.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DASHEmbed";
+				INFOPLIST_FILE = "Target Support Files/DASHEmbed/ResourceBundle-DASHEmbed-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = DASHEmbed;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = "Debug 2";
+		};
+		D834D4B6EB5353420CA0DAD4AA8959E3 /* Debug 2 */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 803989F1E063B5357CD053CD4C237A2B /* Pods-DASHEmbedDemoTests.debug 2.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DASHEmbedDemoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DASHEmbedDemoTests/Pods-DASHEmbedDemoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DASHEmbedDemoTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "Debug 2";
+		};
+		DC60EAE0A23582F4F5E5B8DC1E8C82A0 /* Release 2 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE_2=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = "Release 2";
+		};
+		E35B88A125737835B336760B8178F9A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0D14576F2533317236CC052FF5B9589 /* Pods-DASHEmbedDemoTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DASHEmbedDemoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DASHEmbedDemoTests/Pods-DASHEmbedDemoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DASHEmbedDemoTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F9FEEC31F92299CE4F61CF846C70E798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68B128BC4E2BEDD73F6163FC59555921 /* Pods-DASHEmbedDemoTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DASHEmbedDemoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DASHEmbedDemoTests/Pods-DASHEmbedDemoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DASHEmbedDemoTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12A2290EEC902858764A3B3CD6B5BF7B /* Build configuration list for PBXNativeTarget "Pods-DASHEmbedDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E35B88A125737835B336760B8178F9A4 /* Debug */,
+				D834D4B6EB5353420CA0DAD4AA8959E3 /* Debug 2 */,
+				F9FEEC31F92299CE4F61CF846C70E798 /* Release */,
+				42A31DEFAFB364901C144671276C6529 /* Release 2 */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21B8BC40C13FAE7D32503ADF3715061C /* Build configuration list for PBXNativeTarget "DASHEmbed-DASHEmbed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE3FB56D2D4DF307AA2C84924EC6357D /* Debug */,
+				D4C1A940F990E0FFE9A5206A02D454FD /* Debug 2 */,
+				39329535D54A24017EEDB4EA829EBFE7 /* Release */,
+				582B64886618F07E3BF717A35433ACCA /* Release 2 */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C07ED8089F70A31B83996A8910D7F18 /* Debug */,
+				94ECBB88F6D6E3F37D7C24FC48ECB12C /* Debug 2 */,
+				98F29E7567052F62660DDD7069ADF73C /* Release */,
+				DC60EAE0A23582F4F5E5B8DC1E8C82A0 /* Release 2 */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7330A4C4726011ED54985ACC80F9EB8F /* Build configuration list for PBXNativeTarget "Pods-DASHEmbedDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C77C0250116252112AFDACEC77CF2AA /* Debug */,
+				6AC1F48D23EC82B66DE9C8BF5DF1F846 /* Debug 2 */,
+				AE0FC9A3A0E1416898561DAA6EB288F8 /* Release */,
+				3C28E91D15E5A1E17F6052A05EBC0BD8 /* Release 2 */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A7674B87CD55FFCCA15CC6F91A9F169 /* Build configuration list for PBXNativeTarget "DASHEmbed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6366AFBBA00553338DD367B20F3C66BC /* Debug */,
+				2C26FC0AF2F6A25F5DB148782BA6FD71 /* Debug 2 */,
+				667E1995647BEF867771E64C3AA85493 /* Release */,
+				9153A04E812246B3A502FE25C4539FE1 /* Release 2 */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

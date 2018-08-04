@@ -1,0 +1,6 @@
+framework module Pods_DASHEmbedDemo {
+  umbrella header "Pods-DASHEmbedDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

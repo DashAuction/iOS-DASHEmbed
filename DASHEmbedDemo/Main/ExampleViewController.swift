@@ -8,6 +8,7 @@
 
 import UIKit
 import UserNotifications
+import DASHEmbed
 
 class ExampleViewController: UIViewController {
     

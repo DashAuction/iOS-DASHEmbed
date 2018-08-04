@@ -18,10 +18,13 @@ DASHEmbed provides an easy way to embed the DASH mobile experience into an iOS a
   s.homepage         = 'https://github.com/DashAuction/iOS-DASHEmbed'
   s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author           = { 'DASH' => 'ryan@dashapp.io' }
-  s.source           = { :git => 'https://github.com/DashAuction/iOS-DASHEmbed.git', :branch => release/s.version.to_s }
+  s.source           = { :git => 'https://github.com/DashAuction/iOS-DASHEmbed.git', :tag => s.version.to_s }
 
+  s.swift_version = '4.0'
   s.ios.deployment_target = '10.0'
-  s.source_files = 'DASHEmbed/Framework/**/*'
-  s.frameworks = 'Foundation', 'UIKit'
-
+  s.source_files = 'DASHEmbed/Framework/**/*.{swift}'
+  s.resource_bundles = {
+  'DASHEmbed' => ['DASHEmbed/Framework/**/*.{storyboard,xib}']
+  }
+  s.frameworks = 'Foundation', 'UIKit', 'UserNotifications', 'WebKit'
 end

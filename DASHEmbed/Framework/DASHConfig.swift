@@ -12,6 +12,11 @@ public struct DASHConfig {
     
     /// A unique identifier for the DASH Foundation (provided by DASH)
     public var appId: String
+    
+    ///Public initializer
+    public init(appId: String) {
+        self.appId = appId
+    }
 }
 
 

@@ -4,11 +4,19 @@
 
 This library provides an easy way to embed the DASH mobile experience into an iOS application.
 
+## Installation
+
+The easiest way to use DASHEmbed is Cocoapods
+
+```ruby
+pod 'DASHEmbed'
+```
+
 ## Usage
 
 ### Required permissions
 
-User location is used for future location based features. 
+User location is used for future location based features.
 
 To enable, set a description for the NSLocationWhenInUseUsageDescription plist key.
 

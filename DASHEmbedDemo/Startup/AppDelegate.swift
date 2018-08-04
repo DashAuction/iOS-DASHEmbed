@@ -7,6 +7,7 @@
 
 import UIKit
 import UserNotifications
+import DASHEmbed
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
