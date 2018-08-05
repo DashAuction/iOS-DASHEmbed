@@ -72,6 +72,7 @@ public class DASHViewController: UIViewController {
         let configuration = WKWebViewConfiguration()
         webView = WKWebView(frame: view.bounds, configuration: configuration)
         webView.navigationDelegate = self
+        webView.uiDelegate = self
         webView.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(webView)
@@ -145,5 +146,14 @@ extension DASHViewController: WKNavigationDelegate {
         }
         
         delegate?.dashViewController(self, didFailWith: .unableToLoad)
+    }
+}
+
+extension DASHViewController: WKUIDelegate {
+    public func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
+        if let url = navigationAction.request.url, UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+        return nil
     }
 }
