@@ -26,6 +26,8 @@ To enable, set a description for the NSLocationWhenInUseUsageDescription plist k
 
 We will need a 1) Push notification Encryption Key (.p8), 2) Key ID, 3) Developer Team Id, and 4) App bundle identifier from the [Apple Developer Portal](https://developer.apple.com). For information on obtaining these assets see the "Obtain an Encryption Key and Key ID from Apple" section on [Establishing a Token-Based Connection to APNs](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token_based_connection_to_apns)
 
+Please note that the DASH framework and associated notifications do not affect badge counts.
+
 ### Create a DASHConfig
 
 Create a DASHConfig. This is used to initialize the DASH library with needed information.
