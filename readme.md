@@ -28,14 +28,28 @@ We will need a 1) Push notification Encryption Key (.p8), 2) Key ID, 3) Develope
 
 Please note that the DASH framework and associated notifications do not affect badge counts.
 
+After receiving the push assets above, we will provide you with an App ID to use in the app.
+
 ### Create a DASHConfig
 
 Create a DASHConfig. This is used to initialize the DASH library with needed information.
 
 ```swift
-let appId = "55e1bb99a1a135543f692bad"
+let appId = "APP_ID"
 let dashConfig = DASHConfig(appId: appId)
 ```
+
+A second initializer allow you to use the DASH development servers to test.
+
+```swift
+let dashConfig: DASHConfig
+#if DEBUG
+dashConfig = DASHConfig(appId: appId, useDevelopmentServers: true)
+#else
+dashConfig = DASHConfig(appId: appId)
+#endif
+```
+
 ### Initialize the DASH library
 
 Initialize library using the singleton.
