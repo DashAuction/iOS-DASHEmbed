@@ -21,18 +21,18 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		2F4173312146F9E900ADE3BB /* DASHConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F41732C2146F9E800ADE3BB /* DASHConfig.swift */; };
-		2F4173322146F9E900ADE3BB /* DASH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F41732D2146F9E800ADE3BB /* DASH.swift */; };
-		2F4173332146F9E900ADE3BB /* DASHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F41732E2146F9E800ADE3BB /* DASHViewController.swift */; };
-		2F4173342146F9E900ADE3BB /* Data+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F41732F2146F9E800ADE3BB /* Data+Additions.swift */; };
-		2F4173352146F9E900ADE3BB /* Bundle+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4173302146F9E900ADE3BB /* Bundle+Additions.swift */; };
 		2FB4E93520BD8DF100F09A5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB4E93420BD8DF100F09A5D /* AppDelegate.swift */; };
 		2FB4E93C20BD8DF100F09A5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FB4E93B20BD8DF100F09A5D /* Assets.xcassets */; };
 		2FB4E93F20BD8DF100F09A5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB4E93D20BD8DF100F09A5D /* LaunchScreen.storyboard */; };
 		2FB4E94A20BD8DF100F09A5D /* DASHEmbedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB4E94920BD8DF100F09A5D /* DASHEmbedTests.swift */; };
 		2FB4E95B20BD94D800F09A5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB4E95A20BD94D800F09A5D /* Main.storyboard */; };
 		2FB4E95D20BD94EC00F09A5D /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB4E95C20BD94EC00F09A5D /* ExampleViewController.swift */; };
-		2FDBF3BA2156DF27001BB6E8 /* DASH.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FDBF3B82156DF27001BB6E8 /* DASH.storyboard */; };
+		2FDBF3C32156E1D3001BB6E8 /* Bundle+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBF3BC2156E1D3001BB6E8 /* Bundle+Additions.swift */; };
+		2FDBF3C42156E1D3001BB6E8 /* DASHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBF3BD2156E1D3001BB6E8 /* DASHViewController.swift */; };
+		2FDBF3C52156E1D3001BB6E8 /* DASH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBF3BE2156E1D3001BB6E8 /* DASH.swift */; };
+		2FDBF3C62156E1D3001BB6E8 /* DASH.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FDBF3BF2156E1D3001BB6E8 /* DASH.storyboard */; };
+		2FDBF3C72156E1D3001BB6E8 /* DASHConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBF3C12156E1D3001BB6E8 /* DASHConfig.swift */; };
+		2FDBF3C82156E1D3001BB6E8 /* Data+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBF3C22156E1D3001BB6E8 /* Data+Additions.swift */; };
 		5D68F893922A343AEFEA55F4 /* Pods_DASHEmbedDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BBF8E614C2976D4828D9371 /* Pods_DASHEmbedDemoTests.framework */; };
 		AA67100758E73BE8C858356D /* Pods_DASHEmbedDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00928C1F0CCE11BAB28F047F /* Pods_DASHEmbedDemo.framework */; };
 /* End PBXBuildFile section */
@@ -58,11 +58,6 @@
 		2F4173222146F94B00ADE3BB /* DASHEmbed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DASHEmbed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F4173242146F94B00ADE3BB /* DASHEmbed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DASHEmbed.h; sourceTree = "<group>"; };
 		2F4173252146F94B00ADE3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F41732C2146F9E800ADE3BB /* DASHConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DASHConfig.swift; sourceTree = "<group>"; };
-		2F41732D2146F9E800ADE3BB /* DASH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DASH.swift; sourceTree = "<group>"; };
-		2F41732E2146F9E800ADE3BB /* DASHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DASHViewController.swift; sourceTree = "<group>"; };
-		2F41732F2146F9E800ADE3BB /* Data+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Additions.swift"; sourceTree = "<group>"; };
-		2F4173302146F9E900ADE3BB /* Bundle+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Additions.swift"; sourceTree = "<group>"; };
 		2FB4E93120BD8DF100F09A5D /* DASHEmbedDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DASHEmbedDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB4E93420BD8DF100F09A5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FB4E93B20BD8DF100F09A5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,7 +70,12 @@
 		2FB4E95C20BD94EC00F09A5D /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		2FB9A03420BE22D300314A89 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = SOURCE_ROOT; };
 		2FC22B2720D8ACC500C68963 /* DASHEmbedDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DASHEmbedDemo.entitlements; sourceTree = "<group>"; };
-		2FDBF3B92156DF27001BB6E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Framework/Base.lproj/DASH.storyboard; sourceTree = "<group>"; };
+		2FDBF3BC2156E1D3001BB6E8 /* Bundle+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Additions.swift"; sourceTree = "<group>"; };
+		2FDBF3BD2156E1D3001BB6E8 /* DASHViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DASHViewController.swift; sourceTree = "<group>"; };
+		2FDBF3BE2156E1D3001BB6E8 /* DASH.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DASH.swift; sourceTree = "<group>"; };
+		2FDBF3C02156E1D3001BB6E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DASH.storyboard; sourceTree = "<group>"; };
+		2FDBF3C12156E1D3001BB6E8 /* DASHConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DASHConfig.swift; sourceTree = "<group>"; };
+		2FDBF3C22156E1D3001BB6E8 /* Data+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Additions.swift"; sourceTree = "<group>"; };
 		328A95ABC73AF19009AF3393 /* Pods-DASHEmbedDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DASHEmbedDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DASHEmbedDemo/Pods-DASHEmbedDemo.release.xcconfig"; sourceTree = "<group>"; };
 		37A9F20396DFBCD6285B8B4A /* Pods-DASHEmbedDemo.release 2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DASHEmbedDemo.release 2.xcconfig"; path = "Pods/Target Support Files/Pods-DASHEmbedDemo/Pods-DASHEmbedDemo.release 2.xcconfig"; sourceTree = "<group>"; };
 		4BBF8E614C2976D4828D9371 /* Pods_DASHEmbedDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DASHEmbedDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,13 +130,8 @@
 		2F4173232146F94B00ADE3BB /* DASHEmbed */ = {
 			isa = PBXGroup;
 			children = (
-				2FDBF3B82156DF27001BB6E8 /* DASH.storyboard */,
+				2FDBF3BB2156E1D3001BB6E8 /* Framework */,
 				2F4173242146F94B00ADE3BB /* DASHEmbed.h */,
-				2F4173302146F9E900ADE3BB /* Bundle+Additions.swift */,
-				2F41732D2146F9E800ADE3BB /* DASH.swift */,
-				2F41732C2146F9E800ADE3BB /* DASHConfig.swift */,
-				2F41732E2146F9E800ADE3BB /* DASHViewController.swift */,
-				2F41732F2146F9E800ADE3BB /* Data+Additions.swift */,
 				2F4173252146F94B00ADE3BB /* Info.plist */,
 			);
 			path = DASHEmbed;
@@ -183,6 +178,19 @@
 				2FB4E94B20BD8DF100F09A5D /* Info.plist */,
 			);
 			path = DASHEmbedTests;
+			sourceTree = "<group>";
+		};
+		2FDBF3BB2156E1D3001BB6E8 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				2FDBF3BC2156E1D3001BB6E8 /* Bundle+Additions.swift */,
+				2FDBF3BD2156E1D3001BB6E8 /* DASHViewController.swift */,
+				2FDBF3BE2156E1D3001BB6E8 /* DASH.swift */,
+				2FDBF3BF2156E1D3001BB6E8 /* DASH.storyboard */,
+				2FDBF3C12156E1D3001BB6E8 /* DASHConfig.swift */,
+				2FDBF3C22156E1D3001BB6E8 /* Data+Additions.swift */,
+			);
+			path = Framework;
 			sourceTree = "<group>";
 		};
 		6C25AB2FDBE7C8832CFDA559 /* Frameworks */ = {
@@ -264,7 +272,7 @@
 				2FB4E92D20BD8DF100F09A5D /* Sources */,
 				2FB4E92E20BD8DF100F09A5D /* Frameworks */,
 				2FB4E92F20BD8DF100F09A5D /* Resources */,
-				19749FCFACAB562489CE40AD /* [CP] Copy Pods Resources */,
+				C25BFAAB86707936A2093A3F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -354,7 +362,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FDBF3BA2156DF27001BB6E8 /* DASH.storyboard in Resources */,
+				2FDBF3C62156E1D3001BB6E8 /* DASH.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,24 +386,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		19749FCFACAB562489CE40AD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DASHEmbedDemo/Pods-DASHEmbedDemo-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/DASHEmbed/DASHEmbed.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DASHEmbed.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DASHEmbedDemo/Pods-DASHEmbedDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2C43EA457C4DA8F953784412 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -428,6 +418,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\nBUILD_PATH=\"${SRCROOT}/build\"\nDEPLOYMENT_PATH=\"${SRCROOT}\"\nTARGET_NAME=\"DASHEmbed\"\nFRAMEWORK_NAME=\"DASHEmbed\"\nFRAMEWORK=\"${FRAMEWORK_NAME}.framework\"\nFRAMEWORK_PATH=\"${DEPLOYMENT_PATH}/${FRAMEWORK}\"\n\n# clean the build folder\nif [ -d \"${BUILD_PATH}\" ]; then\nrm -rf \"${BUILD_PATH}\"\nfi\n\n# build the framework for every architecture using xcodebuild\nxcodebuild -target \"${TARGET_NAME}\" -configuration Release \\\n-arch arm64 -arch armv7 -arch armv7s \\\nonly_active_arch=no defines_module=yes -sdk \"iphoneos\"\n\nxcodebuild -target \"${TARGET_NAME}\" -configuration Release \\\n-arch x86_64 -arch i386 \\\nonly_active_arch=no defines_module=yes -sdk \"iphonesimulator\"\n\n# remove previous version from the deployment path\nif [ -d \"${FRAMEWORK_PATH}\" ]; then\nrm -rf \"${FRAMEWORK_PATH}\"\nfi\n\n# copy freshly built version to the deployment path\ncp -r \"${BUILD_PATH}/Release-iphoneos/${FRAMEWORK}\" \"${FRAMEWORK_PATH}\"\n\n# merge all the slices and create the fat framework\nlipo -create -output \"${FRAMEWORK_PATH}/${FRAMEWORK_NAME}\" \\\n\"${BUILD_PATH}/Release-iphoneos/${FRAMEWORK}/${FRAMEWORK_NAME}\" \\\n\"${BUILD_PATH}/Release-iphonesimulator/${FRAMEWORK}/${FRAMEWORK_NAME}\"\n\n# copy Swift module mappings for the simulator\ncp -r \"${BUILD_PATH}/Release-iphonesimulator/${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" \\\n\"${FRAMEWORK_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule\"\n\n# clean up the build folder again\nif [ -d \"${BUILD_PATH}\" ]; then\nrm -rf \"${BUILD_PATH}\"\nfi";
 		};
+		C25BFAAB86707936A2093A3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DASHEmbedDemo/Pods-DASHEmbedDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DASHEmbed/DASHEmbed.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DASHEmbed.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DASHEmbedDemo/Pods-DASHEmbedDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EEA24F9847DAD02B754C77D1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -453,11 +461,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F4173312146F9E900ADE3BB /* DASHConfig.swift in Sources */,
-				2F4173322146F9E900ADE3BB /* DASH.swift in Sources */,
-				2F4173332146F9E900ADE3BB /* DASHViewController.swift in Sources */,
-				2F4173342146F9E900ADE3BB /* Data+Additions.swift in Sources */,
-				2F4173352146F9E900ADE3BB /* Bundle+Additions.swift in Sources */,
+				2FDBF3C42156E1D3001BB6E8 /* DASHViewController.swift in Sources */,
+				2FDBF3C82156E1D3001BB6E8 /* Data+Additions.swift in Sources */,
+				2FDBF3C72156E1D3001BB6E8 /* DASHConfig.swift in Sources */,
+				2FDBF3C32156E1D3001BB6E8 /* Bundle+Additions.swift in Sources */,
+				2FDBF3C52156E1D3001BB6E8 /* DASH.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,10 +505,10 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		2FDBF3B82156DF27001BB6E8 /* DASH.storyboard */ = {
+		2FDBF3BF2156E1D3001BB6E8 /* DASH.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2FDBF3B92156DF27001BB6E8 /* Base */,
+				2FDBF3C02156E1D3001BB6E8 /* Base */,
 			);
 			name = DASH.storyboard;
 			sourceTree = "<group>";

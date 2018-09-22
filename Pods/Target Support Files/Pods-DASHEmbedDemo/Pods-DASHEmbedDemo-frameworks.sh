@@ -141,6 +141,19 @@ strip_invalid_archs() {
   STRIP_BINARY_RETVAL=1
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/DASHEmbed/DASHEmbed.framework"
+fi
+if [[ "$CONFIGURATION" == "Debug 2" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/DASHEmbed/DASHEmbed.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/DASHEmbed/DASHEmbed.framework"
+fi
+if [[ "$CONFIGURATION" == "Release 2" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/DASHEmbed/DASHEmbed.framework"
+fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
 fi
