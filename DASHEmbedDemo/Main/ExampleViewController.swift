@@ -125,11 +125,11 @@ class ExampleViewController: UIViewController {
 }
 
 extension ExampleViewController: DASHViewControllerDelegate {
-    func dashViewController(_ dashViewController: DASHViewController, didFailWith error: DASH.Error) {
+    func dashViewController(_ dashViewController: DASHViewController, didFailWith error: NSError) {
         let title = "Error"
         let message: String
-        switch error {
-        case .noInternet:
+        switch DASH.Error(rawValue: error.code) {
+        case .noInternet?:
             message = "No Internet Detected. Check your connection and try again."
         default:
             message = "We were unable to load. Please try again later."
