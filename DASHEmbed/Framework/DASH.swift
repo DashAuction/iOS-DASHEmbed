@@ -12,13 +12,34 @@ import Foundation
 import UIKit
 import UserNotifications
 
-public class DASH {
+@objc public class DASH: NSObject {
     
-    public enum Error {
+    public enum Error: Int, Swift.Error {
         /// DASH is unable to load
         case unableToLoad
         /// DASH is unable to reach the Internet
         case noInternet
+        
+        //Handling for NSError transformation
+        func errorCode() -> Int {
+            return self.rawValue
+        }
+        
+        func userInfo() -> [String: Any] {
+            var userInfo = [String: Any]()
+            switch self {
+            case .noInternet:
+                userInfo[NSLocalizedFailureReasonErrorKey] = "Unable to connect to the Internet."
+            default:
+                userInfo[NSLocalizedFailureReasonErrorKey] = "Unable to load DASH. Please try again later."
+            }
+            
+            return userInfo
+        }
+        
+        func nsError() -> NSError {
+            return NSError(domain: "io.dashapp.dash", code: errorCode(), userInfo: userInfo())
+        }
     }
     
     private let dashNotificationInfoKey = "dash"
@@ -39,10 +60,10 @@ public class DASH {
     // MARK: Public
     
     /// Singleton use of DASH
-    public static let team = DASH()
+    @objc public static let team = DASH()
     
     /// Initializes DASH. Call this once before any other methods.
-    public func start(with config: DASHConfig) {
+    @objc public func start(with config: DASHConfig) {
         self.config = config
         
         //Populate cached values
@@ -51,42 +72,42 @@ public class DASH {
     }
     
     /// Sets the current user's email. Email is used to uniquely identify a user in the DASH system. Email is cached locally by DASH for ease of use.
-    public func setUserEmail(_ userEmail: String?) {
+    @objc public func setUserEmail(_ userEmail: String?) {
         self.userEmail = userEmail
         cacheString(userEmail, forKey: dashUserEmailKey)
     }
     
     /// Clears out local and cached user email data
-    public func clearUserEmail() {
+    @objc public func clearUserEmail() {
         userEmail = nil
         cacheString(nil, forKey: dashUserEmailKey)
     }
     
     /// Used to set the push device token for the current app. Set this with the data returned from the remote notifications delegate method. This is used to send DASH outbid notifications on the team's behalf. Set each time token changes. Token will be cached locally by DASH for ease of use.
-    public func setUserPushToken(with data: Data?) {
+    @objc(setUserPushTokenWithData:) public func setUserPushToken(with data: Data?) {
         pushTokenString = data?.hexString
         cacheString(pushTokenString, forKey: dashPushTokenKey)
     }
     
     /// Used to set the push device token for the current app if already in string format. This is used to send DASH outbid notifications on the team's behalf. Set each time token changes. Token will be cached locally by DASH for ease of use.
-    public func setUserPushToken(with data: String) {
-        pushTokenString = data;
+    @objc(setUserPushTokenWithString:) public func setUserPushToken(with string: String) {
+        pushTokenString = string;
         cacheString(pushTokenString, forKey: dashPushTokenKey)
     }
     
     /// Clears out local and cached push tokens in DASH
-    public func clearPushToken() {
+    @objc public func clearPushToken() {
         pushTokenString = nil
         cacheString(nil, forKey: dashPushTokenKey) //Clears from defaults
     }
     
     /// Returns true if the notification passed in should be handled by DASH. If true, you should tell DASH to handle the notification and present the DASH view controller.
-    public func canHandleNotification(_ notification: UNNotification) -> Bool {
+    @objc public func canHandleNotification(_ notification: UNNotification) -> Bool {
         return notification.request.content.userInfo[dashNotificationInfoKey] != nil
     }
     
     /// Tells DASH to handle the notification. The next presentation of the DASH view controller will handle the notification. If DASH view controller is already presented, this will reload the interface to handle the notification. EX: If a DASH outbid notification is set here, the next presentation will navigate directly to the respective auction item.
-    public func setNotificationData(from notification: UNNotification) {
+    @objc public func setNotificationData(from notification: UNNotification) {
         if let dashInfo = notification.request.content.userInfo[dashNotificationInfoKey] as? [String: Any] {
             currentNotificationData = dashInfo
             
@@ -99,17 +120,17 @@ public class DASH {
     }
     
     /// Returns whether DASH currently has data as result of a notification (and subsequently DASH view controller should be presented)
-    public func hasNotificationData() -> Bool {
+    @objc public func hasNotificationData() -> Bool {
         return currentNotificationData != nil
     }
     
     /// Clears out the pending notification data provided by handleNotification()
-    public func clearNotificationData() {
+    @objc public func clearNotificationData() {
         currentNotificationData = nil
     }
     
     /// Returns a DASH view controller for display. Can be pushed on a navigation stack as is or presented modally when embedded in a UINavigationController
-    public func dashViewController() -> DASHViewController? {
+    @objc public func dashViewController() -> DASHViewController? {
         guard let config = config else {
             print("DASH must start with config before using DASHViewController")
             return nil

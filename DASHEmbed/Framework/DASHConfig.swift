@@ -8,18 +8,19 @@
 
 import Foundation
 
-public struct DASHConfig {
+@objc public class DASHConfig: NSObject {
     
     /// A unique identifier for the DASH Foundation (provided by DASH)
-    public var appId: String
+    public let appId: String
     
     /// When true, DASH points to the development servers. Internal use.
-    var useDevelopmentServers: Bool
+    public let useDevelopmentServers: Bool
     
     ///Public initializer
-    public init(appId: String, useDevelopmentServers: Bool = false) {
+    @objc public init(appId: String, useDevelopmentServers: Bool = false) {
         self.appId = appId
         self.useDevelopmentServers = useDevelopmentServers
+        super.init()
     }
 }
 

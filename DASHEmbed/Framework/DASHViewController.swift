@@ -8,12 +8,12 @@
 import UIKit
 import WebKit
 
-public protocol DASHViewControllerDelegate: class {
+@objc public protocol DASHViewControllerDelegate: class {
     /// Called when the DASH view controller encounters an error.
-    func dashViewController(_ dashViewController: DASHViewController, didFailWith error: DASH.Error)
+    @objc func dashViewController(_ dashViewController: DASHViewController, didFailWith error: NSError)
 }
 
-public class DASHViewController: UIViewController {
+@objc public class DASHViewController: UIViewController {
     
     private let baseDevelopmentURLString = "https://dev-web.dashapp.io/app"
     private let baseURLString = "https://web.dashapp.io/app"
@@ -28,7 +28,7 @@ public class DASHViewController: UIViewController {
     private var userInfo: DASH.UserInfo?
     private var notificationData: [String: Any]?
     
-    public weak var delegate: DASHViewControllerDelegate?
+    @objc public weak var delegate: DASHViewControllerDelegate?
     
     static func instantiate(with config: DASHConfig, userInfo: DASH.UserInfo, notificationData: [String: Any]?) -> DASHViewController? {
         let storyboard = UIStoryboard(name: "DASH", bundle: Bundle.frameworkResourceBundle)
@@ -51,13 +51,13 @@ public class DASHViewController: UIViewController {
     }
     
     /// Updates the view controller with notification data. Used internally.
-    public func updateNotificationData(with data: [String: Any]?) {
+    @objc public func updateNotificationData(with data: [String: Any]?) {
         notificationData = data
         reloadInterface(startFromBeginning: true) //Reload the web view to the correct page
     }
     
     /// Refreshes the current page. If startFromBeginning is true, the interface is reloaded to the beginning state.
-    public func reloadInterface(startFromBeginning: Bool = false) {
+    @objc public func reloadInterface(startFromBeginning: Bool = false) {
         if startFromBeginning {
             loadWebView()
         } else {
@@ -91,7 +91,7 @@ public class DASHViewController: UIViewController {
     private func loadWebView() {
         guard let config = config else {
             print("A DASHConfig is required before using DASHViewController")
-            delegate?.dashViewController(self, didFailWith: .unableToLoad)
+            delegate?.dashViewController(self, didFailWith: DASH.Error.unableToLoad.nsError())
             return
         }
         
@@ -141,11 +141,11 @@ extension DASHViewController: WKNavigationDelegate {
     public func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
         let nsError = error as NSError
         if nsError.code == NSURLErrorNotConnectedToInternet {
-            delegate?.dashViewController(self, didFailWith: .noInternet)
+            delegate?.dashViewController(self, didFailWith: DASH.Error.noInternet.nsError())
             return
         }
         
-        delegate?.dashViewController(self, didFailWith: .unableToLoad)
+        delegate?.dashViewController(self, didFailWith: DASH.Error.unableToLoad.nsError())
     }
 }
 
