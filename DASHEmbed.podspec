@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DASHEmbed'
-  s.version          = '1.0.0'
+  s.version          = '1.1.0'
   s.summary          = 'An easy way to embed DASH into an iOS app'
 
   s.description      = <<-DESC

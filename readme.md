@@ -123,4 +123,4 @@ Or push on a navigation stack
 navigationController?.pushViewController(dashViewController, animated: true)
 ```
 
-Check out the [Current Documentation](https://github.com/DashAuction/iOS-DASHEmbed/raw/master/Documentation/DASHAuctions_V1.pdf)
+Check out the [Current Documentation](https://github.com/DashAuction/iOS-DASHEmbed/raw/master/Documentation/DASHAuctions_V1.1.pdf)
