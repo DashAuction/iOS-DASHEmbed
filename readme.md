@@ -6,13 +6,13 @@ This library provides an easy way to embed the DASH mobile experience into an iO
 
 ## Installation
 
-####The easiest way to use DASHEmbed: Cocoapods
+#### The easiest way to use DASHEmbed: Cocoapods
 
 ```ruby
 pod 'DASHEmbed'
 ```
 
-####Manual Install: Static Framework
+#### Manual Install: Static Framework
 
 1. Build the static framework using the "DASHEmbed-Aggregate" target. (Builds to root of repository)
 2. Build the resource bundle using the "DASHResources" target. (Builds to products)
@@ -20,7 +20,7 @@ pod 'DASHEmbed'
 4. Add DASHEmbed.framework to the "Embedded Binaries" list of the target you wish to use with DASHEmbed. This should automatically add it to the "Linked Frameworks and Libaries" list.
 5. As DASHEmbed is written in Swift, be sure you include the Swift standard libraries if you aren't already. (You'll know if you encounter a runtime error regarding swift libraries when trying to use DASHEmbed). Simply set "Always Embed Swift Standard Libraries" to "YES" in your target's build settings. This will include everything needed.
 
-####Manual Install: Source
+#### Manual Install: Source
 
 1. Copy everything under "DASHEmbed/Framework" into your project.
 
