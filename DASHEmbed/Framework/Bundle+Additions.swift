@@ -11,8 +11,12 @@ import Foundation
 extension Bundle {
     
     static var frameworkResourceBundle: Bundle {
-        let podBundle = Bundle(for: DASH.self)
-        let bundleURL = podBundle.url(forResource: "DASHEmbed", withExtension: "bundle")
+        #if FRAMEWORK
+        let currentBundle = Bundle.main
+        #else
+        let currentBundle = Bundle(for: DASH.self)
+        #endif
+        let bundleURL = currentBundle.url(forResource: "DASHEmbed", withExtension: "bundle")
         
         guard let url = bundleURL, let resourceBundle = Bundle(url: url) else { fatalError() }
         
