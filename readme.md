@@ -14,11 +14,22 @@ pod 'DASHEmbed'
 
 #### Manual Install: Static Framework
 
-1. Build the static framework using the "DASHEmbed-Aggregate" target. (Builds to root of repository)
-2. Build the resource bundle using the "DASHResources" target. (Builds to products)
-3. Copy both DASHEmbed.framework and DASHEmbed.resources into your project (but don't add it to any targets).
-4. Add DASHEmbed.framework to the "Embedded Binaries" list of the target you wish to use with DASHEmbed. This should automatically add it to the "Linked Frameworks and Libaries" list.
-5. As DASHEmbed is written in Swift, be sure you include the Swift standard libraries if you aren't already. (You'll know if you encounter a runtime error regarding swift libraries when trying to use DASHEmbed). Simply set "Always Embed Swift Standard Libraries" to "YES" in your target's build settings. This will include everything needed.
+- Download zip with pre-built 1.1.0 framework assets [here.](https://github.com/DashAuction/iOS-DASHEmbed/releases/download/1.1.0/DASHEmbed.zip) This framework was built with Base SDK of iOS 11.4 in Xcode 9.4.1, Swift 4.1 and Bitcode enabled. Requires iOS 10+. If you need more customization (different version of Xcode, bitcode disabled), you can build the framework yourself below.
+
+##### OR
+
+- Build the static framework using the "DASHEmbed-Aggregate" target. (Builds to root of repository) 
+- Build the resource bundle using the "DASHResources" target. (Builds to products)
+
+##### THEN
+- Copy both DASHEmbed.framework and DASHEmbed.resources into your project (but don't add it to any targets).
+- Add DASHEmbed.framework to the "Embedded Binaries" list of the target you wish to use with DASHEmbed. This should automatically add it to the "Linked Frameworks and Libaries" list.
+- Add DASHEmbed.resources to the target you with to use with DASHEmbed.
+- As DASHEmbed is written in Swift, be sure you include the Swift standard libraries if you aren't already. (You'll know if you encounter a runtime error regarding swift libraries when trying to use DASHEmbed). Simply set "Always Embed Swift Standard Libraries" to "YES" in your target's build settings. This will include everything needed. Be sure to clean between builds when changing these project settings as they don't always update until the next full build.
+
+##### NOTE
+
+- DASHEmbed.framework has a fat binary containing bitcode and the slices for the following architectures - (x86_64 i386 armv7 armv7s arm64). This allows for the framework to run on all devices and simulators, but will not be accepted to the App Store  in it's current state. To remove the unneeded architectures for submission check out [this article.](http://ikennd.ac/blog/2015/02/stripping-unwanted-architectures-from-dynamic-libraries-in-xcode/) He includes a build script you can add as a build phase which will remove all architectures except for the active ones in your bundled frameworks. 
 
 #### Manual Install: Source
 
