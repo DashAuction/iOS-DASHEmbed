@@ -104,6 +104,8 @@ class ExampleViewController: UIViewController {
                     status = "Denied"
                 case .notDetermined:
                     status = "Not Determined"
+                case .provisional:
+                    status = "Provisional"
                 }
                 self?.pushStatusLabel.text = "Push Status: \(status)"
             }
