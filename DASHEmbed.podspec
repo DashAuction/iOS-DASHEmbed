@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DASHEmbed'
-  s.version          = '1.1.0'
+  s.version          = '1.2.0'
   s.summary          = 'An easy way to embed DASH into an iOS app'
 
   s.description      = <<-DESC
@@ -20,8 +20,8 @@ DASHEmbed provides an easy way to embed the DASH mobile experience into an iOS a
   s.author           = { 'DASH' => 'ryan@dashapp.io' }
   s.source           = { :git => 'https://github.com/DashAuction/iOS-DASHEmbed.git', :tag => s.version.to_s }
 
-  s.swift_version = '4.0'
-  s.ios.deployment_target = '10.0'
+  s.swift_version = '5.0'
+  s.ios.deployment_target = '12.0'
   s.source_files = 'DASHEmbed/Framework/**/*.{swift}'
   s.resource_bundles = {
   'DASHEmbed' => ['DASHEmbed/Framework/**/*.{storyboard,xib}']

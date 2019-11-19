@@ -1,5 +1,5 @@
 PODS:
-  - DASHEmbed (1.1.0)
+  - DASHEmbed (1.2.0)
 
 DEPENDENCIES:
   - DASHEmbed (from `./`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  DASHEmbed: 958651da97a01d09b026def5659945f62fcdced1
+  DASHEmbed: 93a00d40d843f8ffd9b235c8c614ccbf5422c7ac
 
 PODFILE CHECKSUM: b075021cadac034c4a0ab78bfc909c4fb4a5fa0a
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4

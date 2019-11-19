@@ -473,7 +473,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DASHEmbedDemo/Pods-DASHEmbedDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-DASHEmbedDemo/Pods-DASHEmbedDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DASHEmbed/DASHEmbed.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -482,7 +482,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DASHEmbedDemo/Pods-DASHEmbedDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DASHEmbedDemo/Pods-DASHEmbedDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EEA24F9847DAD02B754C77D1 /* [CP] Check Pods Manifest.lock */ = {
