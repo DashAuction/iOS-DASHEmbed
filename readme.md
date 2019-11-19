@@ -14,7 +14,7 @@ pod 'DASHEmbed'
 
 #### Manual Install: Static Framework
 
-- Download zip with pre-built 1.1.0 framework assets [here.](https://github.com/DashAuction/iOS-DASHEmbed/releases/download/1.1.0/DASHEmbed.zip) This framework was built with Base SDK of iOS 11.4 in Xcode 9.4.1, Swift 4.1 and Bitcode enabled. Requires iOS 10+. If you need more customization (different version of Xcode, bitcode disabled), you can build the framework yourself below.
+- Download zip with pre-built 1.2.0 framework assets [here.](https://github.com/DashAuction/iOS-DASHEmbed/releases/download/1.2.0/DASHEmbed.zip) This framework was built with Base SDK of iOS 12.0 in Xcode 11.2.1, Swift 5.0 and Bitcode enabled. Requires iOS 10+. If you need more customization (different version of Xcode, bitcode disabled), you can build the framework yourself below. Other downloads can be found on the [Releases](https://github.com/DashAuction/iOS-DASHEmbed/releases) page.
 
 ##### OR
 
@@ -39,7 +39,8 @@ pod 'DASHEmbed'
 
 ### Requirements
 
-##### iOS 10+, Swift 4.1
+##### (1.2.0) iOS 12+, Swift 5.0
+##### (1.0.0 - 1.1.0) iOS 11+, Swift 4.0
 
 ##### User location is used for future location based features.
 
