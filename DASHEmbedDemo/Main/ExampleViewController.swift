@@ -106,6 +106,8 @@ class ExampleViewController: UIViewController {
                     status = "Not Determined"
                 case .provisional:
                     status = "Provisional"
+                @unknown default:
+                    status = "Unknown"
                 }
                 self?.pushStatusLabel.text = "Push Status: \(status)"
             }

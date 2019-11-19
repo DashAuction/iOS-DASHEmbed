@@ -76,14 +76,15 @@ import WebKit
         webView.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(webView)
+        let views: [String: UIView] = ["webView": webView]
         let horizontalContraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|[webView]|",
                                                                   options: [],
                                                                   metrics: nil,
-                                                                  views: ["webView": webView])
+                                                                  views: views)
         let verticalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|[webView]|",
                                                                  options: [],
                                                                  metrics: nil,
-                                                                 views: ["webView": webView])
+                                                                 views: views)
         view.addConstraints(horizontalContraints)
         view.addConstraints(verticalConstraints)
     }

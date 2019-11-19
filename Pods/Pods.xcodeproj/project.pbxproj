@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -56,12 +56,12 @@
 		06623F80437B87B1461E9FA9B687B86B /* Pods-DASHEmbedDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DASHEmbedDemo-umbrella.h"; sourceTree = "<group>"; };
 		06E90FA164175F77F586B8094C66C4F0 /* DASHConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DASHConfig.swift; path = DASHEmbed/Framework/DASHConfig.swift; sourceTree = "<group>"; };
 		0EC7A656FAD210C1838796D3D548C579 /* DASH.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DASH.storyboard; path = DASHEmbed/Framework/Base.lproj/DASH.storyboard; sourceTree = "<group>"; };
-		11B70EA14BDAE6543794E754416C46EE /* Pods_DASHEmbedDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DASHEmbedDemo.framework; path = "Pods-DASHEmbedDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B70EA14BDAE6543794E754416C46EE /* Pods_DASHEmbedDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DASHEmbedDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15829D8608FBB89EBB967A9521A394FF /* Pods-DASHEmbedDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		19F1B6576B660B147B8E0A6F30D25601 /* Pods-DASHEmbedDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DASHEmbedDemo-resources.sh"; sourceTree = "<group>"; };
 		1B23A2762BEE4171D38CAC3D126EE289 /* Pods-DASHEmbedDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DASHEmbedDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1DC0AF6EA2C86BE9AB84AC9C34BE6C4E /* DASHEmbed-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DASHEmbed-umbrella.h"; sourceTree = "<group>"; };
-		221B30A9DD0ABD6C219605828FAAE2AA /* readme.md */ = {isa = PBXFileReference; includeInIndex = 1; path = readme.md; sourceTree = "<group>"; };
+		221B30A9DD0ABD6C219605828FAAE2AA /* readme.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		239C61BB2796922EB1B27994BFC0AE69 /* Pods-DASHEmbedDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		2E82F172C23A0553736A0F14CF9E8BF4 /* DASHEmbed-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DASHEmbed-prefix.pch"; sourceTree = "<group>"; };
 		315AABAE39F447E2FF16269FF51A5EAC /* Data+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Additions.swift"; path = "DASHEmbed/Framework/Data+Additions.swift"; sourceTree = "<group>"; };
@@ -70,17 +70,17 @@
 		4FF70B2853F6C922979C92140125E273 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5454217F2A2C33D92393E7F3977C6EC1 /* Pods-DASHEmbedDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		557711B81FE0E00E2B97136B31065125 /* Pods-DASHEmbedDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DASHEmbedDemo-frameworks.sh"; sourceTree = "<group>"; };
-		582B79B3DB9C1C7AE5B5497555B5E481 /* DASHEmbed.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = DASHEmbed.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		582B79B3DB9C1C7AE5B5497555B5E481 /* DASHEmbed.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = DASHEmbed.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5951E397C9B1C7E3A3F92751C8669ABB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		59618753B3CF32C73EA45DB132876150 /* Pods-DASHEmbedDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DASHEmbedDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		63B8BE6C6763E103AF0332B584B1BFAA /* Pods-DASHEmbedDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DASHEmbedDemoTests-resources.sh"; sourceTree = "<group>"; };
 		690DA8516C91EDFDCD81F8D3449BA158 /* Pods-DASHEmbedDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DASHEmbedDemoTests-frameworks.sh"; sourceTree = "<group>"; };
-		6BE7B6B8B50526F60EAF9666AF697DD7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6BE7B6B8B50526F60EAF9666AF697DD7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		71CF1687706B672B2442DCF6FB2A16FB /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = DEVELOPER_DIR; };
 		8923B7E865D77AFDF40E989FED611CED /* DASHViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DASHViewController.swift; path = DASHEmbed/Framework/DASHViewController.swift; sourceTree = "<group>"; };
 		89638317A07A7D785F59966FA7878824 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		8E249C01B86C536473E4FBB8CEC1FBA8 /* DASHEmbed.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DASHEmbed.bundle; path = "DASHEmbed-DASHEmbed.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8E249C01B86C536473E4FBB8CEC1FBA8 /* DASHEmbed.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DASHEmbed.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93EF7294E7AA340C6A83854DAFCDC295 /* Pods-DASHEmbedDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemo.release.xcconfig"; sourceTree = "<group>"; };
 		96395A59730856DFC48885047CF5E8B4 /* Pods-DASHEmbedDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DASHEmbedDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D530C97FE21E9146C0B0E08BA213311 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -97,11 +97,11 @@
 		E007FBDAD496BAFDBCE39959492CDA2B /* DASH.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DASH.swift; path = DASHEmbed/Framework/DASH.swift; sourceTree = "<group>"; };
 		E78258C49269AF098858EBB0D2C1B058 /* Pods-DASHEmbedDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DASHEmbedDemoTests-umbrella.h"; sourceTree = "<group>"; };
 		EA9CAE7FEBBBE4592757431426CCF76A /* Pods-DASHEmbedDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DASHEmbedDemoTests-dummy.m"; sourceTree = "<group>"; };
-		EAA84F0902F10361D2B22062037F3BA8 /* Pods_DASHEmbedDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DASHEmbedDemoTests.framework; path = "Pods-DASHEmbedDemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA84F0902F10361D2B22062037F3BA8 /* Pods_DASHEmbedDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DASHEmbedDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3E88E18957AFC96CD3957F11DC322E /* Pods-DASHEmbedDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DASHEmbedDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F43522FCC31BB704EB6E02E69AA43126 /* Pods-DASHEmbedDemo.debug 2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemo.debug 2.xcconfig"; sourceTree = "<group>"; };
 		F7111F0BDE6237695ACB262AA95B7F8E /* Pods-DASHEmbedDemoTests.debug 2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemoTests.debug 2.xcconfig"; sourceTree = "<group>"; };
-		FC83D5EAE27895A1D48BD9289D0718F1 /* DASHEmbed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DASHEmbed.framework; path = DASHEmbed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC83D5EAE27895A1D48BD9289D0718F1 /* DASHEmbed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DASHEmbed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -399,12 +399,18 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					D76DD11FF5C92541EBC3B88A0E17DC9F = {
+						LastSwiftMigration = 1120;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
@@ -544,7 +550,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -578,7 +584,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -628,7 +634,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1121,7 +1127,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
