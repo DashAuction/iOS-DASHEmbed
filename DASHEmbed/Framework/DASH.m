@@ -50,19 +50,19 @@ static DASH *_shared;
     self.config = config;
     
     //Populate cached values
-    self.pushTokenString = [self cachedStringForKey:DASHPushTokenDefaultsKey];
-    self.userEmail = [self cachedStringForKey:DASHUserEmailDefaultsKey];
+    _pushTokenString = [self cachedStringForKey:DASHPushTokenDefaultsKey];
+    _userEmail = [self cachedStringForKey:DASHUserEmailDefaultsKey];
 }
 
 /// Sets the current user's email. Email is used to uniquely identify a user in the DASH system. Email is cached locally by DASH for ease of use.
 - (void)setUserEmail:(NSString *)userEmail {
-    self.userEmail = userEmail;
+    _userEmail = userEmail;
     [self cacheString:userEmail forKey:DASHUserEmailDefaultsKey];
 }
 
 /// Clears out local and cached user email data
 - (void)clearUserEmail {
-    self.userEmail = nil;
+    _userEmail = nil;
     [self cacheString:nil forKey:DASHUserEmailDefaultsKey];
 }
 
@@ -74,13 +74,13 @@ static DASH *_shared;
 
 /// Used to set the push device token for the current app if already in string format. This is used to send DASH outbid notifications on the team's behalf. Set each time token changes. Token will be cached locally by DASH for ease of use.
 - (void)setUserPushTokenWithString:(NSString *)string {
-    self.pushTokenString = string;
+    _pushTokenString = string;
     [self cacheString:string forKey:DASHPushTokenDefaultsKey];
 }
 
 /// Clears out local and cached push tokens in DASH
 - (void)clearPushToken {
-    self.pushTokenString = nil;
+    _pushTokenString = nil;
     [self cacheString:nil forKey:DASHPushTokenDefaultsKey];
 }
 
@@ -110,7 +110,7 @@ static DASH *_shared;
 
 /// Clears out the pending notification data provided by handleNotification()
 - (void)clearNotificationData {
-    self.currentNotificationData = nil;
+    _currentNotificationData = nil;
 }
 
 /// Returns a DASH view controller for display. Can be pushed on a navigation stack as is or presented modally when embedded in a UINavigationController
