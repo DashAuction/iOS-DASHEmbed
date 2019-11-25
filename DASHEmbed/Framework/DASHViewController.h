@@ -10,8 +10,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class DASHViewController;
+@protocol DASHViewControllerDelegate <NSObject>
+
+- (void)dashViewController:(DASHViewController *)viewController didFailWithError:(NSError *)error;
+
+@end
+
 @class DASHConfig, DASHUserInfo;
 @interface DASHViewController : UIViewController
+
+@property (nonatomic, weak) id<DASHViewControllerDelegate> delegate;
 
 + (instancetype)instantiateWithConfig:(DASHConfig *)config userInfo:(DASHUserInfo *)userInfo notificationData:(NSDictionary<NSString *, id> *)notificationData;
 

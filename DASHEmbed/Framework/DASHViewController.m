@@ -12,12 +12,6 @@
 #import "NSBundle+DASHAdditions.h"
 @import WebKit;
 
-@protocol DASHViewControllerDelegate <NSObject>
-
-- (void)dashViewController:(DASHViewController *)viewController didFailWithError:(NSError *)error;
-
-@end
-
 static NSString *const DASBaseDevelopmentURLString = @"https://dev-web.dashapp.io/app";
 static NSString *const DASBaseURLString = @"https://web.dashapp.io/app";
 static NSString *const DASApplicationQueryName = @"appId";
@@ -32,7 +26,6 @@ static NSString *const DASPushQueryName = @"pushId";
 @property (nonatomic, strong) DASHConfig *config;
 @property (nonatomic, strong) DASHUserInfo *userInfo;
 @property (nonatomic, strong) NSDictionary<NSString *, id> *notificationData;
-@property (nonatomic, weak) id<DASHViewControllerDelegate> delegate;
 
 @end
 

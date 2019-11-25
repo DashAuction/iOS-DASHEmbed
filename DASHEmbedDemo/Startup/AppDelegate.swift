@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #endif
         let dashConfig = DASHConfig(appId: appId)
         //Start DASH
-        DASH.team.start(with: dashConfig)
+        DASH.team().start(with: dashConfig)
         
         //Set delegate to respond to push notifications
         UNUserNotificationCenter.current().delegate = self
@@ -37,14 +37,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         //Sets the user's push token for outbid notifications
-        DASH.team.setUserPushToken(with: deviceToken)
+        DASH.team().setUserPushTokenWith(deviceToken)
     }
 }
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        if DASH.team.canHandleNotification(response.notification) {
-            DASH.team.setNotificationData(from: response.notification)
+        if DASH.team().canHandle(response.notification) {
+            DASH.team().setNotificationDataFrom(response.notification)
             
             //This is a simplified approach as an example. Exact implementation will depend on your architecture
             if let navController = window?.rootViewController as? UINavigationController, let exampleViewController = navController.topViewController as? ExampleViewController {

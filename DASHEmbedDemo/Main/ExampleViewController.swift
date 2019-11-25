@@ -33,18 +33,18 @@ class ExampleViewController: UIViewController {
     
     func showDASHIfNeeded() {
         //Very simple example of push handling. Your setup will probably be more complex
-        if DASH.team.hasNotificationData() && presentedViewController == nil && isViewLoaded {
+        if DASH.team().hasNotificationData() && presentedViewController == nil && isViewLoaded {
             presentModally()
             
             //Clear notification data now that we've presented it
-            DASH.team.clearNotificationData()
+            DASH.team().clearNotificationData()
         }
     }
     
     // MARK: Actions
     
     @IBAction private func presentModally() {
-        guard let dashViewController = DASH.team.dashViewController() else { return }
+        guard let dashViewController = DASH.team().dashViewController() else { return }
         dashViewController.delegate = self //Optionally set delegate
         
         //Add a close button
@@ -57,7 +57,7 @@ class ExampleViewController: UIViewController {
     }
     
     @IBAction private func pushNavigation() {
-        guard let dashViewController = DASH.team.dashViewController() else { return }
+        guard let dashViewController = DASH.team().dashViewController() else { return }
         dashViewController.delegate = self //Optionally set delegate
         navigationController?.pushViewController(dashViewController, animated: true)
     }
@@ -68,7 +68,9 @@ class ExampleViewController: UIViewController {
     
     @IBAction private func setUserEmailTapped() {
         presentEntryAlert(with: "Set Email", message: "Set the user email.", currentValue: nil) { (email) in
-            DASH.team.setUserEmail(email)
+            if let email = email {
+                DASH.team().setUserEmail(email)
+            }
             self.userEmailLabel.text = "Email: \(email ?? "Not Set")"
         }
     }
@@ -129,18 +131,12 @@ class ExampleViewController: UIViewController {
 }
 
 extension ExampleViewController: DASHViewControllerDelegate {
-    func dashViewController(_ dashViewController: DASHViewController, didFailWith error: NSError) {
+    func dashViewController(_ viewController: DASHViewController, didFailWithError error: Error) {
         let title = "Error"
-        let message: String
-        switch DASH.Error(rawValue: error.code) {
-        case .noInternet?:
-            message = "No Internet Detected. Check your connection and try again."
-        default:
-            message = "We were unable to load. Please try again later."
-        }
+        let message: String = (error as NSError).userInfo[NSLocalizedFailureReasonErrorKey] as? String ?? "Unknown Error";
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        dashViewController.present(alert, animated: true, completion: nil)
+        viewController.present(alert, animated: true, completion: nil)
     }
 }
