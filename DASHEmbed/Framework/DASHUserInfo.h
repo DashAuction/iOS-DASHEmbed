@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DASHUserInfo : NSObject
 
-@property (nonatomic, strong, readonly) nullable NSString *pushTokenString;
-@property (nonatomic, strong, readonly) nullable NSString *userEmail;
+@property (nonatomic, strong, readonly) NSString * _Nullable pushTokenString;
+@property (nonatomic, strong, readonly) NSString * _Nullable userEmail;
 
 - (instancetype)initWithPushToken:(nullable NSString *)pushTokenString userEmail:(nullable NSString *)userEmail;
 

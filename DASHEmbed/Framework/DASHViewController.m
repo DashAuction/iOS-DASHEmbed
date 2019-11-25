@@ -10,15 +10,13 @@
 #import "DASHConfig.h"
 #import "DASHUserInfo.h"
 #import "NSBundle+DASHAdditions.h"
-@import WebKit
+@import WebKit;
 
 @protocol DASHViewControllerDelegate <NSObject>
 
-- (void)dashViewController:(DASHViewController *)viewController didFailWithError:(NSError *)error
+- (void)dashViewController:(DASHViewController *)viewController didFailWithError:(NSError *)error;
 
 @end
-
-static NSError *const DASHUnableToLoadError = [NSError errorWithDomain:@"io.dashapp.dash" code:1 userInfo:@{NSLocalizedFailureReasonErrorKey: @"Unable to load DASH. Please try again later."}];
 
 static NSString *const DASBaseDevelopmentURLString = @"https://dev-web.dashapp.io/app";
 static NSString *const DASBaseURLString = @"https://web.dashapp.io/app";
@@ -33,14 +31,14 @@ static NSString *const DASPushQueryName = @"pushId";
 @property (nonatomic, strong) WKWebView *webView;
 @property (nonatomic, strong) DASHConfig *config;
 @property (nonatomic, strong) DASHUserInfo *userInfo;
-@property (nonatomic, strong) NSDictionary<NSString *, NSObject> notificationData;
+@property (nonatomic, strong) NSDictionary<NSString *, id> *notificationData;
 @property (nonatomic, weak) id<DASHViewControllerDelegate> delegate;
 
 @end
 
 @implementation DASHViewController
 
-+ (instancetype)instantiateWithConfig:(DASHConfig *)config userInfo:(DASHUserInfo *)userInfo notificationData:(NSDictionary<NSString *, NSObject> *)notificationData {
++ (instancetype)instantiateWithConfig:(DASHConfig *)config userInfo:(DASHUserInfo *)userInfo notificationData:(NSDictionary<NSString *, id> *)notificationData {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"DASH" bundle:[NSBundle frameworkResourceBundle]];
     DASHViewController *viewController = [storyboard instantiateInitialViewController];
     
@@ -59,7 +57,7 @@ static NSString *const DASPushQueryName = @"pushId";
 
 #pragma mark - Public
 
-- (void)updateNotificationData:(NSDictionary<NSString *, NSObject> *)notificationData {
+- (void)updateNotificationData:(NSDictionary<NSString *, id> *)notificationData {
     _notificationData = notificationData;
     [self reloadInterfaceStartFromBeginning:YES];
 }
@@ -81,9 +79,9 @@ static NSString *const DASPushQueryName = @"pushId";
     self.webView.UIDelegate = self;
     self.webView.translatesAutoresizingMaskIntoConstraints = false;
     [self.view addSubview:self.webView];
-    NSDictionary<NSString *, UIView *> *views = @[@"webView": self.webView];
-    NSArray<NSLayoutConstraint *> *horizontalConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|[webView]|" options:@[] metrics:nil views:views];
-    NSArray<NSLayoutConstraint *> *verticalConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[webView]|" options:@[] metrics:nil views:views];
+    NSDictionary<NSString *, UIView *> *views = @{@"webView": self.webView};
+    NSArray<NSLayoutConstraint *> *horizontalConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|[webView]|" options:0 metrics:nil views:views];
+    NSArray<NSLayoutConstraint *> *verticalConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[webView]|" options:0 metrics:nil views:views];
     [self.view addConstraints:horizontalConstraints];
     [self.view addConstraints:verticalConstraints];
 }
@@ -91,7 +89,8 @@ static NSString *const DASPushQueryName = @"pushId";
 - (void)loadWebView {
     if (!self.config) {
         NSLog(@"A DASHConfig is required before using DASHViewController");
-        [self.delegate dashViewController:self didFailWithError:DASHUnableToLoadError];
+        NSError *unableToLoadError = [NSError errorWithDomain:@"io.dashapp.dash" code:1 userInfo:@{NSLocalizedFailureReasonErrorKey: @"Unable to load DASH. Please try again later."}];
+        [self.delegate dashViewController:self didFailWithError:unableToLoadError];
         return;
     }
     

@@ -318,7 +318,7 @@
 				2FB4E92D20BD8DF100F09A5D /* Sources */,
 				2FB4E92E20BD8DF100F09A5D /* Frameworks */,
 				2FB4E92F20BD8DF100F09A5D /* Resources */,
-				C25BFAAB86707936A2093A3F /* [CP] Embed Pods Frameworks */,
+				94DB7D2EF496522D3B5C936C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -495,7 +495,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\nBUILD_PATH=\"${SRCROOT}/build\"\nDEPLOYMENT_PATH=\"${SRCROOT}\"\nTARGET_NAME=\"DASHEmbed\"\nFRAMEWORK_NAME=\"DASHEmbed\"\nFRAMEWORK=\"${FRAMEWORK_NAME}.framework\"\nFRAMEWORK_PATH=\"${DEPLOYMENT_PATH}/${FRAMEWORK}\"\n\n# clean the build folder\nif [ -d \"${BUILD_PATH}\" ]; then\nrm -rf \"${BUILD_PATH}\"\nfi\n\n# build the framework for every architecture using xcodebuild\nxcodebuild BITCODE_GENERATION_MODE=bitcode -target \"${TARGET_NAME}\" -configuration Release \\\n-arch arm64 -arch armv7 -arch armv7s \\\nonly_active_arch=no defines_module=yes -sdk \"iphoneos\"\n\nxcodebuild BITCODE_GENERATION_MODE=bitcode -target \"${TARGET_NAME}\" -configuration Release \\\n-arch x86_64 -arch i386 \\\nonly_active_arch=no defines_module=yes -sdk \"iphonesimulator\"\n\n# remove previous version from the deployment path\nif [ -d \"${FRAMEWORK_PATH}\" ]; then\nrm -rf \"${FRAMEWORK_PATH}\"\nfi\n\n# copy freshly built version to the deployment path\ncp -r \"${BUILD_PATH}/Release-iphoneos/${FRAMEWORK}\" \"${FRAMEWORK_PATH}\"\n\n# merge all the slices and create the fat framework\nlipo -create -output \"${FRAMEWORK_PATH}/${FRAMEWORK_NAME}\" \\\n\"${BUILD_PATH}/Release-iphoneos/${FRAMEWORK}/${FRAMEWORK_NAME}\" \\\n\"${BUILD_PATH}/Release-iphonesimulator/${FRAMEWORK}/${FRAMEWORK_NAME}\"\n\n# copy Swift module mappings for the simulator\ncp -r \"${BUILD_PATH}/Release-iphonesimulator/${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" \\\n\"${FRAMEWORK_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule\"\n\n# clean up the build folder again\nif [ -d \"${BUILD_PATH}\" ]; then\nrm -rf \"${BUILD_PATH}\"\nfi\n";
 		};
-		C25BFAAB86707936A2093A3F /* [CP] Embed Pods Frameworks */ = {
+		94DB7D2EF496522D3B5C936C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

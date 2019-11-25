@@ -10,6 +10,12 @@
 #endif
 #endif
 
+#import "DASH.h"
+#import "DASHConfig.h"
+#import "DASHUserInfo.h"
+#import "DASHViewController.h"
+#import "NSBundle+DASHAdditions.h"
+#import "NSData+DASHAdditions.h"
 
 FOUNDATION_EXPORT double DASHEmbedVersionNumber;
 FOUNDATION_EXPORT const unsigned char DASHEmbedVersionString[];

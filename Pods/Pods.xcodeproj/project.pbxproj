@@ -7,41 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09F20A64D40897E56DE2AE861B88692A /* Bundle+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1180D3C9F671423A988ADD9C00DA3B1D /* Bundle+Additions.swift */; };
-		17F093BCBC0CE63786831B00A23DCA7A /* DASH.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750BFA92B04B521A4E73B1E7C1E2259B /* DASH.storyboard */; };
-		23EACBC5271DE739906276E885E8F5E6 /* DASHEmbed-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88F31680EE80DDBAA284C76ED7C34D27 /* DASHEmbed-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BE6530539E302372D5815A19FCF06EF /* DASHEmbed-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF477C1E72F0CCF39EC78B22C4BC3BA0 /* DASHEmbed-dummy.m */; };
-		342FF73CAB7A03EF0B322C2452206180 /* DASH.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64495A8EB92673F436B80D1D65C4C3 /* DASH.swift */; };
+		086A95897630BEFB2CC607BBAD464815 /* DASHEmbed-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C1787D87FA13ED874F6F5AB2E0C99 /* DASHEmbed-dummy.m */; };
+		1D9CF848D656419DCF3044C2CB34CD65 /* DASH.m in Sources */ = {isa = PBXBuildFile; fileRef = 485E0DAD5790CBD92C335C90BFC7F557 /* DASH.m */; };
+		23541C0BB0072EDA369CD416A0E6F69E /* DASHEmbed-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB309F67D11733EEC210B8858D801EB9 /* DASHEmbed-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36A2AB279457EF640A518E9E67BEFC09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0782D75979FE19FAC9CAA9BCA9C1572E /* Foundation.framework */; };
+		3855332866F5C15F0D63EAB297EFD0ED /* DASHEmbed.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 572AF4B58F532A00F0285CB6ECA90511 /* DASHEmbed.bundle */; };
+		406D0E117C6822595DBACB6D35FF9E65 /* DASH.h in Headers */ = {isa = PBXBuildFile; fileRef = 3074BB6CA17A2BF148D283FF54F8585B /* DASH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		435E5BFE4DEC77A00DDC6E2AE4366DA0 /* NSData+DASHAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEEED64ED66657443F5BF5020A66485 /* NSData+DASHAdditions.m */; };
 		45C4687BDA47760810472592D1655506 /* Pods-DASHEmbedDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D488FC69FCA80DEB4C3473F69A54720C /* Pods-DASHEmbedDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F1D3C55B1A82FA0A6FBC1336F40F8F2 /* NSBundle+DASHAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6059326CE46B60E4EA1A09478931364B /* NSBundle+DASHAdditions.m */; };
 		5EF8DE82F3E815C077E02927D8734BBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0782D75979FE19FAC9CAA9BCA9C1572E /* Foundation.framework */; };
-		619FFFDD9A4A594F4CEE579101173C8E /* Data+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D891BB8BD18040EACDF422290997D3 /* Data+Additions.swift */; };
-		66F78B2528CFF4F852529DB02C62E628 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966472067AD065BB90E6F287629D7C0D /* UserNotifications.framework */; };
+		648A93A7AB9120B8010D77C650DFE563 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57245938688EE7CB09BB387B2D47F745 /* UIKit.framework */; };
+		6A66C655F1CA5AF886AC23291ABC9E59 /* NSBundle+DASHAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 897CCEFC14211DB23550724BA171F884 /* NSBundle+DASHAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85457A913AB9D988FB55A453A0832657 /* DASHUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2882FC6550F0272B6041E3CE7DB3523D /* DASHUserInfo.m */; };
+		8C84B72DEFD9D69AF092CAF377808241 /* DASHViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 09BC75C5824EF083517E161DA8C12C6D /* DASHViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91902CCFC8AC41A003027335CA182D71 /* Pods-DASHEmbedDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2F09213CD4513B46891E1D2255A917 /* Pods-DASHEmbedDemo-dummy.m */; };
-		9B04CD48E304745A18E52B41C5A4FE90 /* DASHEmbed.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 572AF4B58F532A00F0285CB6ECA90511 /* DASHEmbed.bundle */; };
+		9304119A0B197D8EABEC126EADC27FC4 /* DASHConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = BC733854B3D1F67BF3DBDC79B722A3E0 /* DASHConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B921CFDF4019539ABFF0BD880C96A22 /* NSData+DASHAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D3C27CEBE4F3DCB4F15B09580D03E55 /* NSData+DASHAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6DC41CFC9A8B0D5E25264A7D4346009 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0782D75979FE19FAC9CAA9BCA9C1572E /* Foundation.framework */; };
+		A7E450179B548FAFAA50B04DF6257313 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966472067AD065BB90E6F287629D7C0D /* UserNotifications.framework */; };
+		B04DC408037BBFD519E050DA10F80F03 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F05F87854B1CE6A0C9282CBF250BD4D /* WebKit.framework */; };
+		BCD4F28294718D202E59067399D95746 /* DASHConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EF8D12E30C150331F76840C86F9D44 /* DASHConfig.m */; };
 		BD5B160ED603C1E22BDEBDD4CCD8A678 /* Pods-DASHEmbedDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 23839C039995802ECCC47CB8991729B6 /* Pods-DASHEmbedDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C36513C11ED5B2F59D221EAC97ACAC28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57245938688EE7CB09BB387B2D47F745 /* UIKit.framework */; };
 		CA100DB676BF5C51340388B7E54FE011 /* Pods-DASHEmbedDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C214FCD02C61B370AB85C288FD911CF /* Pods-DASHEmbedDemoTests-dummy.m */; };
-		CBAB39CCA088D329AE88536B09A64F7E /* DASHConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B11D403C09C0232E1749330849703E0 /* DASHConfig.swift */; };
-		CD3818EE6A7E5FDFB828EB363E376E1C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F05F87854B1CE6A0C9282CBF250BD4D /* WebKit.framework */; };
-		CE159389246F6691058FB3858E02FBF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0782D75979FE19FAC9CAA9BCA9C1572E /* Foundation.framework */; };
-		FAF78EB382B3AC68D3E94249D293B8A9 /* DASHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B4A720C86FA1A65DC07B1FDB275557 /* DASHViewController.swift */; };
+		DBE5F60DA611A4EA1D707612D0A1D6DC /* DASH.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46772E4CF2F67512A32B3F895A089920 /* DASH.storyboard */; };
+		F299DB887A5C5351ACF574FCEC8265C1 /* DASHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74E4A22B1A8C0DB22BEC8668D39761D /* DASHViewController.m */; };
+		F665D7C8A79199B917B70C27C1AA87AC /* DASHUserInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 95494AE7FAD3142E96F393E39270E2FA /* DASHUserInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		055A1DBBEBFBE54788E5D4A894A0AA39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 877181E75D3B56707CE51E5B93D60B32;
+			remoteInfo = "DASHEmbed-DASHEmbed";
+		};
 		644E4472DFA5D9A038EF46D53BEE343B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F36A67A225DD066D84F975BF39FE0CD2;
 			remoteInfo = "Pods-DASHEmbedDemo";
-		};
-		9AA9849AFEB7F3FF1E73802EB7FDAF9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 877181E75D3B56707CE51E5B93D60B32;
-			remoteInfo = "DASHEmbed-DASHEmbed";
 		};
 		B15BCC312004F64DD83C0EB60B5BE9D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -54,66 +61,73 @@
 
 /* Begin PBXFileReference section */
 		0147ABD1B87826DA2DFCCE7B0EEF74A4 /* Pods-DASHEmbedDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DASHEmbedDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		01A6383CD8E7E410155F9DBE03DE4936 /* ResourceBundle-DASHEmbed-DASHEmbed-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-DASHEmbed-DASHEmbed-Info.plist"; sourceTree = "<group>"; };
-		04D891BB8BD18040EACDF422290997D3 /* Data+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Additions.swift"; path = "DASHEmbed/Framework/Data+Additions.swift"; sourceTree = "<group>"; };
 		0782D75979FE19FAC9CAA9BCA9C1572E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		09BC75C5824EF083517E161DA8C12C6D /* DASHViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DASHViewController.h; path = DASHEmbed/Framework/DASHViewController.h; sourceTree = "<group>"; };
 		0AE52FD6E95FEC72791887BFF0133E19 /* Pods-DASHEmbedDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		0C23251D4FAA76C13316BA14B3B60399 /* readme.md */ = {isa = PBXFileReference; includeInIndex = 1; path = readme.md; sourceTree = "<group>"; };
 		0EB308DCE0C240DE1D202268BAEBE1ED /* Pods-DASHEmbedDemo.debug 2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemo.debug 2.xcconfig"; sourceTree = "<group>"; };
-		1180D3C9F671423A988ADD9C00DA3B1D /* Bundle+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Additions.swift"; path = "DASHEmbed/Framework/Bundle+Additions.swift"; sourceTree = "<group>"; };
+		13EF8D12E30C150331F76840C86F9D44 /* DASHConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DASHConfig.m; path = DASHEmbed/Framework/DASHConfig.m; sourceTree = "<group>"; };
 		17CB40E0350CF092C595C1BF919EB25E /* Pods_DASHEmbedDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DASHEmbedDemo.framework; path = "Pods-DASHEmbedDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		181B63E9B645FA3AAE2F2F2933F6D65C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		23839C039995802ECCC47CB8991729B6 /* Pods-DASHEmbedDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DASHEmbedDemo-umbrella.h"; sourceTree = "<group>"; };
-		28B4A720C86FA1A65DC07B1FDB275557 /* DASHViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DASHViewController.swift; path = DASHEmbed/Framework/DASHViewController.swift; sourceTree = "<group>"; };
+		2882FC6550F0272B6041E3CE7DB3523D /* DASHUserInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DASHUserInfo.m; path = DASHEmbed/Framework/DASHUserInfo.m; sourceTree = "<group>"; };
 		2D5AA5122BEE67B9C5A329851915EC29 /* Pods-DASHEmbedDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DASHEmbedDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3074BB6CA17A2BF148D283FF54F8585B /* DASH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DASH.h; path = DASHEmbed/Framework/DASH.h; sourceTree = "<group>"; };
+		314CAEDE94575C553E1874EB4E80792D /* ResourceBundle-DASHEmbed-DASHEmbed-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-DASHEmbed-DASHEmbed-Info.plist"; sourceTree = "<group>"; };
 		342BB47C1699E960DF4AA653E8F5B224 /* DASHEmbed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DASHEmbed.framework; path = DASHEmbed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3C27CEBE4F3DCB4F15B09580D03E55 /* NSData+DASHAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+DASHAdditions.h"; path = "DASHEmbed/Framework/NSData+DASHAdditions.h"; sourceTree = "<group>"; };
+		41FC1B07E012134BAA650937FCB4FB55 /* DASHEmbed.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DASHEmbed.xcconfig; sourceTree = "<group>"; };
 		422A30BB513BB9257FB1130A1056C9EA /* Pods-DASHEmbedDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DASHEmbedDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		49AF2455D3667D98E3B78CE0A48C6762 /* DASHEmbed-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DASHEmbed-prefix.pch"; sourceTree = "<group>"; };
+		46772E4CF2F67512A32B3F895A089920 /* DASH.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DASH.storyboard; path = DASHEmbed/Framework/Base.lproj/DASH.storyboard; sourceTree = "<group>"; };
+		485E0DAD5790CBD92C335C90BFC7F557 /* DASH.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DASH.m; path = DASHEmbed/Framework/DASH.m; sourceTree = "<group>"; };
 		4E2F09213CD4513B46891E1D2255A917 /* Pods-DASHEmbedDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DASHEmbedDemo-dummy.m"; sourceTree = "<group>"; };
-		51BC31D1E2F172F49D890AC9FABE28B3 /* DASHEmbed.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DASHEmbed.xcconfig; sourceTree = "<group>"; };
 		57245938688EE7CB09BB387B2D47F745 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		572AF4B58F532A00F0285CB6ECA90511 /* DASHEmbed.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DASHEmbed.bundle; path = "DASHEmbed-DASHEmbed.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59F11B99DDF70124627795A8B9A4EDE5 /* DASHEmbed.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DASHEmbed.modulemap; sourceTree = "<group>"; };
 		5C214FCD02C61B370AB85C288FD911CF /* Pods-DASHEmbedDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DASHEmbedDemoTests-dummy.m"; sourceTree = "<group>"; };
-		6B11D403C09C0232E1749330849703E0 /* DASHConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DASHConfig.swift; path = DASHEmbed/Framework/DASHConfig.swift; sourceTree = "<group>"; };
+		5C29EB2C6C9372B2A5DCB52B0CC5AE62 /* DASHEmbed.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DASHEmbed.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6059326CE46B60E4EA1A09478931364B /* NSBundle+DASHAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+DASHAdditions.m"; path = "DASHEmbed/Framework/NSBundle+DASHAdditions.m"; sourceTree = "<group>"; };
+		6EEEED64ED66657443F5BF5020A66485 /* NSData+DASHAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+DASHAdditions.m"; path = "DASHEmbed/Framework/NSData+DASHAdditions.m"; sourceTree = "<group>"; };
 		6F05F87854B1CE6A0C9282CBF250BD4D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
-		750BFA92B04B521A4E73B1E7C1E2259B /* DASH.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DASH.storyboard; path = DASHEmbed/Framework/Base.lproj/DASH.storyboard; sourceTree = "<group>"; };
+		75D3A92629CA0F86B6D1298FCC94994D /* readme.md */ = {isa = PBXFileReference; includeInIndex = 1; path = readme.md; sourceTree = "<group>"; };
 		7740BB170EF6E4FD3D75B372451DB723 /* Pods-DASHEmbedDemoTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DASHEmbedDemoTests-Info.plist"; sourceTree = "<group>"; };
 		793A02BFE03DBB6E57E8CF2B965532AD /* Pods-DASHEmbedDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DASHEmbedDemo.modulemap"; sourceTree = "<group>"; };
 		7E0967E4CEFDED6248BF999F43C1C552 /* Pods-DASHEmbedDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DASHEmbedDemo-Info.plist"; sourceTree = "<group>"; };
+		7F64FA9B212EF605E51BF34F6AE197DC /* DASHEmbed-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DASHEmbed-Info.plist"; sourceTree = "<group>"; };
 		807863F1CE0C54983A0C5172C2ECA486 /* Pods_DASHEmbedDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DASHEmbedDemoTests.framework; path = "Pods-DASHEmbedDemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8107E1C40ED7F932C77BA06E6C4120CF /* Pods-DASHEmbedDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DASHEmbedDemo-frameworks.sh"; sourceTree = "<group>"; };
-		88F31680EE80DDBAA284C76ED7C34D27 /* DASHEmbed-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DASHEmbed-umbrella.h"; sourceTree = "<group>"; };
+		897CCEFC14211DB23550724BA171F884 /* NSBundle+DASHAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+DASHAdditions.h"; path = "DASHEmbed/Framework/NSBundle+DASHAdditions.h"; sourceTree = "<group>"; };
+		95494AE7FAD3142E96F393E39270E2FA /* DASHUserInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DASHUserInfo.h; path = DASHEmbed/Framework/DASHUserInfo.h; sourceTree = "<group>"; };
 		966472067AD065BB90E6F287629D7C0D /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = DEVELOPER_DIR; };
+		9C8C1787D87FA13ED874F6F5AB2E0C99 /* DASHEmbed-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DASHEmbed-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DEFAEEB1DF06E1686F2CB3AA341FE24 /* DASHEmbed.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DASHEmbed.modulemap; sourceTree = "<group>"; };
 		A617367D693DE3FF505F102CD8620D71 /* Pods-DASHEmbedDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AAA9993398DCA688E75A68FCF6859A40 /* Pods-DASHEmbedDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DASHEmbedDemoTests.modulemap"; sourceTree = "<group>"; };
 		B34B891618C2EF83B386429F0BF8A00C /* Pods-DASHEmbedDemo.release 2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemo.release 2.xcconfig"; sourceTree = "<group>"; };
 		BBF8F2F1C8C63D31D1C00D9BE5D6CAFD /* Pods-DASHEmbedDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemo.release.xcconfig"; sourceTree = "<group>"; };
-		BF477C1E72F0CCF39EC78B22C4BC3BA0 /* DASHEmbed-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DASHEmbed-dummy.m"; sourceTree = "<group>"; };
-		CA2BFBDE110FFDAE1002DF4C1E26CC14 /* DASHEmbed-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DASHEmbed-Info.plist"; sourceTree = "<group>"; };
+		BC733854B3D1F67BF3DBDC79B722A3E0 /* DASHConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DASHConfig.h; path = DASHEmbed/Framework/DASHConfig.h; sourceTree = "<group>"; };
+		BEF001E7525848D66636F41C5BDC3C4D /* DASHEmbed-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DASHEmbed-prefix.pch"; sourceTree = "<group>"; };
+		CB309F67D11733EEC210B8858D801EB9 /* DASHEmbed-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DASHEmbed-umbrella.h"; sourceTree = "<group>"; };
 		CD243B2EFF1E4FB61BBF42CB43C4EC62 /* Pods-DASHEmbedDemoTests.release 2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemoTests.release 2.xcconfig"; sourceTree = "<group>"; };
-		CE64495A8EB92673F436B80D1D65C4C3 /* DASH.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DASH.swift; path = DASHEmbed/Framework/DASH.swift; sourceTree = "<group>"; };
 		CF985EA7BC3FB086FC1247287782B384 /* Pods-DASHEmbedDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		D357614F0874F2F79E0291E0D652B2E6 /* DASHEmbed.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DASHEmbed.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D488FC69FCA80DEB4C3473F69A54720C /* Pods-DASHEmbedDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DASHEmbedDemoTests-umbrella.h"; sourceTree = "<group>"; };
-		E4F587528EEFC43C31C2778DCC8D4A15 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E74E4A22B1A8C0DB22BEC8668D39761D /* DASHViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DASHViewController.m; path = DASHEmbed/Framework/DASHViewController.m; sourceTree = "<group>"; };
 		EAD2A5B9F11222504FE03BA6D6133BDB /* Pods-DASHEmbedDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DASHEmbedDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		ECE23EC6BEED6070808E334D33AA8E1D /* Pods-DASHEmbedDemoTests.debug 2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DASHEmbedDemoTests.debug 2.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		040A1166D388BC9C1C5C932C46088337 /* Frameworks */ = {
+		1C93969840FDF6D11DF8609D23257664 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE159389246F6691058FB3858E02FBF1 /* Foundation.framework in Frameworks */,
-				C36513C11ED5B2F59D221EAC97ACAC28 /* UIKit.framework in Frameworks */,
-				66F78B2528CFF4F852529DB02C62E628 /* UserNotifications.framework in Frameworks */,
-				CD3818EE6A7E5FDFB828EB363E376E1C /* WebKit.framework in Frameworks */,
+				36A2AB279457EF640A518E9E67BEFC09 /* Foundation.framework in Frameworks */,
+				648A93A7AB9120B8010D77C650DFE563 /* UIKit.framework in Frameworks */,
+				A7E450179B548FAFAA50B04DF6257313 /* UserNotifications.framework in Frameworks */,
+				B04DC408037BBFD519E050DA10F80F03 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44CDD39F709C1FF54947175B4B50EFF6 /* Frameworks */ = {
+		7464C66A7E7179B6EED42CFEF61FE78D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -139,6 +153,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E9E50CF6E99C98911A54F1BB825F628 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				5C29EB2C6C9372B2A5DCB52B0CC5AE62 /* DASHEmbed.podspec */,
+				181B63E9B645FA3AAE2F2F2933F6D65C /* LICENSE */,
+				75D3A92629CA0F86B6D1298FCC94994D /* readme.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		399CD2BF84E6D2C8339649E3A7B35284 /* Pods-DASHEmbedDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,29 +202,19 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		499B4835DEB5A86A4DE1744E92501EDC /* Support Files */ = {
+		42DD000B75544179286AF777DF966274 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9DEFAEEB1DF06E1686F2CB3AA341FE24 /* DASHEmbed.modulemap */,
-				51BC31D1E2F172F49D890AC9FABE28B3 /* DASHEmbed.xcconfig */,
-				BF477C1E72F0CCF39EC78B22C4BC3BA0 /* DASHEmbed-dummy.m */,
-				CA2BFBDE110FFDAE1002DF4C1E26CC14 /* DASHEmbed-Info.plist */,
-				49AF2455D3667D98E3B78CE0A48C6762 /* DASHEmbed-prefix.pch */,
-				88F31680EE80DDBAA284C76ED7C34D27 /* DASHEmbed-umbrella.h */,
-				01A6383CD8E7E410155F9DBE03DE4936 /* ResourceBundle-DASHEmbed-DASHEmbed-Info.plist */,
+				59F11B99DDF70124627795A8B9A4EDE5 /* DASHEmbed.modulemap */,
+				41FC1B07E012134BAA650937FCB4FB55 /* DASHEmbed.xcconfig */,
+				9C8C1787D87FA13ED874F6F5AB2E0C99 /* DASHEmbed-dummy.m */,
+				7F64FA9B212EF605E51BF34F6AE197DC /* DASHEmbed-Info.plist */,
+				BEF001E7525848D66636F41C5BDC3C4D /* DASHEmbed-prefix.pch */,
+				CB309F67D11733EEC210B8858D801EB9 /* DASHEmbed-umbrella.h */,
+				314CAEDE94575C553E1874EB4E80792D /* ResourceBundle-DASHEmbed-DASHEmbed-Info.plist */,
 			);
 			name = "Support Files";
 			path = "Pods/Target Support Files/DASHEmbed";
-			sourceTree = "<group>";
-		};
-		50A1A7ABC68944AE068063C807D91D33 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				D357614F0874F2F79E0291E0D652B2E6 /* DASHEmbed.podspec */,
-				E4F587528EEFC43C31C2778DCC8D4A15 /* LICENSE */,
-				0C23251D4FAA76C13316BA14B3B60399 /* readme.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		6CC6CB756ED2901FA0BDD4694D6D35AA /* Products */ = {
@@ -214,36 +228,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7D59A3FA25FEAAC195075D2C09569691 /* Development Pods */ = {
+		724C6BEB9482CBDF1BAEA6A529F7EEC4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A47319A545EEA18D1590808EAB12726D /* DASHEmbed */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		899073515FB2FC33A5B17E5DEBFAE4B3 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				750BFA92B04B521A4E73B1E7C1E2259B /* DASH.storyboard */,
+				46772E4CF2F67512A32B3F895A089920 /* DASH.storyboard */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		A47319A545EEA18D1590808EAB12726D /* DASHEmbed */ = {
-			isa = PBXGroup;
-			children = (
-				1180D3C9F671423A988ADD9C00DA3B1D /* Bundle+Additions.swift */,
-				CE64495A8EB92673F436B80D1D65C4C3 /* DASH.swift */,
-				6B11D403C09C0232E1749330849703E0 /* DASHConfig.swift */,
-				28B4A720C86FA1A65DC07B1FDB275557 /* DASHViewController.swift */,
-				04D891BB8BD18040EACDF422290997D3 /* Data+Additions.swift */,
-				50A1A7ABC68944AE068063C807D91D33 /* Pod */,
-				899073515FB2FC33A5B17E5DEBFAE4B3 /* Resources */,
-				499B4835DEB5A86A4DE1744E92501EDC /* Support Files */,
-			);
-			name = DASHEmbed;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
@@ -254,11 +244,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CC0A23250C2F688498147284B3987DC0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6D18241FA8A0557E1D39969F17F7D69 /* DASHEmbed */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				7D59A3FA25FEAAC195075D2C09569691 /* Development Pods */,
+				CC0A23250C2F688498147284B3987DC0 /* Development Pods */,
 				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
 				6CC6CB756ED2901FA0BDD4694D6D35AA /* Products */,
 				40F2B68A080A6F47EC11EFB3B1DD89C9 /* Targets Support Files */,
@@ -283,22 +281,51 @@
 			path = "Target Support Files/Pods-DASHEmbedDemoTests";
 			sourceTree = "<group>";
 		};
+		E6D18241FA8A0557E1D39969F17F7D69 /* DASHEmbed */ = {
+			isa = PBXGroup;
+			children = (
+				3074BB6CA17A2BF148D283FF54F8585B /* DASH.h */,
+				485E0DAD5790CBD92C335C90BFC7F557 /* DASH.m */,
+				BC733854B3D1F67BF3DBDC79B722A3E0 /* DASHConfig.h */,
+				13EF8D12E30C150331F76840C86F9D44 /* DASHConfig.m */,
+				95494AE7FAD3142E96F393E39270E2FA /* DASHUserInfo.h */,
+				2882FC6550F0272B6041E3CE7DB3523D /* DASHUserInfo.m */,
+				09BC75C5824EF083517E161DA8C12C6D /* DASHViewController.h */,
+				E74E4A22B1A8C0DB22BEC8668D39761D /* DASHViewController.m */,
+				897CCEFC14211DB23550724BA171F884 /* NSBundle+DASHAdditions.h */,
+				6059326CE46B60E4EA1A09478931364B /* NSBundle+DASHAdditions.m */,
+				3D3C27CEBE4F3DCB4F15B09580D03E55 /* NSData+DASHAdditions.h */,
+				6EEEED64ED66657443F5BF5020A66485 /* NSData+DASHAdditions.m */,
+				1E9E50CF6E99C98911A54F1BB825F628 /* Pod */,
+				724C6BEB9482CBDF1BAEA6A529F7EEC4 /* Resources */,
+				42DD000B75544179286AF777DF966274 /* Support Files */,
+			);
+			name = DASHEmbed;
+			path = ..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2F2D36E30EE5D26C092C77A9F9DC01E9 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				23EACBC5271DE739906276E885E8F5E6 /* DASHEmbed-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		30D92835A1BC7957DBD09E8FB5D8F4CB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				45C4687BDA47760810472592D1655506 /* Pods-DASHEmbedDemoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F55F1F715DD4DCFD0293189CA461FED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				406D0E117C6822595DBACB6D35FF9E65 /* DASH.h in Headers */,
+				9304119A0B197D8EABEC126EADC27FC4 /* DASHConfig.h in Headers */,
+				23541C0BB0072EDA369CD416A0E6F69E /* DASHEmbed-umbrella.h in Headers */,
+				F665D7C8A79199B917B70C27C1AA87AC /* DASHUserInfo.h in Headers */,
+				8C84B72DEFD9D69AF092CAF377808241 /* DASHViewController.h in Headers */,
+				6A66C655F1CA5AF886AC23291ABC9E59 /* NSBundle+DASHAdditions.h in Headers */,
+				9B921CFDF4019539ABFF0BD880C96A22 /* NSData+DASHAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,17 +361,17 @@
 		};
 		8610BADBE5231DD8A8BDF0D9D6635FDA /* DASHEmbed */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 35434C9438C477FBDC702DBAEAFB375B /* Build configuration list for PBXNativeTarget "DASHEmbed" */;
+			buildConfigurationList = 057B98C559D4022AF022CA77B471D996 /* Build configuration list for PBXNativeTarget "DASHEmbed" */;
 			buildPhases = (
-				2F2D36E30EE5D26C092C77A9F9DC01E9 /* Headers */,
-				57B9EA2084EFB3AABD554A19EA1A9B4B /* Sources */,
-				040A1166D388BC9C1C5C932C46088337 /* Frameworks */,
-				F990257CB9CA922914887A714E3F16B5 /* Resources */,
+				5F55F1F715DD4DCFD0293189CA461FED /* Headers */,
+				CA2BAA049E58D990A69A5FE2876A0F80 /* Sources */,
+				1C93969840FDF6D11DF8609D23257664 /* Frameworks */,
+				2C690D45591AFC42F3BF28CDAF97BF34 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9FA21280C56FA11A3D852FF48056245B /* PBXTargetDependency */,
+				736BEEFCC4182F1E7947D8DD4FEA9A3F /* PBXTargetDependency */,
 			);
 			name = DASHEmbed;
 			productName = DASHEmbed;
@@ -353,11 +380,11 @@
 		};
 		877181E75D3B56707CE51E5B93D60B32 /* DASHEmbed-DASHEmbed */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1ECB50664C828FFF301B5E33E0C8A621 /* Build configuration list for PBXNativeTarget "DASHEmbed-DASHEmbed" */;
+			buildConfigurationList = 3326D2D3BA2CB393926386FEBEA67386 /* Build configuration list for PBXNativeTarget "DASHEmbed-DASHEmbed" */;
 			buildPhases = (
-				1D8CEEDC3A9613686EB1A7FB2B540709 /* Sources */,
-				44CDD39F709C1FF54947175B4B50EFF6 /* Frameworks */,
-				96BDD7E16CBF216A29C1851A30C129DF /* Resources */,
+				3BEC554E74B923A48968AAAFEF521F17 /* Sources */,
+				7464C66A7E7179B6EED42CFEF61FE78D /* Frameworks */,
+				6DD69D78A353ED2933C7F2C2FF3D8C17 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -417,18 +444,26 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2C690D45591AFC42F3BF28CDAF97BF34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3855332866F5C15F0D63EAB297EFD0ED /* DASHEmbed.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DD69D78A353ED2933C7F2C2FF3D8C17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBE5F60DA611A4EA1D707612D0A1D6DC /* DASH.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FB8725FCB1E1DACBFEDB5EDCAB8D62E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		96BDD7E16CBF216A29C1851A30C129DF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				17F093BCBC0CE63786831B00A23DCA7A /* DASH.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,34 +474,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F990257CB9CA922914887A714E3F16B5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B04CD48E304745A18E52B41C5A4FE90 /* DASHEmbed.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1D8CEEDC3A9613686EB1A7FB2B540709 /* Sources */ = {
+		3BEC554E74B923A48968AAAFEF521F17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		57B9EA2084EFB3AABD554A19EA1A9B4B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09F20A64D40897E56DE2AE861B88692A /* Bundle+Additions.swift in Sources */,
-				342FF73CAB7A03EF0B322C2452206180 /* DASH.swift in Sources */,
-				CBAB39CCA088D329AE88536B09A64F7E /* DASHConfig.swift in Sources */,
-				2BE6530539E302372D5815A19FCF06EF /* DASHEmbed-dummy.m in Sources */,
-				FAF78EB382B3AC68D3E94249D293B8A9 /* DASHViewController.swift in Sources */,
-				619FFFDD9A4A594F4CEE579101173C8E /* Data+Additions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +489,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				91902CCFC8AC41A003027335CA182D71 /* Pods-DASHEmbedDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2BAA049E58D990A69A5FE2876A0F80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D9CF848D656419DCF3044C2CB34CD65 /* DASH.m in Sources */,
+				BCD4F28294718D202E59067399D95746 /* DASHConfig.m in Sources */,
+				086A95897630BEFB2CC607BBAD464815 /* DASHEmbed-dummy.m in Sources */,
+				85457A913AB9D988FB55A453A0832657 /* DASHUserInfo.m in Sources */,
+				F299DB887A5C5351ACF574FCEC8265C1 /* DASHViewController.m in Sources */,
+				4F1D3C55B1A82FA0A6FBC1336F40F8F2 /* NSBundle+DASHAdditions.m in Sources */,
+				435E5BFE4DEC77A00DDC6E2AE4366DA0 /* NSData+DASHAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,11 +523,11 @@
 			target = F36A67A225DD066D84F975BF39FE0CD2 /* Pods-DASHEmbedDemo */;
 			targetProxy = 644E4472DFA5D9A038EF46D53BEE343B /* PBXContainerItemProxy */;
 		};
-		9FA21280C56FA11A3D852FF48056245B /* PBXTargetDependency */ = {
+		736BEEFCC4182F1E7947D8DD4FEA9A3F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "DASHEmbed-DASHEmbed";
 			target = 877181E75D3B56707CE51E5B93D60B32 /* DASHEmbed-DASHEmbed */;
-			targetProxy = 9AA9849AFEB7F3FF1E73802EB7FDAF9E /* PBXContainerItemProxy */;
+			targetProxy = 055A1DBBEBFBE54788E5D4A894A0AA39 /* PBXContainerItemProxy */;
 		};
 		A67F7803D321BA9A41FC258DE9642E53 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -510,6 +538,40 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		00187442B92BCC0069977D19F100E30F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41FC1B07E012134BAA650937FCB4FB55 /* DASHEmbed.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DASHEmbed/DASHEmbed-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DASHEmbed/DASHEmbed-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DASHEmbed/DASHEmbed.modulemap";
+				PRODUCT_MODULE_NAME = DASHEmbed;
+				PRODUCT_NAME = DASHEmbed;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		024EB201D0A730E6B6A42E4376813068 /* Debug 2 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -569,25 +631,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = "Debug 2";
-		};
-		0636D9390B98F3F5AB5C33EB2AD7FF20 /* Release 2 */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51BC31D1E2F172F49D890AC9FABE28B3 /* DASHEmbed.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DASHEmbed";
-				IBSC_MODULE = DASHEmbed;
-				INFOPLIST_FILE = "Target Support Files/DASHEmbed/ResourceBundle-DASHEmbed-DASHEmbed-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = DASHEmbed;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = "Release 2";
 		};
 		131356BE54884448CA49C07BEDF4BB2A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -653,9 +696,9 @@
 			};
 			name = Debug;
 		};
-		260051D17EE9CC08EFF75EDF7EB6FC64 /* Release */ = {
+		1EB2EA59E1515E5B1E9C9769E4DAD851 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51BC31D1E2F172F49D890AC9FABE28B3 /* DASHEmbed.xcconfig */;
+			baseConfigurationReference = 41FC1B07E012134BAA650937FCB4FB55 /* DASHEmbed.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DASHEmbed";
@@ -669,6 +712,40 @@
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
+		};
+		456952331C8FA2DA6B225562C49514B8 /* Release 2 */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41FC1B07E012134BAA650937FCB4FB55 /* DASHEmbed.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DASHEmbed/DASHEmbed-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DASHEmbed/DASHEmbed-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DASHEmbed/DASHEmbed.modulemap";
+				PRODUCT_MODULE_NAME = DASHEmbed;
+				PRODUCT_NAME = DASHEmbed;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "Release 2";
 		};
 		4A21D18C45A35CE0BAF4FAC189F44E20 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -776,39 +853,41 @@
 			};
 			name = Debug;
 		};
-		75DA7086EDF4A3335264C469BC949EB9 /* Debug 2 */ = {
+		73B70AB1898883410A93EFC04827FDB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51BC31D1E2F172F49D890AC9FABE28B3 /* DASHEmbed.xcconfig */;
+			baseConfigurationReference = 41FC1B07E012134BAA650937FCB4FB55 /* DASHEmbed.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DASHEmbed/DASHEmbed-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DASHEmbed/DASHEmbed-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DASHEmbed";
+				IBSC_MODULE = DASHEmbed;
+				INFOPLIST_FILE = "Target Support Files/DASHEmbed/ResourceBundle-DASHEmbed-DASHEmbed-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DASHEmbed/DASHEmbed.modulemap";
-				PRODUCT_MODULE_NAME = DASHEmbed;
 				PRODUCT_NAME = DASHEmbed;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		787BF303C41A0C5BB933EB4BFF1B9AB2 /* Release 2 */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41FC1B07E012134BAA650937FCB4FB55 /* DASHEmbed.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DASHEmbed";
+				IBSC_MODULE = DASHEmbed;
+				INFOPLIST_FILE = "Target Support Files/DASHEmbed/ResourceBundle-DASHEmbed-DASHEmbed-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = DASHEmbed;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
-			name = "Debug 2";
+			name = "Release 2";
 		};
 		7A1396C7FFB742B1829125B3C68E9FFA /* Release 2 */ = {
 			isa = XCBuildConfiguration;
@@ -870,40 +949,6 @@
 			};
 			name = "Release 2";
 		};
-		8398BFF8530D87BCCA417FE7A0D8BDD2 /* Release 2 */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51BC31D1E2F172F49D890AC9FABE28B3 /* DASHEmbed.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DASHEmbed/DASHEmbed-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DASHEmbed/DASHEmbed-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DASHEmbed/DASHEmbed.modulemap";
-				PRODUCT_MODULE_NAME = DASHEmbed;
-				PRODUCT_NAME = DASHEmbed;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = "Release 2";
-		};
 		94F8E21EE1B4805C5DDB6D9212F790E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0AE52FD6E95FEC72791887BFF0133E19 /* Pods-DASHEmbedDemoTests.release.xcconfig */;
@@ -940,9 +985,9 @@
 			};
 			name = Release;
 		};
-		A41FAF34A01A9746EBCB567C21B92473 /* Debug */ = {
+		981A7C8159918EB2DE68757D2F0602CB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51BC31D1E2F172F49D890AC9FABE28B3 /* DASHEmbed.xcconfig */;
+			baseConfigurationReference = 41FC1B07E012134BAA650937FCB4FB55 /* DASHEmbed.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -973,9 +1018,9 @@
 			};
 			name = Debug;
 		};
-		D81B722D282FDC8CFC29CEFC8FF88BEC /* Release */ = {
+		AFA93F7E3559397D5784B090DD382B2C /* Debug 2 */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51BC31D1E2F172F49D890AC9FABE28B3 /* DASHEmbed.xcconfig */;
+			baseConfigurationReference = 41FC1B07E012134BAA650937FCB4FB55 /* DASHEmbed.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1004,25 +1049,6 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D8C0D0D195551B55555FA4EAF9FDA8F2 /* Debug 2 */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51BC31D1E2F172F49D890AC9FABE28B3 /* DASHEmbed.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DASHEmbed";
-				IBSC_MODULE = DASHEmbed;
-				INFOPLIST_FILE = "Target Support Files/DASHEmbed/ResourceBundle-DASHEmbed-DASHEmbed-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = DASHEmbed;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = "Debug 2";
 		};
@@ -1194,10 +1220,11 @@
 			};
 			name = "Release 2";
 		};
-		F363140A6F3B8DD28E841ABB310B3854 /* Debug */ = {
+		F2AC4BB023AC6B895895A8A486916EBF /* Debug 2 */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51BC31D1E2F172F49D890AC9FABE28B3 /* DASHEmbed.xcconfig */;
+			baseConfigurationReference = 41FC1B07E012134BAA650937FCB4FB55 /* DASHEmbed.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DASHEmbed";
 				IBSC_MODULE = DASHEmbed;
@@ -1207,9 +1234,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Debug;
+			name = "Debug 2";
 		};
 		FD4CB8F5C05996CEA519FF3F3E33417E /* Debug 2 */ = {
 			isa = XCBuildConfiguration;
@@ -1250,6 +1278,17 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		057B98C559D4022AF022CA77B471D996 /* Build configuration list for PBXNativeTarget "DASHEmbed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				981A7C8159918EB2DE68757D2F0602CB /* Debug */,
+				AFA93F7E3559397D5784B090DD382B2C /* Debug 2 */,
+				00187442B92BCC0069977D19F100E30F /* Release */,
+				456952331C8FA2DA6B225562C49514B8 /* Release 2 */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0685F71810694A5FB83C9476AB00888A /* Build configuration list for PBXNativeTarget "Pods-DASHEmbedDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1261,24 +1300,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1ECB50664C828FFF301B5E33E0C8A621 /* Build configuration list for PBXNativeTarget "DASHEmbed-DASHEmbed" */ = {
+		3326D2D3BA2CB393926386FEBEA67386 /* Build configuration list for PBXNativeTarget "DASHEmbed-DASHEmbed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F363140A6F3B8DD28E841ABB310B3854 /* Debug */,
-				D8C0D0D195551B55555FA4EAF9FDA8F2 /* Debug 2 */,
-				260051D17EE9CC08EFF75EDF7EB6FC64 /* Release */,
-				0636D9390B98F3F5AB5C33EB2AD7FF20 /* Release 2 */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		35434C9438C477FBDC702DBAEAFB375B /* Build configuration list for PBXNativeTarget "DASHEmbed" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A41FAF34A01A9746EBCB567C21B92473 /* Debug */,
-				75DA7086EDF4A3335264C469BC949EB9 /* Debug 2 */,
-				D81B722D282FDC8CFC29CEFC8FF88BEC /* Release */,
-				8398BFF8530D87BCCA417FE7A0D8BDD2 /* Release 2 */,
+				73B70AB1898883410A93EFC04827FDB1 /* Debug */,
+				F2AC4BB023AC6B895895A8A486916EBF /* Debug 2 */,
+				1EB2EA59E1515E5B1E9C9769E4DAD851 /* Release */,
+				787BF303C41A0C5BB933EB4BFF1B9AB2 /* Release 2 */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

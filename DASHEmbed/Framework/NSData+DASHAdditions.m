@@ -14,7 +14,7 @@
     const char *data = [self bytes];
     NSMutableString *token = [NSMutableString string];
 
-    for (NSUInteger i = 0; i < [deviceToken length]; i++) {
+    for (NSUInteger i = 0; i < [self length]; i++) {
         [token appendFormat:@"%02.2hhx", data[i]];
     }
 

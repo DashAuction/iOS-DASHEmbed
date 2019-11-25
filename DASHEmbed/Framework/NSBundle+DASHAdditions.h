@@ -6,16 +6,13 @@
 //  Copyright © 2019 DASH. All rights reserved.
 //
 
-#import <AppKit/AppKit.h>
-
-
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NSBundle (DASHAdditions)
 
-- (nullable NSBundle *)frameworkResourceBundle;
++ (nullable NSBundle *)frameworkResourceBundle;
 
 @end
 

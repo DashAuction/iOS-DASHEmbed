@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DASHConfig : NSObject
 
 @property (nonatomic, strong, readonly) NSString *appId;
-@property (nonatomic, strong, readonly) BOOL useDevelopmentServers;
+@property (nonatomic, readonly) BOOL useDevelopmentServers;
 
 - (instancetype)initWithAppId:(NSString *)appId; //Defaults to production
 - (instancetype)initWithAppId:(NSString *)appId useDevelopmentServers:(BOOL)useDevelopmentServers;

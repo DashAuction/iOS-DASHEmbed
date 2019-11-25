@@ -14,6 +14,7 @@
 #import "DASHViewController.h"
 #import "NSData+DASHAdditions.h"
 #import "DASHUserInfo.h"
+@import UserNotifications;
 
 static NSString *const DASHNotificationInfoKey = @"dash";
 static NSString *const DASHPushTokenDefaultsKey = @"io.dashapp.dashembed.pushtoken";
@@ -22,9 +23,9 @@ static NSString *const DASHUserEmailDefaultsKey = @"io.dashapp.dashembed.userema
 @interface DASH()
 
 @property (nonatomic, strong) DASHConfig *config;
-@property (nonatomic, strong) NSString *pushTokenString;
-@property (nonatomic, strong) NSString *userEmail;
-@property (nonatomic, strong) NSDictionary<NSString *, NSObject> *currentNotificationData;
+@property (nonatomic, strong) NSString * _Nullable pushTokenString;
+@property (nonatomic, strong) NSString * _Nullable userEmail;
+@property (nonatomic, strong) NSDictionary<NSString *, id> *currentNotificationData;
 @property (nonatomic, weak) DASHViewController *currentDashViewController;
 
 @end
@@ -90,7 +91,7 @@ static DASH *_shared;
 
 /// Tells DASH to handle the notification. The next presentation of the DASH view controller will handle the notification. If DASH view controller is already presented, this will reload the interface to handle the notification. EX: If a DASH outbid notification is set here, the next presentation will navigate directly to the respective auction item.
 - (void)setNotificationDataFromNotification:(UNNotification *)notification {
-    NSDictionary<NSString *, NSObject> *notificationData = notification.request.content.userInfo[DASHNotificationInfoKey];
+    NSDictionary<NSString *, id> *notificationData = notification.request.content.userInfo[DASHNotificationInfoKey];
     if (notificationData) {
         self.currentNotificationData = notificationData;
         

@@ -1,6 +1,6 @@
 {
   "name": "DASHEmbed",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "summary": "An easy way to embed DASH into an iOS app",
   "description": "DASHEmbed provides an easy way to embed the DASH mobile experience into an iOS application.",
   "homepage": "https://github.com/DashAuction/iOS-DASHEmbed",
@@ -13,13 +13,12 @@
   },
   "source": {
     "git": "https://github.com/DashAuction/iOS-DASHEmbed.git",
-    "tag": "1.2.0"
+    "tag": "2.0.0"
   },
-  "swift_versions": "5.0",
   "platforms": {
     "ios": "12.0"
   },
-  "source_files": "DASHEmbed/Framework/**/*.{swift}",
+  "source_files": "DASHEmbed/Framework/**/*.{h,m}",
   "resource_bundles": {
     "DASHEmbed": [
       "DASHEmbed/Framework/**/*.{storyboard,xib}"
@@ -30,6 +29,5 @@
     "UIKit",
     "UserNotifications",
     "WebKit"
-  ],
-  "swift_version": "5.0"
+  ]
 }

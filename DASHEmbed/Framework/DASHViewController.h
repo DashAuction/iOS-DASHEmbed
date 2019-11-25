@@ -13,9 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 @class DASHConfig, DASHUserInfo;
 @interface DASHViewController : UIViewController
 
-+ (instancetype)instantiateWithConfig:(DASHConfig *)config userInfo:(DASHUserInfo *)userInfo notificationData:(NSDictionary<NSString *, NSObject> *)notificationData;
++ (instancetype)instantiateWithConfig:(DASHConfig *)config userInfo:(DASHUserInfo *)userInfo notificationData:(NSDictionary<NSString *, id> *)notificationData;
 
-- (void)updateNotificationData:(NSDictionary<NSString *, NSObject> *)notificationData;
+- (void)updateNotificationData:(NSDictionary<NSString *, id> *)notificationData;
 - (void)reloadInterfaceStartFromBeginning:(BOOL)startFromBeginning;
 
 @end

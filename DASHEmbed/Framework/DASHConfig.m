@@ -21,7 +21,7 @@
         _useDevelopmentServers = useDevelopmentServers;
     }
     
-    return self
+    return self;
 }
 
 @end

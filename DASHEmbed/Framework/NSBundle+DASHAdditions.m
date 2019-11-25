@@ -12,7 +12,7 @@
 
 @implementation NSBundle (DASHAdditions)
 
-- (nullable NSBundle *)frameworkResourceBundle {
++ (nullable NSBundle *)frameworkResourceBundle {
 #ifdef FRAMEWORK
     NSBundle *currentBundle = [NSBundle mainBundle];
 #else
