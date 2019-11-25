@@ -21,17 +21,25 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		2FA80881238ADDB800974B6B /* DASHViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA8087F238ADDB800974B6B /* DASHViewController.h */; };
+		2FA80882238ADDB800974B6B /* DASHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA80880238ADDB800974B6B /* DASHViewController.m */; };
+		2FA80886238ADF8800974B6B /* DASHConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA80884238ADF8800974B6B /* DASHConfig.h */; };
+		2FA80887238ADF8800974B6B /* DASHConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA80885238ADF8800974B6B /* DASHConfig.m */; };
+		2FA8088A238AE19600974B6B /* DASHUserInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA80888238AE19600974B6B /* DASHUserInfo.h */; };
+		2FA8088B238AE19600974B6B /* DASHUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA80889238AE19600974B6B /* DASHUserInfo.m */; };
+		2FA8088E238AE35700974B6B /* NSBundle+DASHAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA8088C238AE35700974B6B /* NSBundle+DASHAdditions.h */; };
+		2FA8088F238AE35700974B6B /* NSBundle+DASHAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA8088D238AE35700974B6B /* NSBundle+DASHAdditions.m */; };
+		2FA80892238AE46000974B6B /* DASH.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA80890238AE46000974B6B /* DASH.h */; };
+		2FA80893238AE46000974B6B /* DASH.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA80891238AE46000974B6B /* DASH.m */; };
+		2FA80896238AED6B00974B6B /* NSData+DASHAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA80894238AED6B00974B6B /* NSData+DASHAdditions.h */; };
+		2FA80897238AED6B00974B6B /* NSData+DASHAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA80895238AED6B00974B6B /* NSData+DASHAdditions.m */; };
 		2FB4E93520BD8DF100F09A5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB4E93420BD8DF100F09A5D /* AppDelegate.swift */; };
 		2FB4E93C20BD8DF100F09A5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FB4E93B20BD8DF100F09A5D /* Assets.xcassets */; };
 		2FB4E93F20BD8DF100F09A5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB4E93D20BD8DF100F09A5D /* LaunchScreen.storyboard */; };
 		2FB4E94A20BD8DF100F09A5D /* DASHEmbedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB4E94920BD8DF100F09A5D /* DASHEmbedTests.swift */; };
 		2FB4E95B20BD94D800F09A5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB4E95A20BD94D800F09A5D /* Main.storyboard */; };
 		2FB4E95D20BD94EC00F09A5D /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB4E95C20BD94EC00F09A5D /* ExampleViewController.swift */; };
-		2FDBF3C32156E1D3001BB6E8 /* Bundle+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBF3BC2156E1D3001BB6E8 /* Bundle+Additions.swift */; };
-		2FDBF3C42156E1D3001BB6E8 /* DASHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBF3BD2156E1D3001BB6E8 /* DASHViewController.swift */; };
 		2FDBF3C52156E1D3001BB6E8 /* DASH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBF3BE2156E1D3001BB6E8 /* DASH.swift */; };
-		2FDBF3C72156E1D3001BB6E8 /* DASHConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBF3C12156E1D3001BB6E8 /* DASHConfig.swift */; };
-		2FDBF3C82156E1D3001BB6E8 /* Data+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDBF3C22156E1D3001BB6E8 /* Data+Additions.swift */; };
 		2FDBF3E321582E79001BB6E8 /* DASH.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FDBF3BF2156E1D3001BB6E8 /* DASH.storyboard */; };
 		5D68F893922A343AEFEA55F4 /* Pods_DASHEmbedDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BBF8E614C2976D4828D9371 /* Pods_DASHEmbedDemoTests.framework */; };
 		AA67100758E73BE8C858356D /* Pods_DASHEmbedDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00928C1F0CCE11BAB28F047F /* Pods_DASHEmbedDemo.framework */; };
@@ -58,6 +66,18 @@
 		2F4173222146F94B00ADE3BB /* DASHEmbed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DASHEmbed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F4173242146F94B00ADE3BB /* DASHEmbed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DASHEmbed.h; sourceTree = "<group>"; };
 		2F4173252146F94B00ADE3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FA8087F238ADDB800974B6B /* DASHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DASHViewController.h; sourceTree = "<group>"; };
+		2FA80880238ADDB800974B6B /* DASHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DASHViewController.m; sourceTree = "<group>"; };
+		2FA80884238ADF8800974B6B /* DASHConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DASHConfig.h; sourceTree = "<group>"; };
+		2FA80885238ADF8800974B6B /* DASHConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DASHConfig.m; sourceTree = "<group>"; };
+		2FA80888238AE19600974B6B /* DASHUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DASHUserInfo.h; sourceTree = "<group>"; };
+		2FA80889238AE19600974B6B /* DASHUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DASHUserInfo.m; sourceTree = "<group>"; };
+		2FA8088C238AE35700974B6B /* NSBundle+DASHAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+DASHAdditions.h"; sourceTree = "<group>"; };
+		2FA8088D238AE35700974B6B /* NSBundle+DASHAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+DASHAdditions.m"; sourceTree = "<group>"; };
+		2FA80890238AE46000974B6B /* DASH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DASH.h; sourceTree = "<group>"; };
+		2FA80891238AE46000974B6B /* DASH.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DASH.m; sourceTree = "<group>"; };
+		2FA80894238AED6B00974B6B /* NSData+DASHAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+DASHAdditions.h"; sourceTree = "<group>"; };
+		2FA80895238AED6B00974B6B /* NSData+DASHAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+DASHAdditions.m"; sourceTree = "<group>"; };
 		2FB4E93120BD8DF100F09A5D /* DASHEmbedDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DASHEmbedDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB4E93420BD8DF100F09A5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FB4E93B20BD8DF100F09A5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,12 +90,8 @@
 		2FB4E95C20BD94EC00F09A5D /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		2FB9A03420BE22D300314A89 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = SOURCE_ROOT; };
 		2FC22B2720D8ACC500C68963 /* DASHEmbedDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DASHEmbedDemo.entitlements; sourceTree = "<group>"; };
-		2FDBF3BC2156E1D3001BB6E8 /* Bundle+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Additions.swift"; sourceTree = "<group>"; };
-		2FDBF3BD2156E1D3001BB6E8 /* DASHViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DASHViewController.swift; sourceTree = "<group>"; };
 		2FDBF3BE2156E1D3001BB6E8 /* DASH.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DASH.swift; sourceTree = "<group>"; };
 		2FDBF3C02156E1D3001BB6E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DASH.storyboard; sourceTree = "<group>"; };
-		2FDBF3C12156E1D3001BB6E8 /* DASHConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DASHConfig.swift; sourceTree = "<group>"; };
-		2FDBF3C22156E1D3001BB6E8 /* Data+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Additions.swift"; sourceTree = "<group>"; };
 		2FDBF3DB21582DEB001BB6E8 /* DASHEmbed.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DASHEmbed.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FDBF3DD21582DEB001BB6E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		328A95ABC73AF19009AF3393 /* Pods-DASHEmbedDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DASHEmbedDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DASHEmbedDemo/Pods-DASHEmbedDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +162,14 @@
 			path = DASHEmbed;
 			sourceTree = "<group>";
 		};
+		2FA80883238ADF5800974B6B /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				2FDBF3BE2156E1D3001BB6E8 /* DASH.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
 		2FB4E92820BD8DF100F09A5D = {
 			isa = PBXGroup;
 			children = (
@@ -194,12 +218,20 @@
 		2FDBF3BB2156E1D3001BB6E8 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				2FDBF3BC2156E1D3001BB6E8 /* Bundle+Additions.swift */,
-				2FDBF3BD2156E1D3001BB6E8 /* DASHViewController.swift */,
-				2FDBF3BE2156E1D3001BB6E8 /* DASH.swift */,
+				2FA80883238ADF5800974B6B /* Swift */,
 				2FDBF3BF2156E1D3001BB6E8 /* DASH.storyboard */,
-				2FDBF3C12156E1D3001BB6E8 /* DASHConfig.swift */,
-				2FDBF3C22156E1D3001BB6E8 /* Data+Additions.swift */,
+				2FA8087F238ADDB800974B6B /* DASHViewController.h */,
+				2FA80880238ADDB800974B6B /* DASHViewController.m */,
+				2FA80884238ADF8800974B6B /* DASHConfig.h */,
+				2FA80885238ADF8800974B6B /* DASHConfig.m */,
+				2FA80888238AE19600974B6B /* DASHUserInfo.h */,
+				2FA80889238AE19600974B6B /* DASHUserInfo.m */,
+				2FA8088C238AE35700974B6B /* NSBundle+DASHAdditions.h */,
+				2FA8088D238AE35700974B6B /* NSBundle+DASHAdditions.m */,
+				2FA80890238AE46000974B6B /* DASH.h */,
+				2FA80891238AE46000974B6B /* DASH.m */,
+				2FA80894238AED6B00974B6B /* NSData+DASHAdditions.h */,
+				2FA80895238AED6B00974B6B /* NSData+DASHAdditions.m */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
@@ -259,6 +291,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FA80892238AE46000974B6B /* DASH.h in Headers */,
+				2FA8088A238AE19600974B6B /* DASHUserInfo.h in Headers */,
+				2FA80886238ADF8800974B6B /* DASHConfig.h in Headers */,
+				2FA8088E238AE35700974B6B /* NSBundle+DASHAdditions.h in Headers */,
+				2FA80881238ADDB800974B6B /* DASHViewController.h in Headers */,
+				2FA80896238AED6B00974B6B /* NSData+DASHAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +388,7 @@
 				TargetAttributes = {
 					2F4173212146F94B00ADE3BB = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1120;
 						ProvisioningStyle = Automatic;
 					};
 					2FB4E93020BD8DF100F09A5D = {
@@ -510,10 +549,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FDBF3C42156E1D3001BB6E8 /* DASHViewController.swift in Sources */,
-				2FDBF3C82156E1D3001BB6E8 /* Data+Additions.swift in Sources */,
-				2FDBF3C72156E1D3001BB6E8 /* DASHConfig.swift in Sources */,
-				2FDBF3C32156E1D3001BB6E8 /* Bundle+Additions.swift in Sources */,
+				2FA80887238ADF8800974B6B /* DASHConfig.m in Sources */,
+				2FA80882238ADDB800974B6B /* DASHViewController.m in Sources */,
+				2FA8088B238AE19600974B6B /* DASHUserInfo.m in Sources */,
+				2FA80893238AE46000974B6B /* DASH.m in Sources */,
+				2FA8088F238AE35700974B6B /* NSBundle+DASHAdditions.m in Sources */,
+				2FA80897238AED6B00974B6B /* NSData+DASHAdditions.m in Sources */,
 				2FDBF3C52156E1D3001BB6E8 /* DASH.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,6 +616,7 @@
 		2F4173282146F94B00ADE3BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
@@ -593,6 +635,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG FRAMEWORK";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -602,6 +645,7 @@
 		2F4173292146F94B00ADE3BB /* Debug 2 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
@@ -620,6 +664,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG FRAMEWORK";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -629,6 +674,7 @@
 		2F41732A2146F94B00ADE3BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
@@ -656,6 +702,7 @@
 		2F41732B2146F94B00ADE3BB /* Release 2 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
